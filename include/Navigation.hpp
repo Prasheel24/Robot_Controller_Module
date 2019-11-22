@@ -35,6 +35,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 #include "SteerAlgorithm.hpp"
 
+#include <vector>
 /**
  *  @brief Class Navigation 
  *  Contains the methods of Pid Algorithm
@@ -55,7 +56,34 @@ class Navigation : public SteerAlgorithm {
    /**
     *  @brief Destructor of class Navigation
     */
-    ~Navigation();
+    virtual ~Navigation();
+
+    /**
+    *  @brief Function to calculate new velocity using PID in m/s
+    *  @param double setPoint, Setpoint of the robot
+    *  @param double currentVelocity, current Velocity of the robot 
+    *  @return double std::vector<double>, values of error, Proportional
+    *                                      output, Integral output,
+    *                                      derivative output
+    */
+    virtual std::vector<double> calculatePID(double setPoint,
+                                             double currentVelocity);
+    /**
+    *  @brief Function to use GNUplot for velocity convergence graph
+    *  @param std::vector<std::pair<double, double>> points vector
+    *  @param double newVelocity,  New velocity from code
+    *  @return none
+    */
+    void gnuVelocityGraph(std::vector<std::pair<double, double>>
+                                    vectorPointsVel, double newVelocity);
+    /**
+    *  @brief Function to use GNUplot for Steer angle convergence graph
+    *  @param std::vector<std::pair<double, double>> points vector
+    *  @param double steerAngle,  steer angle from code
+    *  @return none
+    */
+    void gnuSteerAngleGraph(std::vector<std::pair<double, double>>
+                                    vectorPointsSteer, double steerAngle);
 
    /**
     *  @brief Function to calculate new velocity in m/s with a PID 
@@ -66,7 +94,7 @@ class Navigation : public SteerAlgorithm {
     *  @param int flag, to enable while
     *  @return double newVelocity
    */
-    double calculate(double targetHeading, double currentVelocity,
+    virtual double calculate(double targetHeading, double currentVelocity,
                      double setPoint, int flag);
 
    /**
@@ -74,42 +102,42 @@ class Navigation : public SteerAlgorithm {
     *  @param none
     *  @return double
     */
-     double getKp_();
+    virtual double getKp_();
 
    /**
     *  @brief Function to get ki_
     *  @param none
     *  @return double 
     */
-     double getKi_();
+    virtual double getKi_();
 
    /**
     *  @brief Function to get kd_
     *  @param none
     *  @return double 
     */
-     double getKd_();
+    virtual double getKd_();
 
    /**
     *  @brief Function to set kp_
     *  @param double kp
     *  @return boolean true
     */
-     bool setKp_(double kp);
+    virtual bool setKp_(double kp);
 
    /**
     *  @brief Function to set ki_
     *  @param double ki
     *  @return boolean true
     */
-     bool setKi_(double ki);
+    virtual bool setKi_(double ki);
 
    /**
     *  @brief Function to set kd_
     *  @param double kd
     *  @return boolean true
     */
-     bool setKd_(double kd);
+    virtual bool setKd_(double kd);
 };
 
 #endif  // INCLUDE_NAVIGATION_HPP_

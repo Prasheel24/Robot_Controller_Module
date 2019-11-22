@@ -47,6 +47,7 @@ OTHER DEALINGS IN THE SOFTWARE.
  */
 TEST(Navigation, testSetPid) {
 Navigation testn;
+//  Expect true if we are able to set the gains
 EXPECT_TRUE(testn.setKp_(1));
 EXPECT_TRUE(testn.setKi_(1));
 EXPECT_TRUE(testn.setKd_(1));
@@ -58,9 +59,20 @@ EXPECT_TRUE(testn.setKd_(1));
  */
 TEST(Navigation, testGetPid) {
 Navigation testn;
+//  Expect true if it returns the gains set from above
 EXPECT_LT(testn.getKp_(), 1);
 EXPECT_LT(testn.getKi_(), 1);
 EXPECT_LT(testn.getKd_(), 1);
+}
+
+/**
+ *  @brief Test to check the output of calculatePID
+ *  function to check errorvalue and output.
+ */
+TEST(Navigation, testPID) {
+Navigation testn;
+std::vector<double> out{0.0, 0.0, 0.0, 0.0}; 
+EXPECT_EQ(testn.calculatePID(10, 10), out);
 }
 
 /**
@@ -70,6 +82,12 @@ EXPECT_LT(testn.getKd_(), 1);
  */
 TEST(Navigation, testConvergence) {
 Navigation testn;
+//  Calculates the convergence for setpoint:40, Current Velocity: 10
+//  target heading: 0, and flag is 1 as we do not need graphs
 ASSERT_NEAR(testn.calculate(0, 10, 40, 1), 40, 2);
+//  Calculates the convergence for setpoint:40, Current Velocity: 10
+//  target heading: 120, and flag is 0 as we do not need graphs
 ASSERT_NEAR(testn.calculate(120, 10, 40, 0), 120, 1);
 }
+
+

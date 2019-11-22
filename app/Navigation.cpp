@@ -40,9 +40,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include "Navigation.hpp"
 #include "SteerAlgorithm.hpp"
 
-/**
- *  @brief Constructor of class SteerAlgorithm
- */
 Navigation::Navigation() {
 //  Initialised Variables
 kp_ = 0.5;
@@ -53,47 +50,57 @@ error_ = 0;
 previousError_ = 0;
 }
 
-/**
- *  @brief Destructor of class SteerAlgorithm
- */
 Navigation::~Navigation() {}
 
-/**
-*  @brief Function to calculate new velocity in m/s with a PID 
-*  Algorithm using kp, ki & kd
-*  @param double targetHeading, Target heading of the robot
-*  @param double currentVelocity, current velocity of robot
-*  @param double setPoint, Target Velocity
-*  @param int flag, to enable while
-*  @return double newVelocity
-*/
-double Navigation::calculate(double targetHeading,
-                             double currentVelocity,
-                             double setPoint,
-                             int flag) {
-double newVelocity = 0;
+std::vector<double> Navigation::calculatePID(double setPoint, double currentVelocity) {
+
+std::vector<double> pidOut;
+//double newVelocity = 0;
 double errorValue = 0;     //  to store current error
 double propOutput = 0;     //  to store proportional output
 double integralVal = 0;    //  temp variable to calculate integral value
 double intOutput = 0;      //  to store integral output
 double derivativeVal = 0;  //  temp variable to calculate derivative value
 double derOutput = 0;      //  to store derivative output
-double tempVel;            //  temp variable to store current velocity
-int velocityConverged = 0;
-int headingConverged = 0;
 
-double outTime = 0;        //  temp variable to determine convergence time
-SteerAlgorithm Ackermann = SteerAlgorithm();
+errorValue = setPoint - currentVelocity;
+propOutput = kp_ * errorValue;
 
-double tempHeading = targetHeading;      //  to store the target for graph
+integralVal += errorValue * diffTime_;
+intOutput = ki_ * integralVal;
 
+derivativeVal = ((errorValue - previousError_) / diffTime_);
+derOutput = kd_ * derivativeVal;
+
+pidOut.push_back(errorValue);
+pidOut.push_back(propOutput);
+pidOut.push_back(intOutput);
+pidOut.push_back(derOutput);
+return pidOut;
+}
+
+void Navigation::gnuVelocityGraph(std::vector<std::pair<double, double>>
+                         vectorPointsVel, double newVel) {
 //  call object and intialise variables for Graph in GNUPLOT
-Gnuplot gnu;
 Gnuplot gnup;
 
-std::vector<std::pair<double, double>> combinedXY(1, std::make_pair(0, 0));
-std::vector<std::pair<double, double>> points;
-std::vector<std::pair<double, double>> pointsVelocity;
+//  set the graph on gnuplot for the respective coordinates
+gnup << "set xrange [0:0.03]\nset yrange [0:45]\n";
+gnup << "set title \"Velocity Convergence\"\n";
+gnup << "set pointsize 1\n";
+gnup << "set xlabel \"Time\"\n";
+gnup << "set ylabel \"Current Velocity\"\n";
+gnup << "set key outside\n";
+
+gnup << "plot" << gnup.file1d(vectorPointsVel)
+     << "with lp title 'Current Velocity' lc 3, "
+     << newVel << " title 'Set Point' lt 1 lc 4" << std::endl;
+}
+
+void gnuSteerAngleGraph(std::vector<std::pair<double, double>>
+                   vectorPointsSteer, double steerAngle) {
+//  call object and intialise variables for Graph in GNUPLOT
+Gnuplot gnu;
 
 //  set the graph on gnuplot for the respective coordinates
 gnu << "set xrange [0:2]\nset yrange [0:100]\n";
@@ -103,26 +110,34 @@ gnu << "set xlabel \"Time\"\n";
 gnu << "set ylabel \"Heading Angle\"\n";
 gnu << "set key outside\n";
 
-gnup << "set xrange [0:0.17]\nset yrange [0:45]\n";
-gnup << "set title \"Velocity Convergence\"\n";
-gnup << "set pointsize 1\n";
-gnup << "set xlabel \"Time\"\n";
-gnup << "set ylabel \"Current Velocity\"\n";
-gnup << "set key outside\n";
+}
+
+double Navigation::calculate(double targetHeading,
+                             double currentVelocity,
+                             double setPoint,
+                             int flag) {
+double newVelocity = 0;
+double tempVel;            //  temp variable to store current velocity
+int velocityConverged = 0;
+int headingConverged = 0;
+std::vector<double> pidOutput;
+
+double outTime = 0;        //  temp variable to determine convergence time
+SteerAlgorithm Ackermann = SteerAlgorithm();
+
+double tempHeading = targetHeading;      //  to store the target for graph
+
+//  std::vector<std::pair<double, double>> combinedXY(1, std::make_pair(0, 0));
+std::vector<std::pair<double, double>> points;
+std::vector<std::pair<double, double>> pointsVelocity;
+
 //  while loop to run until velocity and heading are converged
 while(velocityConverged != 1 && headingConverged != 1) {
         //  Run PID control initially
-        errorValue = setPoint - currentVelocity;
-        propOutput = kp_ * errorValue;
-
-        integralVal += errorValue * diffTime_;
-        intOutput = ki_ * integralVal;
-
-        derivativeVal = ((errorValue - previousError_) / diffTime_);
-        derOutput = kd_ * derivativeVal;
-
-        newVelocity = currentVelocity + (propOutput + intOutput + derOutput);
-        previousError_ = errorValue;
+        pidOutput = calculatePID(setPoint, currentVelocity);
+        newVelocity = currentVelocity +
+                      (pidOutput[1] + pidOutput[2] + pidOutput[2]);
+        previousError_ = pidOutput[0];
         currentVelocity = newVelocity;
 
         clock_t toc = clock();
@@ -161,18 +176,10 @@ while(velocityConverged != 1 && headingConverged != 1) {
 
           //  loop until heading is converged towards target
           while ((outTime < turnTime) && (targetHeading != heading)) {
-                errorValue = setPoint - currentVelocity;
-                propOutput = kp_ * errorValue;
-
-                integralVal += errorValue * diffTime_;
-                intOutput = ki_ * integralVal;
-
-                derivativeVal = ((errorValue - previousError_) / diffTime_);
-                derOutput = kd_ * derivativeVal;
-
+                pidOutput = calculatePID(setPoint, currentVelocity);
                 newVelocity = currentVelocity +
-                                     (propOutput + intOutput + derOutput);
-                previousError_ = errorValue;
+                             (pidOutput[1] + pidOutput[2] + pidOutput[2]);
+                previousError_ = pidOutput[0];
                 currentVelocity = newVelocity;
 
                 clock_t toc = clock();
@@ -196,60 +203,32 @@ while(velocityConverged != 1 && headingConverged != 1) {
         Ackermann.resetWheel();
         }
 }
+
 if (flag == 2) {
   //  Plot the graph on gnuplot by calling the below lines
-  gnu << "plot" << gnu.file1d(points) << "with points title 'Heading' lc 3, "
-      << tempHeading << " title 'Target Heading' lt 1 lc 4" << std::endl;
-  gnup << "plot" << gnup.file1d(pointsVelocity)
-       << "with lp title 'Current Velocity' lc 3, "
-       << newVelocity << " title 'Set Point' lt 1 lc 4" << std::endl;
+  gnuSteerAngleGraph(points, tempHeading);
+  gnuVelocityGraph(pointsVelocity, newVelocity);
 return 0;
 } else if (flag == 1) {
   return newVelocity;
 } else {
   return heading;
 }
-errorValue = 0;
-propOutput = 0;
-integralVal = 0;
-intOutput = 0;
-derivativeVal = 0;
-derOutput = 0;
 return newVelocity;
 }
 
-/**
- *  @brief Function to get kp_
- *  @param none
- *  @return double
- */
 double Navigation::getKp_() {
 return kp_;
 }
 
-/**
- *  @brief Function to get ki_
- *  @param none
- *  @return double 
- */
 double Navigation::getKi_() {
 return ki_;
 }
 
-/**
- *  @brief Function to get kd_
- *  @param none
- *  @return double 
- */
 double Navigation::getKd_() {
 return kd_;
 }
 
-/**
- *  @brief Function to set kp_
- *  @param double kp
- *  @return boolean true
- */
 bool Navigation::setKp_(double kp) {
 bool flag = true;
 kp_ = kp;
@@ -259,11 +238,6 @@ if (kp_ != kp) {
 return flag;
 }
 
-/**
- *  @brief Function to set ki_
- *  @param double ki
- *  @return boolean true
- */
 bool Navigation::setKi_(double ki) {
 bool flag = true;
 ki_ = ki;
@@ -273,11 +247,6 @@ if (ki_ != ki) {
 return flag;
 }
 
-/**
- *  @brief Function to set kd_
- *  @param double kd
- *  @return boolean true
- */
 bool Navigation::setKd_(double kd) {
 bool flag = true;
 kd_ = kd;
