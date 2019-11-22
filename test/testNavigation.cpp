@@ -113,3 +113,15 @@ std::vector<std::pair<double, double>> points;
 EXPECT_FALSE(testn.gnuSteerAngleGraph(points,10, false));
 }
 
+/**
+ *  @brief Test to check the output of calculate
+ *  function converges with the setPoint and
+ *  Heading with gnuplot
+ */
+TEST(Navigation, testConvergenceGraph) {
+Navigation testn;
+//  Calculates the convergence for setpoint:40, Current Velocity: 10
+//  target heading: 0, and flag is 2 to check gnuplot graphs.
+ASSERT_NEAR(testn.calculate(90, 10, 40, 2), 0, 0);
+}
+
