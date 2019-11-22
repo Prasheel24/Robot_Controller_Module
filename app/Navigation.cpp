@@ -97,7 +97,7 @@ gnup << "plot" << gnup.file1d(vectorPointsVel)
      << newVel << " title 'Set Point' lt 1 lc 4" << std::endl;
 }
 
-void gnuSteerAngleGraph(std::vector<std::pair<double, double>>
+void Navigation::gnuSteerAngleGraph(std::vector<std::pair<double, double>>
                    vectorPointsSteer, double steerAngle) {
 //  call object and intialise variables for Graph in GNUPLOT
 Gnuplot gnu;
@@ -110,6 +110,9 @@ gnu << "set xlabel \"Time\"\n";
 gnu << "set ylabel \"Heading Angle\"\n";
 gnu << "set key outside\n";
 
+gnu << "plot" << gnu.file1d(vectorPointsSteer)
+    << "with points title 'Heading' lc 3, "
+    << steerAngle << " title 'Target Heading' lt 1 lc 4" << std::endl;
 }
 
 double Navigation::calculate(double targetHeading,
