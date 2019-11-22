@@ -90,4 +90,26 @@ ASSERT_NEAR(testn.calculate(0, 10, 40, 1), 40, 2);
 ASSERT_NEAR(testn.calculate(120, 10, 40, 0), 120, 1);
 }
 
+/**
+ *  @brief Test to check if gnuVelocityGraph is working
+ */
+TEST(Navigation, testVelocityPlot) {
+Navigation testn;
+
+std::vector<std::pair<double, double>> points;
+//  Tests if GNUPLOT is working for velocity graph
+EXPECT_FALSE(testn.gnuVelocityGraph(points,10, false));
+}
+
+
+/**
+ *  @brief Test to check if gnuSteerAngleGraph is working
+ */
+TEST(Navigation, testSteerAnglePlot) {
+Navigation testn;
+
+std::vector<std::pair<double, double>> points;
+//  Tests if GNUPLOT is working for velocity graph
+EXPECT_FALSE(testn.gnuSteerAngleGraph(points,10, false));
+}
 

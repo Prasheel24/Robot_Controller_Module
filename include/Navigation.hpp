@@ -72,18 +72,20 @@ class Navigation : public SteerAlgorithm {
     *  @brief Function to use GNUplot for velocity convergence graph
     *  @param std::vector<std::pair<double, double>> points vector
     *  @param double newVelocity,  New velocity from code
+    *  @param bool flag, to test the gnuplot working
     *  @return none
     */
-    void gnuVelocityGraph(std::vector<std::pair<double, double>>
-                                    vectorPointsVel, double newVelocity);
+    bool gnuVelocityGraph(std::vector<std::pair<double, double>>
+                          vectorPointsVel, double newVelocity, bool flag);
     /**
     *  @brief Function to use GNUplot for Steer angle convergence graph
     *  @param std::vector<std::pair<double, double>> points vector
     *  @param double steerAngle,  steer angle from code
+    *  @param bool flag, to test the gnuplot working
     *  @return none
     */
-    void gnuSteerAngleGraph(std::vector<std::pair<double, double>>
-                                    vectorPointsSteer, double steerAngle);
+    bool gnuSteerAngleGraph(std::vector<std::pair<double, double>>
+                            vectorPointsSteer, double steerAngle, bool flag);
 
    /**
     *  @brief Function to calculate new velocity in m/s with a PID 

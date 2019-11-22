@@ -79,11 +79,10 @@ pidOut.push_back(derOutput);
 return pidOut;
 }
 
-void Navigation::gnuVelocityGraph(std::vector<std::pair<double, double>>
-                         vectorPointsVel, double newVel) {
+bool Navigation::gnuVelocityGraph(std::vector<std::pair<double, double>>
+                         vectorPointsVel, double newVel, bool flag) {
 //  call object and intialise variables for Graph in GNUPLOT
 Gnuplot gnup;
-
 //  set the graph on gnuplot for the respective coordinates
 gnup << "set xrange [0:0.03]\nset yrange [0:45]\n";
 gnup << "set title \"Velocity Convergence\"\n";
@@ -92,13 +91,18 @@ gnup << "set xlabel \"Time\"\n";
 gnup << "set ylabel \"Current Velocity\"\n";
 gnup << "set key outside\n";
 
+if (flag) {
 gnup << "plot" << gnup.file1d(vectorPointsVel)
      << "with lp title 'Current Velocity' lc 3, "
      << newVel << " title 'Set Point' lt 1 lc 4" << std::endl;
+} else {
+gnup << "test" << std::endl;
+}
+return flag;
 }
 
-void Navigation::gnuSteerAngleGraph(std::vector<std::pair<double, double>>
-                   vectorPointsSteer, double steerAngle) {
+bool Navigation::gnuSteerAngleGraph(std::vector<std::pair<double, double>>
+                   vectorPointsSteer, double steerAngle, bool flag) {
 //  call object and intialise variables for Graph in GNUPLOT
 Gnuplot gnu;
 
@@ -110,9 +114,14 @@ gnu << "set xlabel \"Time\"\n";
 gnu << "set ylabel \"Heading Angle\"\n";
 gnu << "set key outside\n";
 
+if (flag) {
 gnu << "plot" << gnu.file1d(vectorPointsSteer)
     << "with points title 'Heading' lc 3, "
     << steerAngle << " title 'Target Heading' lt 1 lc 4" << std::endl;
+} else {
+gnu << "test" << std::endl;
+}
+return flag;
 }
 
 double Navigation::calculate(double targetHeading,
@@ -209,8 +218,8 @@ while(velocityConverged != 1 && headingConverged != 1) {
 
 if (flag == 2) {
   //  Plot the graph on gnuplot by calling the below lines
-  gnuSteerAngleGraph(points, tempHeading);
-  gnuVelocityGraph(pointsVelocity, newVelocity);
+  gnuSteerAngleGraph(points, tempHeading, true);
+  gnuVelocityGraph(pointsVelocity, newVelocity, true);
 return 0;
 } else if (flag == 1) {
   return newVelocity;
