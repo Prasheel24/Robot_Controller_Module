@@ -33,9 +33,11 @@ OTHER DEALINGS IN THE SOFTWARE.
 #ifndef INCLUDE_NAVIGATION_HPP_
 #define INCLUDE_NAVIGATION_HPP_
 
-#include "SteerAlgorithm.hpp"
-
+#include <iostream>
 #include <vector>
+#include <utility>
+
+#include <SteerAlgorithm.hpp>
 /**
  *  @brief Class Navigation 
  *  Contains the methods of Pid Algorithm

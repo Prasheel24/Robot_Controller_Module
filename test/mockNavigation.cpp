@@ -32,7 +32,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include <vector>
-#include "iostream"
+#include <iostream>
 
 #include "Navigation.hpp"
 
@@ -41,7 +41,7 @@ OTHER DEALINGS IN THE SOFTWARE.
  *  To implement google mock
  */
 class MockNavigation : public Navigation{
-  public :
+ public :
    /**
     *  @brief Initialise the constructor
     */
@@ -50,45 +50,45 @@ class MockNavigation : public Navigation{
    /**
     *  @brief Mock method to get Kp_
     */
-    MOCK_METHOD0( getKp_, double());
+    MOCK_METHOD0(getKp_, double());
 
    /**
     *  @brief Mock method to set Kp_
     */
-    MOCK_METHOD1( setKp_, bool(double));
+    MOCK_METHOD1(setKp_, bool(double));
 
    /**
     *  @brief Mock method to get Ki_
     */
-    MOCK_METHOD0( getKi_, double());
+    MOCK_METHOD0(getKi_, double());
 
    /**
     *  @brief Mock method to set Ki_
     */
-    MOCK_METHOD1( setKi_, bool(double));
+    MOCK_METHOD1(setKi_, bool(double));
 
    /**
     *  @brief Mock method to get Kd_
     */
-    MOCK_METHOD0( getKd_, double());
+    MOCK_METHOD0(getKd_, double());
 
    /**
     *  @brief Mock method to set Kd_
     */
-    MOCK_METHOD1( setKd_, bool(double));
+    MOCK_METHOD1(setKd_, bool(double));
 
    /**
     *  @brief Mock method to calculate PID
     */
-    MOCK_METHOD2( calculatePID, std::vector<double>(double, double));
+    MOCK_METHOD2(calculatePID, std::vector<double>(double, double));
 
    /**
     *  @brief Mock method to compute the convergence
     */
-    MOCK_METHOD4( calculate, double(double targetHeading,
+    MOCK_METHOD4(calculate, double(double targetHeading,
                                     double currentVelocity,
                                     double setPoint,
-                                    int flag) );    
+                                    int flag));
 };
 
 /**
@@ -142,7 +142,7 @@ TEST(MockNavigation, checkPID) {
 MockNavigation mn;
 //  Expect call to compute PID output
 EXPECT_CALL(mn, calculatePID(40, 10)).Times(1);
-std::vector<double> out; 
+std::vector<double> out;
 EXPECT_EQ(mn.calculatePID(40, 10), out);
 }
 

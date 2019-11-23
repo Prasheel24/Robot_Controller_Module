@@ -37,7 +37,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <fstream>
 #include <vector>
 
-#include "gnuplot-iostream.h"
+#include "include/gnuplot-iostream.h"
 #include "Navigation.hpp"
 #include "SteerAlgorithm.hpp"
 
@@ -53,10 +53,9 @@ previousError_ = 0;
 
 Navigation::~Navigation() {}
 
-std::vector<double> Navigation::calculatePID(double setPoint, double currentVelocity) {
-
+std::vector<double> Navigation::calculatePID(double setPoint,
+                                      double currentVelocity) {
 std::vector<double> pidOut;
-//double newVelocity = 0;
 double errorValue = 0;     //  to store current error
 double propOutput = 0;     //  to store proportional output
 double integralVal = 0;    //  temp variable to calculate integral value

@@ -75,7 +75,7 @@ EXPECT_LT(testn.getKd_(), 1);
  */
 TEST(Navigation, testPID) {
 Navigation testn;
-std::vector<double> out{0.0, 0.0, 0.0, 0.0}; 
+std::vector<double> out{0.0, 0.0, 0.0, 0.0};
 EXPECT_EQ(testn.calculatePID(10, 10), out);
 }
 
@@ -104,7 +104,7 @@ Navigation testn;
 
 std::vector<std::pair<double, double>> points;
 //  Tests if GNUPLOT is working for velocity graph
-EXPECT_FALSE(testn.gnuVelocityGraph(points,10, false));
+EXPECT_FALSE(testn.gnuVelocityGraph(points, 10, false));
 }
 
 
@@ -117,7 +117,7 @@ Navigation testn;
 
 std::vector<std::pair<double, double>> points;
 //  Tests if GNUPLOT is working for velocity graph
-EXPECT_FALSE(testn.gnuSteerAngleGraph(points,10, false));
+EXPECT_FALSE(testn.gnuSteerAngleGraph(points, 10, false));
 }
 
 
