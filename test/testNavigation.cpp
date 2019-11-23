@@ -28,8 +28,9 @@ OTHER DEALINGS IN THE SOFTWARE.
  *  @file    testNavigation.cpp
  *  @author  Sprint-1 Raj Shinde- driver and Prasheel Renkuntla- navigator
  *  @author  Sprint-2 Prasheel Renkuntla- driver and Raj Shinde- navigator
- *  @date    10/10/2019
- *  @version 6.0
+ *  @author  Gmock- Prasheel Renkuntla
+ *  @date    11/22/2019
+ *  @version 7.0
  *  @brief   Mid Term Project
  *  @section Tests functionality of Navigation code
  */
@@ -42,6 +43,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include "Navigation.hpp"
 
 /**
+ *  @def TEST(Navigation, testSetPid)
  *  @brief Test to check the set functions
  *  for kp_,ki_ and kd_
  */
@@ -54,6 +56,7 @@ EXPECT_TRUE(testn.setKd_(1));
 }
 
 /**
+ *  @def TEST(Navigation, testGetPid)
  *  @brief Test to check that values of
  *  kp_,ki_ and kd_ are below 1 or not
  */
@@ -66,6 +69,7 @@ EXPECT_LT(testn.getKd_(), 1);
 }
 
 /**
+ *  @def TEST(Navigation, testPID)
  *  @brief Test to check the output of calculatePID
  *  function to check errorvalue and output.
  */
@@ -76,6 +80,7 @@ EXPECT_EQ(testn.calculatePID(10, 10), out);
 }
 
 /**
+ *  @def TEST(Navigation, testConvergence)
  *  @brief Test to check the output of calculate
  *  function converges with the setPoint and
  *  Heading
@@ -91,6 +96,7 @@ ASSERT_NEAR(testn.calculate(120, 10, 40, 0), 120, 1);
 }
 
 /**
+ *  @def TEST(Navigation, testVelocityPlot)
  *  @brief Test to check if gnuVelocityGraph is working
  */
 TEST(Navigation, testVelocityPlot) {
@@ -103,6 +109,7 @@ EXPECT_FALSE(testn.gnuVelocityGraph(points,10, false));
 
 
 /**
+ *  @def TEST(Navigation, testSteerAnglePlot)
  *  @brief Test to check if gnuSteerAngleGraph is working
  */
 TEST(Navigation, testSteerAnglePlot) {
@@ -112,4 +119,5 @@ std::vector<std::pair<double, double>> points;
 //  Tests if GNUPLOT is working for velocity graph
 EXPECT_FALSE(testn.gnuSteerAngleGraph(points,10, false));
 }
+
 

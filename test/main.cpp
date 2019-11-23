@@ -28,10 +28,11 @@ OTHER DEALINGS IN THE SOFTWARE.
  *  @file    main.cpp
  *  @author  Sprint-1 Raj Shinde- driver and Prasheel Renkuntla- navigator
  *  @author  Sprint-2 Prasheel Renkuntla- driver and Raj Shinde- navigator
- *  @date    10/10/2019
- *  @version 6.0
+ *  @author  Gmock Prasheel Renkuntla
+ *  @date    11/22/2019
+ *  @version 7.0
  *  @brief   Mid Term Project
- *  @section Tests all files in module
+ *  @section Tests all files in module with gmock
  */
 
 #include <gtest/gtest.h>

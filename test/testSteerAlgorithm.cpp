@@ -28,8 +28,9 @@ OTHER DEALINGS IN THE SOFTWARE.
  *  @file    testSteerAlgorithm.cpp
  *  @author  Sprint-1 Raj Shinde- driver and Prasheel Renkuntla- navigator
  *  @author  Sprint-2 Prasheel Renkuntla- driver and Raj Shinde- navigator
- *  @date    10/10/2019
- *  @version 6.0
+ *  @author  Gmock Prasheel Renkuntla
+ *  @date    11/22/2019
+ *  @version 7.0
  *  @brief   Mid Term Project
  *  @section Tests functionality of SteerAlgorithm Code
  */
@@ -41,6 +42,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include "SteerAlgorithm.hpp"
 
 /**
+ *  @def TEST(SteerAlgorithm, testCorrRadius)
  *  @brief Tests to check that the set functions works 
  *  and the value of corrRadius in below setlimit
  */
@@ -51,6 +53,7 @@ EXPECT_LT(tests.getCorrRadius_(), 150);
 }
 
 /**
+ *  @def TEST(SteerAlgorithm, testwheel)
  *  @brief Tests to check if the wheel angles get 
  *  resetted and the Ackeermann kinematic model is
  *  is properly implemented
@@ -62,6 +65,7 @@ EXPECT_LT(tests.changeWheelAngles(10, 4, 8), 46);
 }
 
 /**
+ *  @def TEST(SteerAlgorithm, testCalculations)
  *  @brief Test to check the functions arclength 
  *  and turnTime provide right length and time values
  */
