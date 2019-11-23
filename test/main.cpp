@@ -35,6 +35,7 @@ OTHER DEALINGS IN THE SOFTWARE.
  */
 
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
 /**
  *  @brief  Main Function for running tests
@@ -43,5 +44,6 @@ OTHER DEALINGS IN THE SOFTWARE.
  */
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
+  ::testing::InitGoogleMock(&argc, argv);
   return RUN_ALL_TESTS();
 }
