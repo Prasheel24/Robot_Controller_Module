@@ -1,0 +1,4 @@
+var structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arra8faa7fb46cef74a29a23f22c000e4a99 =
+[
+    [ "mode", "structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arra8faa7fb46cef74a29a23f22c000e4a99.html#a9c16f714b67e1c4b38e5c7ff956e8acc", null ]
+];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calculate',['calculate',['../class_navigation.html#a0f83b511cec12a68f2c3466c40c5d3cb',1,'Navigation']]],
-  ['changewheelangles',['changeWheelAngles',['../class_steer_algorithm.html#a6067af69593713f561890ae8ad23f5ff',1,'SteerAlgorithm']]]
+  ['binaryfile',['binaryFile',['../classgnuplotio_1_1_gnuplot.html#ad90501e6dbab5379abcd76fd0e2e4ef1',1,'gnuplotio::Gnuplot']]],
+  ['binfmt',['binfmt',['../classgnuplotio_1_1_gnuplot.html#a43fe103649ec168b453c43aecdacce81',1,'gnuplotio::Gnuplot']]]
 ];

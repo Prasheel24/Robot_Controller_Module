@@ -1,0 +1,103 @@
+.TH "MockNavigation" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MockNavigation \- Mock Class \fBNavigation\fP To implement google mock\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBNavigation\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMockNavigation\fP ()"
+.br
+.RI "\fIInitialise the constructor\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD0\fP (\fBgetKp_\fP, double())"
+.br
+.RI "\fIMock method to get Kp_\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD1\fP (\fBsetKp_\fP, bool(double))"
+.br
+.RI "\fIMock method to set Kp_\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD0\fP (\fBgetKi_\fP, double())"
+.br
+.RI "\fIMock method to get Ki_\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD1\fP (\fBsetKi_\fP, bool(double))"
+.br
+.RI "\fIMock method to set Ki_\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD0\fP (\fBgetKd_\fP, double())"
+.br
+.RI "\fIMock method to get Kd_\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD1\fP (\fBsetKd_\fP, bool(double))"
+.br
+.RI "\fIMock method to set Kd_\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD2\fP (\fBcalculatePID\fP, std::vector< double >(double, double))"
+.br
+.RI "\fIMock method to calculate PID\&. \fP"
+.ti -1c
+.RI "\fBMOCK_METHOD4\fP (\fBcalculate\fP, double(double \fBtargetHeading\fP, double currentVelocity, double setPoint, int flag))"
+.br
+.RI "\fIMock method to compute the convergence\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Mock Class \fBNavigation\fP To implement google mock\&. 
+.PP
+Definition at line 43 of file mockNavigation\&.cpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MockNavigation::MockNavigation ()\fC [inline]\fP"
+
+.PP
+Initialise the constructor\&. 
+.PP
+Definition at line 48 of file mockNavigation\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "MockNavigation::MOCK_METHOD0 (\fBgetKp_\fP, double())"
+
+.PP
+Mock method to get Kp_\&. 
+.SS "MockNavigation::MOCK_METHOD0 (\fBgetKi_\fP, double())"
+
+.PP
+Mock method to get Ki_\&. 
+.SS "MockNavigation::MOCK_METHOD0 (\fBgetKd_\fP, double())"
+
+.PP
+Mock method to get Kd_\&. 
+.SS "MockNavigation::MOCK_METHOD1 (\fBsetKp_\fP, bool(double))"
+
+.PP
+Mock method to set Kp_\&. 
+.SS "MockNavigation::MOCK_METHOD1 (\fBsetKi_\fP, bool(double))"
+
+.PP
+Mock method to set Ki_\&. 
+.SS "MockNavigation::MOCK_METHOD1 (\fBsetKd_\fP, bool(double))"
+
+.PP
+Mock method to set Kd_\&. 
+.SS "MockNavigation::MOCK_METHOD2 (\fBcalculatePID\fP, std::vector< double >double, double)"
+
+.PP
+Mock method to calculate PID\&. 
+.SS "MockNavigation::MOCK_METHOD4 (\fBcalculate\fP, double(double \fBtargetHeading\fP, double currentVelocity, double setPoint, int flag))"
+
+.PP
+Mock method to compute the convergence\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

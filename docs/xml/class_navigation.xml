@@ -3,6 +3,7 @@
   <compounddef id="class_navigation" kind="class" language="C++" prot="public">
     <compoundname>Navigation</compoundname>
     <basecompoundref refid="class_steer_algorithm" prot="public" virt="non-virtual">SteerAlgorithm</basecompoundref>
+    <derivedcompoundref refid="class_mock_navigation" prot="public" virt="non-virtual">MockNavigation</derivedcompoundref>
     <includes refid="_navigation_8hpp" local="no">Navigation.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_navigation_1ae4793f641072096ff84a3fc0a388b639" prot="private" static="no" mutable="no">
@@ -16,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="44" column="1" bodyfile="include/Navigation.hpp" bodystart="44" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="45" column="1" bodyfile="include/Navigation.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_navigation_1a725134611ed3d9f29512f5ad707f58f9" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -29,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="44" column="1" bodyfile="include/Navigation.hpp" bodystart="44" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="45" column="1" bodyfile="include/Navigation.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_navigation_1ad0199044c6517af38ad77594321e6bcd" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -42,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="44" column="1" bodyfile="include/Navigation.hpp" bodystart="44" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="45" column="1" bodyfile="include/Navigation.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_navigation_1a5748c5ebeea7a4142ca9aaf3f4c8cd78" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -55,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="44" column="1" bodyfile="include/Navigation.hpp" bodystart="44" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="45" column="1" bodyfile="include/Navigation.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_navigation_1aaad61568f4da45d5b32ea63a72bbb6a9" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -68,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="44" column="1" bodyfile="include/Navigation.hpp" bodystart="44" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="45" column="1" bodyfile="include/Navigation.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_navigation_1a6f7165404d8b4467f8372c0cbc657e93" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -81,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="44" column="1" bodyfile="include/Navigation.hpp" bodystart="44" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="45" column="1" bodyfile="include/Navigation.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_navigation_1ab3e90b24e7f7e8fea9710d548404f269" prot="private" static="no" mutable="no">
         <type>const double</type>
@@ -95,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="45" column="1" bodyfile="include/Navigation.hpp" bodystart="45" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="46" column="1" bodyfile="include/Navigation.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -111,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="48" column="1" bodyfile="include/Navigation.hpp" bodystart="48" bodyend="-1"/>
+        <location file="include/Navigation.hpp" line="49" column="1" bodyfile="include/Navigation.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -123,12 +124,12 @@
         <briefdescription>
 <para>Constructor of class <ref refid="class_navigation" kindref="compound">Navigation</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>Constructor of class <ref refid="class_steer_algorithm" kindref="compound">SteerAlgorithm</ref>. </para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="53" column="1" bodyfile="app/Navigation.cpp" bodystart="46" bodyend="54"/>
+        <location file="include/Navigation.hpp" line="54" column="1" bodyfile="app/Navigation.cpp" bodystart="44" bodyend="52"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1addd4022d716df48f4e55a1db69361ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1addd4022d716df48f4e55a1db69361ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
         <definition>Navigation::~Navigation</definition>
         <argsstring>()</argsstring>
@@ -136,12 +137,147 @@
         <briefdescription>
 <para>Destructor of class <ref refid="class_navigation" kindref="compound">Navigation</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>Destructor of class <ref refid="class_steer_algorithm" kindref="compound">SteerAlgorithm</ref>. </para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="58" column="1" bodyfile="app/Navigation.cpp" bodystart="59" bodyend="59"/>
+        <location file="include/Navigation.hpp" line="59" column="1" bodyfile="app/Navigation.cpp" bodystart="54" bodyend="54"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; Navigation::calculatePID</definition>
+        <argsstring>(double setPoint, double currentVelocity)</argsstring>
+        <name>calculatePID</name>
+        <param>
+          <type>double</type>
+          <declname>setPoint</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>currentVelocity</declname>
+        </param>
+        <briefdescription>
+<para>Function to calculate new velocity using PID in m/s. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>double</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>setPoint, Setpoint of the robot </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>double</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>currentVelocity, current Velocity of the robot </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double std::vector&lt;double&gt;, values of error, Proportional output, Integral output, derivative output </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Navigation.hpp" line="69" column="1" bodyfile="app/Navigation.cpp" bodystart="56" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_navigation_1a632e4d0d9be60dd775b4e57edb797073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Navigation::gnuVelocityGraph</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; double, double &gt;&gt; vectorPointsVel, double newVelocity, bool flag)</argsstring>
+        <name>gnuVelocityGraph</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; double, double &gt;&gt;</type>
+          <declname>vectorPointsVel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>newVelocity</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Function to use GNUplot for velocity convergence graph. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>std::vector&lt;std::pair&lt;double</parametername>
+<parametername>double&gt;&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>double</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>newVelocity, New velocity from code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag, to test the gnuplot working </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Navigation.hpp" line="78" column="1" bodyfile="app/Navigation.cpp" bodystart="83" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_navigation_1ab35bfaf55fde4a16c05d88ef8789a947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Navigation::gnuSteerAngleGraph</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; double, double &gt;&gt; vectorPointsSteer, double steerAngle, bool flag)</argsstring>
+        <name>gnuSteerAngleGraph</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; double, double &gt;&gt;</type>
+          <declname>vectorPointsSteer</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>steerAngle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Function to use GNUplot for Steer angle convergence graph. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>std::vector&lt;std::pair&lt;double</parametername>
+<parametername>double&gt;&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>double</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>steerAngle, steer angle from code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag, to test the gnuplot working </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Navigation.hpp" line="87" column="1" bodyfile="app/Navigation.cpp" bodystart="105" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
         <definition>double Navigation::calculate</definition>
         <argsstring>(double targetHeading, double currentVelocity, double setPoint, int flag)</argsstring>
@@ -198,9 +334,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="69" column="1" bodyfile="app/Navigation.cpp" bodystart="70" bodyend="200"/>
+        <location file="include/Navigation.hpp" line="99" column="1" bodyfile="app/Navigation.cpp" bodystart="128" bodyend="231"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
         <definition>double Navigation::getKp_</definition>
         <argsstring>()</argsstring>
@@ -220,9 +356,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="77" column="1" bodyfile="app/Navigation.cpp" bodystart="207" bodyend="209"/>
+        <location file="include/Navigation.hpp" line="107" column="1" bodyfile="app/Navigation.cpp" bodystart="233" bodyend="235"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
         <definition>double Navigation::getKi_</definition>
         <argsstring>()</argsstring>
@@ -242,9 +378,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="84" column="1" bodyfile="app/Navigation.cpp" bodystart="216" bodyend="218"/>
+        <location file="include/Navigation.hpp" line="114" column="1" bodyfile="app/Navigation.cpp" bodystart="237" bodyend="239"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1ac6441bb601483166ef7a8081b76f634d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1ac6441bb601483166ef7a8081b76f634d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
         <definition>double Navigation::getKd_</definition>
         <argsstring>()</argsstring>
@@ -264,9 +400,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="91" column="1" bodyfile="app/Navigation.cpp" bodystart="225" bodyend="227"/>
+        <location file="include/Navigation.hpp" line="121" column="1" bodyfile="app/Navigation.cpp" bodystart="241" bodyend="243"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>bool Navigation::setKp_</definition>
         <argsstring>(double kp)</argsstring>
@@ -290,9 +426,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="98" column="1" bodyfile="app/Navigation.cpp" bodystart="234" bodyend="241"/>
+        <location file="include/Navigation.hpp" line="128" column="1" bodyfile="app/Navigation.cpp" bodystart="245" bodyend="252"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>bool Navigation::setKi_</definition>
         <argsstring>(double ki)</argsstring>
@@ -316,9 +452,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="105" column="1" bodyfile="app/Navigation.cpp" bodystart="248" bodyend="255"/>
+        <location file="include/Navigation.hpp" line="135" column="1" bodyfile="app/Navigation.cpp" bodystart="254" bodyend="261"/>
       </memberdef>
-      <memberdef kind="function" id="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>bool Navigation::setKd_</definition>
         <argsstring>(double kd)</argsstring>
@@ -342,7 +478,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Navigation.hpp" line="112" column="1" bodyfile="app/Navigation.cpp" bodystart="262" bodyend="269"/>
+        <location file="include/Navigation.hpp" line="142" column="1" bodyfile="app/Navigation.cpp" bodystart="263" bodyend="270"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -350,41 +486,50 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7">
-        <label>Navigation</label>
-        <link refid="class_navigation"/>
-        <childnode refid="8" relation="public-inheritance">
+      <node id="171">
+        <label>MockNavigation</label>
+        <link refid="class_mock_navigation"/>
+        <childnode refid="169" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="169">
+        <label>Navigation</label>
+        <link refid="class_navigation"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="170">
         <label>SteerAlgorithm</label>
         <link refid="class_steer_algorithm"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9">
+      <node id="172">
         <label>Navigation</label>
         <link refid="class_navigation"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="173" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="173">
         <label>SteerAlgorithm</label>
         <link refid="class_steer_algorithm"/>
       </node>
     </collaborationgraph>
-    <location file="include/Navigation.hpp" line="42" column="1" bodyfile="include/Navigation.hpp" bodystart="42" bodyend="113"/>
+    <location file="include/Navigation.hpp" line="43" column="1" bodyfile="include/Navigation.hpp" bodystart="43" bodyend="143"/>
     <listofallmembers>
       <member refid="class_steer_algorithm_1a17ff78af17e900f752237d274bcf751d" prot="public" virt="non-virtual"><scope>Navigation</scope><name>arcLength</name></member>
-      <member refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" prot="public" virt="non-virtual"><scope>Navigation</scope><name>calculate</name></member>
+      <member refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" prot="public" virt="virtual"><scope>Navigation</scope><name>calculate</name></member>
+      <member refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" prot="public" virt="virtual"><scope>Navigation</scope><name>calculatePID</name></member>
       <member refid="class_steer_algorithm_1a6067af69593713f561890ae8ad23f5ff" prot="public" virt="non-virtual"><scope>Navigation</scope><name>changeWheelAngles</name></member>
       <member refid="class_navigation_1a5748c5ebeea7a4142ca9aaf3f4c8cd78" prot="private" virt="non-virtual"><scope>Navigation</scope><name>diffTime_</name></member>
       <member refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" prot="public" virt="non-virtual"><scope>Navigation</scope><name>dir</name></member>
       <member refid="class_navigation_1aaad61568f4da45d5b32ea63a72bbb6a9" prot="private" virt="non-virtual"><scope>Navigation</scope><name>error_</name></member>
       <member refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" prot="public" virt="non-virtual"><scope>Navigation</scope><name>getCorrRadius_</name></member>
-      <member refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" prot="public" virt="non-virtual"><scope>Navigation</scope><name>getKd_</name></member>
-      <member refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" prot="public" virt="non-virtual"><scope>Navigation</scope><name>getKi_</name></member>
-      <member refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" prot="public" virt="non-virtual"><scope>Navigation</scope><name>getKp_</name></member>
+      <member refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" prot="public" virt="virtual"><scope>Navigation</scope><name>getKd_</name></member>
+      <member refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" prot="public" virt="virtual"><scope>Navigation</scope><name>getKi_</name></member>
+      <member refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" prot="public" virt="virtual"><scope>Navigation</scope><name>getKp_</name></member>
+      <member refid="class_navigation_1ab35bfaf55fde4a16c05d88ef8789a947" prot="public" virt="non-virtual"><scope>Navigation</scope><name>gnuSteerAngleGraph</name></member>
+      <member refid="class_navigation_1a632e4d0d9be60dd775b4e57edb797073" prot="public" virt="non-virtual"><scope>Navigation</scope><name>gnuVelocityGraph</name></member>
       <member refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" prot="public" virt="non-virtual"><scope>Navigation</scope><name>heading</name></member>
       <member refid="class_navigation_1ad0199044c6517af38ad77594321e6bcd" prot="private" virt="non-virtual"><scope>Navigation</scope><name>kd_</name></member>
       <member refid="class_navigation_1a725134611ed3d9f29512f5ad707f58f9" prot="private" virt="non-virtual"><scope>Navigation</scope><name>ki_</name></member>
@@ -396,15 +541,15 @@
       <member refid="class_navigation_1a6f7165404d8b4467f8372c0cbc657e93" prot="private" virt="non-virtual"><scope>Navigation</scope><name>previousError_</name></member>
       <member refid="class_steer_algorithm_1ab251b6fd1f88fb7a526b0d55cd12625b" prot="public" virt="non-virtual"><scope>Navigation</scope><name>resetWheel</name></member>
       <member refid="class_steer_algorithm_1a93cf1fc7d06376ddeaa4e81f2b0a22cc" prot="public" virt="non-virtual"><scope>Navigation</scope><name>setCorrRadius_</name></member>
-      <member refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" prot="public" virt="non-virtual"><scope>Navigation</scope><name>setKd_</name></member>
-      <member refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" prot="public" virt="non-virtual"><scope>Navigation</scope><name>setKi_</name></member>
-      <member refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" prot="public" virt="non-virtual"><scope>Navigation</scope><name>setKp_</name></member>
+      <member refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" prot="public" virt="virtual"><scope>Navigation</scope><name>setKd_</name></member>
+      <member refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" prot="public" virt="virtual"><scope>Navigation</scope><name>setKi_</name></member>
+      <member refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" prot="public" virt="virtual"><scope>Navigation</scope><name>setKp_</name></member>
       <member refid="class_steer_algorithm_1a38bc87552a30e8eda8f647cf341c9657" prot="public" virt="non-virtual"><scope>Navigation</scope><name>shaftDistance</name></member>
       <member refid="class_steer_algorithm_1a9d5bc20acba39f0e53c3d0f6fc280433" prot="public" virt="non-virtual"><scope>Navigation</scope><name>shaftLength</name></member>
       <member refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" prot="public" virt="non-virtual"><scope>Navigation</scope><name>SteerAlgorithm</name></member>
       <member refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" prot="public" virt="non-virtual"><scope>Navigation</scope><name>targetHeading</name></member>
       <member refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" prot="public" virt="non-virtual"><scope>Navigation</scope><name>turnTime</name></member>
-      <member refid="class_navigation_1addd4022d716df48f4e55a1db69361ba7" prot="public" virt="non-virtual"><scope>Navigation</scope><name>~Navigation</name></member>
+      <member refid="class_navigation_1addd4022d716df48f4e55a1db69361ba7" prot="public" virt="virtual"><scope>Navigation</scope><name>~Navigation</name></member>
       <member refid="class_steer_algorithm_1a37dd2ef0ed856582aaacc103a6cd6700" prot="public" virt="non-virtual"><scope>Navigation</scope><name>~SteerAlgorithm</name></member>
     </listofallmembers>
   </compounddef>

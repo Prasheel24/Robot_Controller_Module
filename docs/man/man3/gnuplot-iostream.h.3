@@ -1,0 +1,454 @@
+.TH "include/gnuplot-iostream.h" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/gnuplot-iostream.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdio>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include <stdexcept>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <utility>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <complex>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <boost/iostreams/device/file_descriptor\&.hpp>\fP
+.br
+\fC#include <boost/iostreams/stream\&.hpp>\fP
+.br
+\fC#include <boost/version\&.hpp>\fP
+.br
+\fC#include <boost/utility\&.hpp>\fP
+.br
+\fC#include <boost/tuple/tuple\&.hpp>\fP
+.br
+\fC#include <boost/mpl/bool\&.hpp>\fP
+.br
+\fC#include <boost/cstdint\&.hpp>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBgnuplotio::dont_treat_as_stl_container< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::is_like_stl_container< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::is_boost_tuple_nulltype< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::is_boost_tuple_nulltype< boost::tuples::null_type >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::is_boost_tuple< T >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::GnuplotFeedback\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< T, Enable >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< T, Enable >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::FlatBinarySender< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< T, Enable >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< float >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< double >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::int8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::uint8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::int16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::uint16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::int32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::uint32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::int64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< boost::uint64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< float >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< double >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::int8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::uint8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::int16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::uint16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::int32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::uint32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::int64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< boost::uint64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::CastIntTextSender< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< char >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< signed char >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< unsigned char >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::FloatTextSender< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< float >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< double >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< long double >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< std::complex< T > >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< std::complex< T > >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< std::complex< T > >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::TextSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinfmtSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::BinarySender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::Error_WasNotContainer\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::Error_InappropriateDeref\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraits< T, Enable >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraitsDefaults< V >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraits< T & >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::IteratorRange< TI, TV >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraits< T, typename boost::enable_if< is_like_stl_container< T > >::type >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraits< T[N]>\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::PairOfRange< RT, RU >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraits< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraits< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::ArrayTraits< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::VecOfRange< RT >\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::plotting_empty_container\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ModeText\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ModeBinary\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ModeBinfmt\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ModeSize\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ColUnwrapNo\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ColUnwrapYes\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::Mode1D\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::Mode2D\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::Mode1DUnwrap\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::Mode2DUnwrap\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ModeAuto\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::ModeAutoDecoder< T, Enable >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::type< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::type< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::type< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBgnuplotio::FileHandleWrapper\fP"
+.br
+.ti -1c
+.RI "class \fBgnuplotio::Gnuplot\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBgnuplotio\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGNUPLOT_IOSTREAM_VERSION\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_ENABLE_CXX11\fP   (__cplusplus >= 201103)"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_STATIC_ASSERT_MSG\fP(cond,  msg)   BOOST_STATIC_ASSERT((cond))"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_DEPRECATE\fP(msg)"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_PCLOSE\fP   pclose"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_POPEN\fP   popen"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_FILENO\fP   fileno"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_ISNAN\fP   std::isnan"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_MSVC_WARNING_4996_PUSH\fP"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_MSVC_WARNING_4996_POP\fP"
+.br
+.ti -1c
+.RI "#define \fBGNUPLOT_DEFAULT_COMMAND\fP   'gnuplot \-persist'"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > VecOfRange< typename ArrayTraits< T >::range_type::subiter_type > \fBgnuplotio::get_columns_range\fP (const T &arg)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBgnuplotio::send_scalar\fP (std::ostream &stream, const T &arg, ModeText)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBgnuplotio::send_scalar\fP (std::ostream &stream, const T &arg, ModeBinary)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBgnuplotio::send_scalar\fP (std::ostream &stream, const T &, ModeBinfmt)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > boost::disable_if_c< T::is_container >::type \fBgnuplotio::deref_and_print\fP (std::ostream &stream, const T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > boost::enable_if_c< T::is_container >::type \fBgnuplotio::deref_and_print\fP (std::ostream &stream, const T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename U , typename PrintMode > void \fBgnuplotio::deref_and_print\fP (std::ostream &stream, const PairOfRange< T, U > &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBgnuplotio::deref_and_print\fP (std::ostream &stream, const VecOfRange< T > &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth==1)&&!PrintMode::is_size >::type \fBgnuplotio::print_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth >1)&&!PrintMode::is_size >::type \fBgnuplotio::print_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T > size_t \fBgnuplotio::get_range_size\fP (const T &arg)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth==1)&&PrintMode::is_size >::type \fBgnuplotio::print_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth >1)&&PrintMode::is_size >::type \fBgnuplotio::print_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > void \fBgnuplotio::handle_colunwrap_tag\fP (std::ostream &stream, const T &arg, ColUnwrapNo, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > void \fBgnuplotio::handle_colunwrap_tag\fP (std::ostream &stream, const T &arg, ColUnwrapYes, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBgnuplotio::handle_organization_tag\fP (std::ostream &stream, const T &arg, Mode1D, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBgnuplotio::handle_organization_tag\fP (std::ostream &stream, const T &arg, Mode2D, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBgnuplotio::handle_organization_tag\fP (std::ostream &stream, const T &arg, Mode1DUnwrap, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBgnuplotio::handle_organization_tag\fP (std::ostream &stream, const T &arg, Mode2DUnwrap, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBgnuplotio::handle_organization_tag\fP (std::ostream &stream, const T &arg, ModeAuto, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename OrganizationMode , typename PrintMode > void \fBgnuplotio::top_level_array_sender\fP (std::ostream &stream, const T &arg, OrganizationMode, PrintMode)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define GNUPLOT_DEFAULT_COMMAND   'gnuplot \-persist'"
+
+.PP
+Definition at line 164 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_DEPRECATE(msg)"
+
+.PP
+Definition at line 117 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_ENABLE_CXX11   (__cplusplus >= 201103)"
+
+.PP
+Definition at line 47 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_FILENO   fileno"
+
+.PP
+Definition at line 129 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_IOSTREAM_VERSION   2"
+
+.PP
+Definition at line 44 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_ISNAN   std::isnan"
+
+.PP
+Definition at line 137 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_MSVC_WARNING_4996_POP"
+
+.PP
+Definition at line 152 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_MSVC_WARNING_4996_PUSH"
+
+.PP
+Definition at line 151 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_PCLOSE   pclose"
+
+.PP
+Definition at line 127 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_POPEN   popen"
+
+.PP
+Definition at line 128 of file gnuplot\-iostream\&.h\&.
+.SS "#define GNUPLOT_STATIC_ASSERT_MSG(cond, msg)   BOOST_STATIC_ASSERT((cond))"
+
+.PP
+Definition at line 104 of file gnuplot\-iostream\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

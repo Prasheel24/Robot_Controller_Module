@@ -1,0 +1,126 @@
+.TH "gnuplotio::VecOfRange< RT >" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnuplotio::VecOfRange< RT > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gnuplot\-iostream\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::vector< typename RT::value_type > \fBvalue_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBVecOfRange\fP< typename RT::subiter_type > \fBsubiter_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVecOfRange\fP ()"
+.br
+.ti -1c
+.RI "\fBVecOfRange\fP (const std::vector< RT > &_rvec)"
+.br
+.ti -1c
+.RI "bool \fBis_end\fP () const "
+.br
+.ti -1c
+.RI "void \fBinc\fP ()"
+.br
+.ti -1c
+.RI "\fBvalue_type\fP \fBderef\fP () const "
+.br
+.ti -1c
+.RI "\fBsubiter_type\fP \fBderef_subiter\fP () const "
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const bool \fBis_container\fP = RT::is_container"
+.br
+.ti -1c
+.RI "static const bool \fBallow_auto_unwrap\fP = false"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBderef_and_print\fP (std::ostream &, const \fBVecOfRange\fP< T > &, PrintMode)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename RT>
+.br
+class gnuplotio::VecOfRange< RT >"
+
+.PP
+Definition at line 1096 of file gnuplot\-iostream\&.h\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename RT> typedef \fBVecOfRange\fP<typename RT::subiter_type> \fBgnuplotio::VecOfRange\fP< RT >::\fBsubiter_type\fP"
+
+.PP
+Definition at line 1109 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT> typedef std::vector<typename RT::value_type> \fBgnuplotio::VecOfRange\fP< RT >::\fBvalue_type\fP"
+
+.PP
+Definition at line 1108 of file gnuplot\-iostream\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename RT> \fBgnuplotio::VecOfRange\fP< RT >::\fBVecOfRange\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 1101 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT> \fBgnuplotio::VecOfRange\fP< RT >::\fBVecOfRange\fP (const std::vector< RT > & _rvec)\fC [inline]\fP, \fC [explicit]\fP"
+
+.PP
+Definition at line 1102 of file gnuplot\-iostream\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename RT> \fBvalue_type\fP \fBgnuplotio::VecOfRange\fP< RT >::deref () const\fC [inline]\fP"
+
+.PP
+Definition at line 1128 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT> \fBsubiter_type\fP \fBgnuplotio::VecOfRange\fP< RT >::deref_subiter () const\fC [inline]\fP"
+
+.PP
+Definition at line 1136 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT> void \fBgnuplotio::VecOfRange\fP< RT >::inc ()\fC [inline]\fP"
+
+.PP
+Definition at line 1122 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT> bool \fBgnuplotio::VecOfRange\fP< RT >::is_end () const\fC [inline]\fP"
+
+.PP
+Definition at line 1111 of file gnuplot\-iostream\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<typename RT> template<typename T , typename PrintMode > void deref_and_print (std::ostream & stream, const \fBVecOfRange\fP< T > & arg, PrintMode)\fC [friend]\fP"
+
+.PP
+Definition at line 1352 of file gnuplot\-iostream\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename RT> const bool \fBgnuplotio::VecOfRange\fP< RT >::allow_auto_unwrap = false\fC [static]\fP"
+
+.PP
+Definition at line 1106 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT> const bool \fBgnuplotio::VecOfRange\fP< RT >::is_container = RT::is_container\fC [static]\fP"
+
+.PP
+Definition at line 1104 of file gnuplot\-iostream\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

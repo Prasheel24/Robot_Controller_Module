@@ -1,0 +1,411 @@
+.TH "gnuplotio" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnuplotio \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBArrayTraits\fP"
+.br
+.ti -1c
+.RI "class \fBArrayTraits< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "class \fBArrayTraits< T & >\fP"
+.br
+.ti -1c
+.RI "class \fBArrayTraits< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "class \fBArrayTraits< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "class \fBArrayTraits< T, typename boost::enable_if< is_like_stl_container< T > >::type >\fP"
+.br
+.ti -1c
+.RI "class \fBArrayTraits< T[N]>\fP"
+.br
+.ti -1c
+.RI "class \fBArrayTraitsDefaults\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::int16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::int32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::int64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::int8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::uint16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::uint32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::uint64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< boost::uint8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< double >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< float >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< std::complex< T > >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinarySender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::int16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::int32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::int64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::int8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::uint16_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::uint32_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::uint64_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< boost::uint8_t >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< double >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< float >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< std::complex< T > >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBBinfmtSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBCastIntTextSender\fP"
+.br
+.ti -1c
+.RI "struct \fBColUnwrapNo\fP"
+.br
+.ti -1c
+.RI "struct \fBColUnwrapYes\fP"
+.br
+.ti -1c
+.RI "struct \fBdont_treat_as_stl_container\fP"
+.br
+.ti -1c
+.RI "struct \fBError_InappropriateDeref\fP"
+.br
+.ti -1c
+.RI "struct \fBError_WasNotContainer\fP"
+.br
+.ti -1c
+.RI "struct \fBFileHandleWrapper\fP"
+.br
+.ti -1c
+.RI "struct \fBFlatBinarySender\fP"
+.br
+.ti -1c
+.RI "struct \fBFloatTextSender\fP"
+.br
+.ti -1c
+.RI "class \fBGnuplot\fP"
+.br
+.ti -1c
+.RI "class \fBGnuplotFeedback\fP"
+.br
+.ti -1c
+.RI "struct \fBis_boost_tuple\fP"
+.br
+.ti -1c
+.RI "struct \fBis_boost_tuple_nulltype\fP"
+.br
+.ti -1c
+.RI "struct \fBis_boost_tuple_nulltype< boost::tuples::null_type >\fP"
+.br
+.ti -1c
+.RI "struct \fBis_like_stl_container\fP"
+.br
+.ti -1c
+.RI "class \fBIteratorRange\fP"
+.br
+.ti -1c
+.RI "struct \fBMode1D\fP"
+.br
+.ti -1c
+.RI "struct \fBMode1DUnwrap\fP"
+.br
+.ti -1c
+.RI "struct \fBMode2D\fP"
+.br
+.ti -1c
+.RI "struct \fBMode2DUnwrap\fP"
+.br
+.ti -1c
+.RI "struct \fBModeAuto\fP"
+.br
+.ti -1c
+.RI "struct \fBModeAutoDecoder\fP"
+.br
+.ti -1c
+.RI "struct \fBModeBinary\fP"
+.br
+.ti -1c
+.RI "struct \fBModeBinfmt\fP"
+.br
+.ti -1c
+.RI "struct \fBModeSize\fP"
+.br
+.ti -1c
+.RI "struct \fBModeText\fP"
+.br
+.ti -1c
+.RI "class \fBPairOfRange\fP"
+.br
+.ti -1c
+.RI "class \fBplotting_empty_container\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< char >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< double >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< float >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< long double >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< signed char >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< std::complex< T > >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< std::pair< T, U > >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, boost::mpl::not_< is_boost_tuple_nulltype< typename T::tail_type > > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< T, typename boost::enable_if< boost::mpl::and_< is_boost_tuple< T >, is_boost_tuple_nulltype< typename T::tail_type > > >::type >\fP"
+.br
+.ti -1c
+.RI "struct \fBTextSender< unsigned char >\fP"
+.br
+.ti -1c
+.RI "struct \fBtype\fP"
+.br
+.ti -1c
+.RI "struct \fBtype\fP"
+.br
+.ti -1c
+.RI "struct \fBtype\fP"
+.br
+.ti -1c
+.RI "class \fBVecOfRange\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > \fBVecOfRange\fP< typename \fBArrayTraits\fP< T >::range_type::subiter_type > \fBget_columns_range\fP (const T &arg)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBsend_scalar\fP (std::ostream &stream, const T &arg, \fBModeText\fP)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBsend_scalar\fP (std::ostream &stream, const T &arg, \fBModeBinary\fP)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBsend_scalar\fP (std::ostream &stream, const T &, \fBModeBinfmt\fP)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > boost::disable_if_c< T::is_container >::type \fBderef_and_print\fP (std::ostream &stream, const T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > boost::enable_if_c< T::is_container >::type \fBderef_and_print\fP (std::ostream &stream, const T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename U , typename PrintMode > void \fBderef_and_print\fP (std::ostream &stream, const \fBPairOfRange\fP< T, U > &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBderef_and_print\fP (std::ostream &stream, const \fBVecOfRange\fP< T > &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth==1)&&!PrintMode::is_size >::type \fBprint_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth >1)&&!PrintMode::is_size >::type \fBprint_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T > size_t \fBget_range_size\fP (const T &arg)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth==1)&&PrintMode::is_size >::type \fBprint_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth >1)&&PrintMode::is_size >::type \fBprint_block\fP (std::ostream &stream, T &arg, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > void \fBhandle_colunwrap_tag\fP (std::ostream &stream, const T &arg, \fBColUnwrapNo\fP, PrintMode)"
+.br
+.ti -1c
+.RI "template<size_t Depth, typename T , typename PrintMode > void \fBhandle_colunwrap_tag\fP (std::ostream &stream, const T &arg, \fBColUnwrapYes\fP, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBhandle_organization_tag\fP (std::ostream &stream, const T &arg, \fBMode1D\fP, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBhandle_organization_tag\fP (std::ostream &stream, const T &arg, \fBMode2D\fP, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBhandle_organization_tag\fP (std::ostream &stream, const T &arg, \fBMode1DUnwrap\fP, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBhandle_organization_tag\fP (std::ostream &stream, const T &arg, \fBMode2DUnwrap\fP, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename PrintMode > void \fBhandle_organization_tag\fP (std::ostream &stream, const T &arg, \fBModeAuto\fP, PrintMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename OrganizationMode , typename PrintMode > void \fBtop_level_array_sender\fP (std::ostream &stream, const T &arg, OrganizationMode, PrintMode)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T , typename PrintMode > boost::disable_if_c<T::is_container>::type gnuplotio::deref_and_print (std::ostream & stream, const T & arg, PrintMode)"
+
+.PP
+Definition at line 1317 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename PrintMode > boost::enable_if_c<T::is_container>::type gnuplotio::deref_and_print (std::ostream & stream, const T & arg, PrintMode)"
+
+.PP
+Definition at line 1327 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename U , typename PrintMode > void gnuplotio::deref_and_print (std::ostream & stream, const \fBPairOfRange\fP< T, U > & arg, PrintMode)"
+
+.PP
+Definition at line 1344 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename PrintMode > void gnuplotio::deref_and_print (std::ostream & stream, const \fBVecOfRange\fP< T > & arg, PrintMode)"
+
+.PP
+Definition at line 1352 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T > \fBVecOfRange\fP<typename \fBArrayTraits\fP<T>::range_type::subiter_type> gnuplotio::get_columns_range (const T & arg)"
+
+.PP
+Definition at line 1150 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T > size_t gnuplotio::get_range_size (const T & arg)"
+
+.PP
+Definition at line 1418 of file gnuplot\-iostream\&.h\&.
+.SS "template<size_t Depth, typename T , typename PrintMode > void gnuplotio::handle_colunwrap_tag (std::ostream & stream, const T & arg, \fBColUnwrapNo\fP, PrintMode)"
+
+.PP
+Definition at line 1453 of file gnuplot\-iostream\&.h\&.
+.SS "template<size_t Depth, typename T , typename PrintMode > void gnuplotio::handle_colunwrap_tag (std::ostream & stream, const T & arg, \fBColUnwrapYes\fP, PrintMode)"
+
+.PP
+Definition at line 1460 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename PrintMode > void gnuplotio::handle_organization_tag (std::ostream & stream, const T & arg, \fBMode1D\fP, PrintMode)"
+
+.PP
+Definition at line 1476 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename PrintMode > void gnuplotio::handle_organization_tag (std::ostream & stream, const T & arg, \fBMode2D\fP, PrintMode)"
+
+.PP
+Definition at line 1481 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename PrintMode > void gnuplotio::handle_organization_tag (std::ostream & stream, const T & arg, \fBMode1DUnwrap\fP, PrintMode)"
+
+.PP
+Definition at line 1486 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename PrintMode > void gnuplotio::handle_organization_tag (std::ostream & stream, const T & arg, \fBMode2DUnwrap\fP, PrintMode)"
+
+.PP
+Definition at line 1491 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename PrintMode > void gnuplotio::handle_organization_tag (std::ostream & stream, const T & arg, \fBModeAuto\fP, PrintMode)"
+
+.PP
+Definition at line 1496 of file gnuplot\-iostream\&.h\&.
+.SS "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth==1) && !PrintMode::is_size>::type gnuplotio::print_block (std::ostream & stream, T & arg, PrintMode)"
+
+.PP
+Definition at line 1381 of file gnuplot\-iostream\&.h\&.
+.SS "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth>1) && !PrintMode::is_size>::type gnuplotio::print_block (std::ostream & stream, T & arg, PrintMode)"
+
+.PP
+Definition at line 1397 of file gnuplot\-iostream\&.h\&.
+.SS "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth==1) && PrintMode::is_size>::type gnuplotio::print_block (std::ostream & stream, T & arg, PrintMode)"
+
+.PP
+Definition at line 1428 of file gnuplot\-iostream\&.h\&.
+.SS "template<size_t Depth, typename T , typename PrintMode > boost::enable_if_c<(Depth>1) && PrintMode::is_size>::type gnuplotio::print_block (std::ostream & stream, T & arg, PrintMode)"
+
+.PP
+Definition at line 1435 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T > void gnuplotio::send_scalar (std::ostream & stream, const T & arg, \fBModeText\fP)"
+
+.PP
+Definition at line 1292 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T > void gnuplotio::send_scalar (std::ostream & stream, const T & arg, \fBModeBinary\fP)"
+
+.PP
+Definition at line 1297 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T > void gnuplotio::send_scalar (std::ostream & stream, const T &, \fBModeBinfmt\fP)"
+
+.PP
+Definition at line 1302 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename OrganizationMode , typename PrintMode > void gnuplotio::top_level_array_sender (std::ostream & stream, const T & arg, OrganizationMode, PrintMode)"
+
+.PP
+Definition at line 1509 of file gnuplot\-iostream\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

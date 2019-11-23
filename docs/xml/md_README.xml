@@ -25,7 +25,7 @@ The Demonstration of the controller will be given by plotting a graph that shows
 </para><para>Sprint- <ulink url="https://docs.google.com/document/d/1w6U49tyKj9MFhaVziZ5MEGcaylmxSBOyGzClIz9lFA8/edit?usp=sharing">https://docs.google.com/document/d/1w6U49tyKj9MFhaVziZ5MEGcaylmxSBOyGzClIz9lFA8/edit?usp=sharing</ulink></para><para><heading level="2">Agile Iterative Process Log</heading>
 </para><para>Log- <ulink url="https://docs.google.com/spreadsheets/d/1LFQMKbuGeusgmI7IMbjiw-RJrt9jNgej0F8SvvfyJjY/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1LFQMKbuGeusgmI7IMbjiw-RJrt9jNgej0F8SvvfyJjY/edit?usp=sharing</ulink></para><para><heading level="2">Dependencies</heading>
 </para><para><orderedlist>
-<listitem><para>C++ 11/14/17</para></listitem><listitem><para>gnuplot <linebreak/>
+<listitem><para>C++ 11/14/17</para></listitem><listitem><para>gnuplot- <ulink url="http://stahlke.org/dan/gnuplot-iostream/">http://stahlke.org/dan/gnuplot-iostream/</ulink> <linebreak/>
 Install gnuplot <programlisting><codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>gnuplot</highlight></codeline>
 </programlisting></para></listitem><listitem><para>boost <linebreak/>
 Install boost <programlisting><codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>libboost-all-dev</highlight></codeline>

@@ -1,7 +1,29 @@
 var searchData=
 [
-  ['test',['TEST',['../test_navigation_8cpp.html#a093604a7433c91e9a41a6c486ff843b3',1,'TEST(Navigation, testSetPid):&#160;testNavigation.cpp'],['../test_navigation_8cpp.html#a5c632ae16e5ba30ae35d75900430e15a',1,'TEST(Navigation, testGetPid):&#160;testNavigation.cpp'],['../test_navigation_8cpp.html#acc7325d4d1f9e57e7d887a7af00c04b8',1,'TEST(Navigation, testConvergence):&#160;testNavigation.cpp'],['../test_steer_algorithm_8cpp.html#a302ee9fe0ef08a6beaea103c911981ff',1,'TEST(SteerAlgorithm, testCorrRadius):&#160;testSteerAlgorithm.cpp'],['../test_steer_algorithm_8cpp.html#ab38a7e56f4e7418febe58d9daf9e4b58',1,'TEST(SteerAlgorithm, testwheel):&#160;testSteerAlgorithm.cpp'],['../test_steer_algorithm_8cpp.html#a2e8c38dec883b8cfc46adb1e0cedb000',1,'TEST(SteerAlgorithm, testCalculations):&#160;testSteerAlgorithm.cpp']]],
-  ['testnavigation_2ecpp',['testNavigation.cpp',['../test_navigation_8cpp.html',1,'']]],
-  ['teststeeralgorithm_2ecpp',['testSteerAlgorithm.cpp',['../test_steer_algorithm_8cpp.html',1,'']]],
-  ['turntime',['turnTime',['../class_steer_algorithm.html#aefdb433f65c47bf6e0d6af5de98c8f5a',1,'SteerAlgorithm']]]
+  ['get_5fcolumns_5frange',['get_columns_range',['../namespacegnuplotio.html#a64984827dd8debb9098ad1afdde8e409',1,'gnuplotio']]],
+  ['get_5frange',['get_range',['../classgnuplotio_1_1_array_traits.html#aee31432f330f9f9e4f5af628641181f7',1,'gnuplotio::ArrayTraits::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01is__like__stl__co9e1736bbd08cd58c6993ab613a998887.html#a89d4150ab3c479cde972071a10acd27b',1,'gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; is_like_stl_container&lt; T &gt; &gt;::type &gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t[_n]_4.html#adc9c1ce6da4923418f367e08c150a928',1,'gnuplotio::ArrayTraits&lt; T[N]&gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html#abc84b60061de787f3526163183e186f7',1,'gnuplotio::ArrayTraits&lt; std::pair&lt; T, U &gt; &gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1a8de3a8fe198d85f7f5d28b9a2f5bf229.html#aec07e01edbb46f5f283d5b6af068c0f2',1,'gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ad3fa8e75dccbaae12a06d17831678a88.html#ad0485dd16a9d54a4eb75bf3e75b1facd',1,'gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;::get_range()']]],
+  ['get_5frange_5fsize',['get_range_size',['../namespacegnuplotio.html#abb416b68686102ba84a2cb53c96b64e9',1,'gnuplotio']]],
+  ['getcorrradius_5f',['getCorrRadius_',['../class_steer_algorithm.html#a06a7dd049280fab40d1b54c912daf399',1,'SteerAlgorithm']]],
+  ['getkd_5f',['getKd_',['../class_navigation.html#ac6441bb601483166ef7a8081b76f634d',1,'Navigation']]],
+  ['getki_5f',['getKi_',['../class_navigation.html#a1a84392d6cce3f60df452ab482b5647c',1,'Navigation']]],
+  ['getkp_5f',['getKp_',['../class_navigation.html#ab1469d74f4838a9d32a8647d22701f9f',1,'Navigation']]],
+  ['gnuplot',['Gnuplot',['../classgnuplotio_1_1_gnuplot.html',1,'gnuplotio']]],
+  ['gnuplot',['Gnuplot',['../classgnuplotio_1_1_gnuplot.html#ab2fb14389ab63ad5d9b2e57169bbbf1d',1,'gnuplotio::Gnuplot::Gnuplot(const std::string &amp;_cmd=&quot;&quot;)'],['../classgnuplotio_1_1_gnuplot.html#a4a4f48a548e6ce6d485ca0a868410078',1,'gnuplotio::Gnuplot::Gnuplot(FILE *_fh)']]],
+  ['gnuplot_2diostream_2eh',['gnuplot-iostream.h',['../gnuplot-iostream_8h.html',1,'']]],
+  ['gnuplot_5fdefault_5fcommand',['GNUPLOT_DEFAULT_COMMAND',['../gnuplot-iostream_8h.html#afe4b1cc99e87d3bb8bbb07280db4b697',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fdeprecate',['GNUPLOT_DEPRECATE',['../classgnuplotio_1_1_gnuplot.html#ab2edc3c8f57483c6d9db86d685f3eee7',1,'gnuplotio::Gnuplot::GNUPLOT_DEPRECATE(&quot;use send1d or send2d&quot;)&amp;send(const T &amp;arg)'],['../classgnuplotio_1_1_gnuplot.html#aeb3ba94ed04ecd46b55f89591ba23e7c',1,'gnuplotio::Gnuplot::GNUPLOT_DEPRECATE(&quot;use binfmt1d or binfmt2d&quot;) binfmt(const T &amp;arg'],['../gnuplot-iostream_8h.html#aceaee9cbe0b7786c1ee8aa2e8b79ed1a',1,'GNUPLOT_DEPRECATE():&#160;gnuplot-iostream.h']]],
+  ['gnuplot_5fenable_5fcxx11',['GNUPLOT_ENABLE_CXX11',['../gnuplot-iostream_8h.html#aff01a99842ed9eb01a166d4bf19543c9',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5ffileno',['GNUPLOT_FILENO',['../gnuplot-iostream_8h.html#abcc0f8f4d67f147c013bb33b55dc3a16',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fiostream_5fversion',['GNUPLOT_IOSTREAM_VERSION',['../gnuplot-iostream_8h.html#ab3ce4a7287aefeb9af2345e08cb2d5c6',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fisnan',['GNUPLOT_ISNAN',['../gnuplot-iostream_8h.html#ac10f83c29b94951000138a0ab2054956',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fmsvc_5fwarning_5f4996_5fpop',['GNUPLOT_MSVC_WARNING_4996_POP',['../gnuplot-iostream_8h.html#a4429193ca854af851cec4220c2d9102e',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fmsvc_5fwarning_5f4996_5fpush',['GNUPLOT_MSVC_WARNING_4996_PUSH',['../gnuplot-iostream_8h.html#aef2d72925bdeb9f505df49edbf7579bf',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fpclose',['GNUPLOT_PCLOSE',['../gnuplot-iostream_8h.html#aed027791e656970e6de95b047dc375b1',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fpopen',['GNUPLOT_POPEN',['../gnuplot-iostream_8h.html#a92922430eb3df3ace3b18c75b91a0ab8',1,'gnuplot-iostream.h']]],
+  ['gnuplot_5fstatic_5fassert_5fmsg',['GNUPLOT_STATIC_ASSERT_MSG',['../structgnuplotio_1_1_binary_sender.html#a165c59a28adc4a90930925c6e0bfb0a9',1,'gnuplotio::BinarySender::GNUPLOT_STATIC_ASSERT_MSG()'],['../structgnuplotio_1_1_binfmt_sender.html#ab0b554a2e81309917b2fa6f480e2a8e2',1,'gnuplotio::BinfmtSender::GNUPLOT_STATIC_ASSERT_MSG()'],['../gnuplot-iostream_8h.html#a763d85d6a998475c41e5bea11e6f0a16',1,'GNUPLOT_STATIC_ASSERT_MSG():&#160;gnuplot-iostream.h']]],
+  ['gnuplotfeedback',['GnuplotFeedback',['../classgnuplotio_1_1_gnuplot_feedback.html',1,'gnuplotio']]],
+  ['gnuplotfeedback',['GnuplotFeedback',['../classgnuplotio_1_1_gnuplot_feedback.html#ad03d9a9fde314af659f260adc60b8583',1,'gnuplotio::GnuplotFeedback']]],
+  ['gnuplotio',['gnuplotio',['../namespacegnuplotio.html',1,'']]],
+  ['gnusteeranglegraph',['gnuSteerAngleGraph',['../class_navigation.html#ab35bfaf55fde4a16c05d88ef8789a947',1,'Navigation']]],
+  ['gnuvelocitygraph',['gnuVelocityGraph',['../class_navigation.html#a632e4d0d9be60dd775b4e57edb797073',1,'Navigation']]]
 ];

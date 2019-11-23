@@ -1,0 +1,119 @@
+.TH "gnuplotio::PairOfRange< RT, RU >" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnuplotio::PairOfRange< RT, RU > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gnuplot\-iostream\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::pair< typename RT::value_type, typename RU::value_type > \fBvalue_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBPairOfRange\fP< typename RT::subiter_type, typename RU::subiter_type > \fBsubiter_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPairOfRange\fP ()"
+.br
+.ti -1c
+.RI "\fBPairOfRange\fP (const RT &_l, const RU &_r)"
+.br
+.ti -1c
+.RI "bool \fBis_end\fP () const "
+.br
+.ti -1c
+.RI "void \fBinc\fP ()"
+.br
+.ti -1c
+.RI "\fBvalue_type\fP \fBderef\fP () const "
+.br
+.ti -1c
+.RI "\fBsubiter_type\fP \fBderef_subiter\fP () const "
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const bool \fBis_container\fP = RT::is_container && RU::is_container"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "template<typename T , typename U , typename PrintMode > void \fBderef_and_print\fP (std::ostream &, const \fBPairOfRange\fP< T, U > &, PrintMode)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename RT, typename RU>
+.br
+class gnuplotio::PairOfRange< RT, RU >"
+
+.PP
+Definition at line 927 of file gnuplot\-iostream\&.h\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename RT, typename RU> typedef \fBPairOfRange\fP<typename RT::subiter_type, typename RU::subiter_type> \fBgnuplotio::PairOfRange\fP< RT, RU >::\fBsubiter_type\fP"
+
+.PP
+Definition at line 938 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT, typename RU> typedef std::pair<typename RT::value_type, typename RU::value_type> \fBgnuplotio::PairOfRange\fP< RT, RU >::\fBvalue_type\fP"
+
+.PP
+Definition at line 937 of file gnuplot\-iostream\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename RT, typename RU> \fBgnuplotio::PairOfRange\fP< RT, RU >::\fBPairOfRange\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 932 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT, typename RU> \fBgnuplotio::PairOfRange\fP< RT, RU >::\fBPairOfRange\fP (const RT & _l, const RU & _r)\fC [inline]\fP"
+
+.PP
+Definition at line 933 of file gnuplot\-iostream\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename RT, typename RU> \fBvalue_type\fP \fBgnuplotio::PairOfRange\fP< RT, RU >::deref () const\fC [inline]\fP"
+
+.PP
+Definition at line 954 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT, typename RU> \fBsubiter_type\fP \fBgnuplotio::PairOfRange\fP< RT, RU >::deref_subiter () const\fC [inline]\fP"
+
+.PP
+Definition at line 958 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT, typename RU> void \fBgnuplotio::PairOfRange\fP< RT, RU >::inc ()\fC [inline]\fP"
+
+.PP
+Definition at line 949 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename RT, typename RU> bool \fBgnuplotio::PairOfRange\fP< RT, RU >::is_end () const\fC [inline]\fP"
+
+.PP
+Definition at line 940 of file gnuplot\-iostream\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<typename RT, typename RU> template<typename T , typename U , typename PrintMode > void deref_and_print (std::ostream & stream, const \fBPairOfRange\fP< T, U > & arg, PrintMode)\fC [friend]\fP"
+
+.PP
+Definition at line 1344 of file gnuplot\-iostream\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename RT, typename RU> const bool \fBgnuplotio::PairOfRange\fP< RT, RU >::is_container = RT::is_container && RU::is_container\fC [static]\fP"
+
+.PP
+Definition at line 935 of file gnuplot\-iostream\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

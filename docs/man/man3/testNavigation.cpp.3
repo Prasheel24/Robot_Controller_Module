@@ -1,4 +1,4 @@
-.TH "test/testNavigation.cpp" 3 "Mon Oct 21 2019" "Version 5" "Ackermann Steering Control" \" -*- nroff -*-
+.TH "test/testNavigation.cpp" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -22,15 +22,21 @@ test/testNavigation.cpp \- Mid Term Project\&.
 .ti -1c
 .RI "\fBTEST\fP (\fBNavigation\fP, testSetPid)"
 .br
-.RI "\fITest to check the set functions for kp_,ki_ and kd_\&. \fP"
 .ti -1c
 .RI "\fBTEST\fP (\fBNavigation\fP, testGetPid)"
 .br
-.RI "\fITest to check that values of kp_,ki_ and kd_ are below 1 or not\&. \fP"
+.ti -1c
+.RI "\fBTEST\fP (\fBNavigation\fP, testPID)"
+.br
 .ti -1c
 .RI "\fBTEST\fP (\fBNavigation\fP, testConvergence)"
 .br
-.RI "\fITest to check the output of calculate function converges with the setPoint and Heading\&. \fP"
+.ti -1c
+.RI "\fBTEST\fP (\fBNavigation\fP, testVelocityPlot)"
+.br
+.ti -1c
+.RI "\fBTEST\fP (\fBNavigation\fP, testSteerAnglePlot)"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -48,21 +54,51 @@ MIT License, Copyright © 2019 Raj Shinde
 Sprint-1 Raj Shinde- driver and Prasheel Renkuntla- navigator 
 .PP
 Sprint-2 Prasheel Renkuntla- driver and Raj Shinde- navigator 
+.PP
+Gmock- Prasheel Renkuntla 
 .RE
 .PP
 \fBDate:\fP
 .RS 4
-10/10/2019 
+11/22/2019 
 .RE
 .PP
 \fBVersion:\fP
 .RS 4
-6\&.0 
+7\&.0 
 .RE
 .PP
-.SH "all files in module"
+.SH "all files in module with gmock"
 .PP
 
+.PP
+Definition in file \fBtestNavigation\&.cpp\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "TEST (\fBNavigation\fP, testSetPid)"
+
+.PP
+Definition at line 50 of file testNavigation\&.cpp\&.
+.SS "TEST (\fBNavigation\fP, testGetPid)"
+
+.PP
+Definition at line 63 of file testNavigation\&.cpp\&.
+.SS "TEST (\fBNavigation\fP, testPID)"
+
+.PP
+Definition at line 76 of file testNavigation\&.cpp\&.
+.SS "TEST (\fBNavigation\fP, testConvergence)"
+
+.PP
+Definition at line 88 of file testNavigation\&.cpp\&.
+.SS "TEST (\fBNavigation\fP, testVelocityPlot)"
+
+.PP
+Definition at line 102 of file testNavigation\&.cpp\&.
+.SS "TEST (\fBNavigation\fP, testSteerAnglePlot)"
+
+.PP
+Definition at line 115 of file testNavigation\&.cpp\&.
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Ackermann Steering Control from the source code\&.
+Generated automatically by Doxygen for GMock from the source code\&.

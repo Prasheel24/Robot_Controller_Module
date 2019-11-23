@@ -1,8 +1,16 @@
 var searchData=
 [
-  ['setcorrradius_5f',['setCorrRadius_',['../class_steer_algorithm.html#a93cf1fc7d06376ddeaa4e81f2b0a22cc',1,'SteerAlgorithm']]],
-  ['setkd_5f',['setKd_',['../class_navigation.html#a4986e4357d9707ddf92cf8f559ef3dce',1,'Navigation']]],
-  ['setki_5f',['setKi_',['../class_navigation.html#a539d10206ceb162171e39c36e8aa8f0f',1,'Navigation']]],
-  ['setkp_5f',['setKp_',['../class_navigation.html#a6dd95f46ff4ecc69895452a1879c30af',1,'Navigation']]],
-  ['steeralgorithm',['SteerAlgorithm',['../class_steer_algorithm.html#af64dd94816ab9d00d85227a42b26a3e8',1,'SteerAlgorithm']]]
+  ['get_5fcolumns_5frange',['get_columns_range',['../namespacegnuplotio.html#a64984827dd8debb9098ad1afdde8e409',1,'gnuplotio']]],
+  ['get_5frange',['get_range',['../classgnuplotio_1_1_array_traits.html#aee31432f330f9f9e4f5af628641181f7',1,'gnuplotio::ArrayTraits::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01is__like__stl__co9e1736bbd08cd58c6993ab613a998887.html#a89d4150ab3c479cde972071a10acd27b',1,'gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; is_like_stl_container&lt; T &gt; &gt;::type &gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t[_n]_4.html#adc9c1ce6da4923418f367e08c150a928',1,'gnuplotio::ArrayTraits&lt; T[N]&gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html#abc84b60061de787f3526163183e186f7',1,'gnuplotio::ArrayTraits&lt; std::pair&lt; T, U &gt; &gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1a8de3a8fe198d85f7f5d28b9a2f5bf229.html#aec07e01edbb46f5f283d5b6af068c0f2',1,'gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;::get_range()'],['../classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ad3fa8e75dccbaae12a06d17831678a88.html#ad0485dd16a9d54a4eb75bf3e75b1facd',1,'gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;::get_range()']]],
+  ['get_5frange_5fsize',['get_range_size',['../namespacegnuplotio.html#abb416b68686102ba84a2cb53c96b64e9',1,'gnuplotio']]],
+  ['getcorrradius_5f',['getCorrRadius_',['../class_steer_algorithm.html#a06a7dd049280fab40d1b54c912daf399',1,'SteerAlgorithm']]],
+  ['getkd_5f',['getKd_',['../class_navigation.html#ac6441bb601483166ef7a8081b76f634d',1,'Navigation']]],
+  ['getki_5f',['getKi_',['../class_navigation.html#a1a84392d6cce3f60df452ab482b5647c',1,'Navigation']]],
+  ['getkp_5f',['getKp_',['../class_navigation.html#ab1469d74f4838a9d32a8647d22701f9f',1,'Navigation']]],
+  ['gnuplot',['Gnuplot',['../classgnuplotio_1_1_gnuplot.html#ab2fb14389ab63ad5d9b2e57169bbbf1d',1,'gnuplotio::Gnuplot::Gnuplot(const std::string &amp;_cmd=&quot;&quot;)'],['../classgnuplotio_1_1_gnuplot.html#a4a4f48a548e6ce6d485ca0a868410078',1,'gnuplotio::Gnuplot::Gnuplot(FILE *_fh)']]],
+  ['gnuplot_5fdeprecate',['GNUPLOT_DEPRECATE',['../classgnuplotio_1_1_gnuplot.html#ab2edc3c8f57483c6d9db86d685f3eee7',1,'gnuplotio::Gnuplot::GNUPLOT_DEPRECATE(&quot;use send1d or send2d&quot;)&amp;send(const T &amp;arg)'],['../classgnuplotio_1_1_gnuplot.html#aeb3ba94ed04ecd46b55f89591ba23e7c',1,'gnuplotio::Gnuplot::GNUPLOT_DEPRECATE(&quot;use binfmt1d or binfmt2d&quot;) binfmt(const T &amp;arg']]],
+  ['gnuplot_5fstatic_5fassert_5fmsg',['GNUPLOT_STATIC_ASSERT_MSG',['../structgnuplotio_1_1_binary_sender.html#a165c59a28adc4a90930925c6e0bfb0a9',1,'gnuplotio::BinarySender::GNUPLOT_STATIC_ASSERT_MSG()'],['../structgnuplotio_1_1_binfmt_sender.html#ab0b554a2e81309917b2fa6f480e2a8e2',1,'gnuplotio::BinfmtSender::GNUPLOT_STATIC_ASSERT_MSG()']]],
+  ['gnuplotfeedback',['GnuplotFeedback',['../classgnuplotio_1_1_gnuplot_feedback.html#ad03d9a9fde314af659f260adc60b8583',1,'gnuplotio::GnuplotFeedback']]],
+  ['gnusteeranglegraph',['gnuSteerAngleGraph',['../class_navigation.html#ab35bfaf55fde4a16c05d88ef8789a947',1,'Navigation']]],
+  ['gnuvelocitygraph',['gnuVelocityGraph',['../class_navigation.html#a632e4d0d9be60dd775b4e57edb797073',1,'Navigation']]]
 ];

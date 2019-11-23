@@ -9,26 +9,21 @@ Mid Term Project.
 {\ttfamily \#include $<$cstdlib$>$}\\*
 {\ttfamily \#include $<$memory$>$}\\*
 {\ttfamily \#include \char`\"{}Navigation.\+hpp\char`\"{}}\\*
-Include dependency graph for test\+Navigation.\+cpp\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{test_navigation_8cpp__incl}
-\end{center}
-\end{figure}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{test_navigation_8cpp_a093604a7433c91e9a41a6c486ff843b3}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Set\+Pid)\hypertarget{test_navigation_8cpp_a093604a7433c91e9a41a6c486ff843b3}{}\label{test_navigation_8cpp_a093604a7433c91e9a41a6c486ff843b3}
-
-\begin{DoxyCompactList}\small\item\em Test to check the set functions for kp\+\_\+,ki\+\_\+ and kd\+\_\+. \end{DoxyCompactList}\item 
-\hyperlink{test_navigation_8cpp_a5c632ae16e5ba30ae35d75900430e15a}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Get\+Pid)\hypertarget{test_navigation_8cpp_a5c632ae16e5ba30ae35d75900430e15a}{}\label{test_navigation_8cpp_a5c632ae16e5ba30ae35d75900430e15a}
-
-\begin{DoxyCompactList}\small\item\em Test to check that values of kp\+\_\+,ki\+\_\+ and kd\+\_\+ are below 1 or not. \end{DoxyCompactList}\item 
-\hyperlink{test_navigation_8cpp_acc7325d4d1f9e57e7d887a7af00c04b8}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Convergence)\hypertarget{test_navigation_8cpp_acc7325d4d1f9e57e7d887a7af00c04b8}{}\label{test_navigation_8cpp_acc7325d4d1f9e57e7d887a7af00c04b8}
-
-\begin{DoxyCompactList}\small\item\em Test to check the output of calculate function converges with the set\+Point and Heading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{test_navigation_8cpp_a093604a7433c91e9a41a6c486ff843b3}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Set\+Pid)
+\item 
+\hyperlink{test_navigation_8cpp_a5c632ae16e5ba30ae35d75900430e15a}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Get\+Pid)
+\item 
+\hyperlink{test_navigation_8cpp_ae18ffeef30aacd9eb6294f8eb5460d80}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+P\+ID)
+\item 
+\hyperlink{test_navigation_8cpp_acc7325d4d1f9e57e7d887a7af00c04b8}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Convergence)
+\item 
+\hyperlink{test_navigation_8cpp_ad175cd43f79b49368e38d6706c97f1c0}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Velocity\+Plot)
+\item 
+\hyperlink{test_navigation_8cpp_a3bdb2deb2b979e58079008d0e44cf8ae}{T\+E\+ST} (\hyperlink{class_navigation}{Navigation}, test\+Steer\+Angle\+Plot)
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -41,11 +36,88 @@ M\+IT License, Copyright © 2019 Raj Shinde
 Sprint-\/1 Raj Shinde-\/ driver and Prasheel Renkuntla-\/ navigator 
 
 Sprint-\/2 Prasheel Renkuntla-\/ driver and Raj Shinde-\/ navigator 
+
+Gmock-\/ Prasheel Renkuntla 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
-10/10/2019 
+11/22/2019 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-6.\+0 
+7.\+0 
 \end{DoxyVersion}
-\hypertarget{test_steer_algorithm_8cpp_Tests}{}\subsection{all files in module}\label{test_steer_algorithm_8cpp_Tests}
+\hypertarget{test_steer_algorithm_8cpp_Tests}{}\subsection{all files in module with gmock}\label{test_steer_algorithm_8cpp_Tests}
+
+
+\subsection{Function Documentation}
+\index{test\+Navigation.\+cpp@{test\+Navigation.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test\+Navigation.\+cpp@{test\+Navigation.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Navigation, test\+Set\+Pid)}{TEST(Navigation, testSetPid)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf Navigation}}]{, }
+\item[{test\+Set\+Pid}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{test_navigation_8cpp_a093604a7433c91e9a41a6c486ff843b3}{}\label{test_navigation_8cpp_a093604a7433c91e9a41a6c486ff843b3}
+
+
+Definition at line 50 of file test\+Navigation.\+cpp.
+
+\index{test\+Navigation.\+cpp@{test\+Navigation.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test\+Navigation.\+cpp@{test\+Navigation.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Navigation, test\+Get\+Pid)}{TEST(Navigation, testGetPid)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf Navigation}}]{, }
+\item[{test\+Get\+Pid}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{test_navigation_8cpp_a5c632ae16e5ba30ae35d75900430e15a}{}\label{test_navigation_8cpp_a5c632ae16e5ba30ae35d75900430e15a}
+
+
+Definition at line 63 of file test\+Navigation.\+cpp.
+
+\index{test\+Navigation.\+cpp@{test\+Navigation.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test\+Navigation.\+cpp@{test\+Navigation.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Navigation, test\+P\+I\+D)}{TEST(Navigation, testPID)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf Navigation}}]{, }
+\item[{test\+P\+ID}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{test_navigation_8cpp_ae18ffeef30aacd9eb6294f8eb5460d80}{}\label{test_navigation_8cpp_ae18ffeef30aacd9eb6294f8eb5460d80}
+
+
+Definition at line 76 of file test\+Navigation.\+cpp.
+
+\index{test\+Navigation.\+cpp@{test\+Navigation.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test\+Navigation.\+cpp@{test\+Navigation.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Navigation, test\+Convergence)}{TEST(Navigation, testConvergence)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf Navigation}}]{, }
+\item[{test\+Convergence}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{test_navigation_8cpp_acc7325d4d1f9e57e7d887a7af00c04b8}{}\label{test_navigation_8cpp_acc7325d4d1f9e57e7d887a7af00c04b8}
+
+
+Definition at line 88 of file test\+Navigation.\+cpp.
+
+\index{test\+Navigation.\+cpp@{test\+Navigation.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test\+Navigation.\+cpp@{test\+Navigation.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Navigation, test\+Velocity\+Plot)}{TEST(Navigation, testVelocityPlot)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf Navigation}}]{, }
+\item[{test\+Velocity\+Plot}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{test_navigation_8cpp_ad175cd43f79b49368e38d6706c97f1c0}{}\label{test_navigation_8cpp_ad175cd43f79b49368e38d6706c97f1c0}
+
+
+Definition at line 102 of file test\+Navigation.\+cpp.
+
+\index{test\+Navigation.\+cpp@{test\+Navigation.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test\+Navigation.\+cpp@{test\+Navigation.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Navigation, test\+Steer\+Angle\+Plot)}{TEST(Navigation, testSteerAnglePlot)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{{\bf Navigation}}]{, }
+\item[{test\+Steer\+Angle\+Plot}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{test_navigation_8cpp_a3bdb2deb2b979e58079008d0e44cf8ae}{}\label{test_navigation_8cpp_a3bdb2deb2b979e58079008d0e44cf8ae}
+
+
+Definition at line 115 of file test\+Navigation.\+cpp.
+

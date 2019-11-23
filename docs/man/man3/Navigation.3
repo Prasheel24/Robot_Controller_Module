@@ -1,4 +1,4 @@
-.TH "Navigation" 3 "Mon Oct 21 2019" "Version 5" "Ackermann Steering Control" \" -*- nroff -*-
+.TH "Navigation" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -11,6 +11,8 @@ Navigation \- Class \fBNavigation\fP Contains the methods of Pid Algorithm\&.
 \fC#include <Navigation\&.hpp>\fP
 .PP
 Inherits \fBSteerAlgorithm\fP\&.
+.PP
+Inherited by \fBMockNavigation\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -19,35 +21,47 @@ Inherits \fBSteerAlgorithm\fP\&.
 .br
 .RI "\fIConstructor of class \fBNavigation\fP\&. \fP"
 .ti -1c
-.RI "\fB~Navigation\fP ()"
+.RI "virtual \fB~Navigation\fP ()"
 .br
 .RI "\fIDestructor of class \fBNavigation\fP\&. \fP"
 .ti -1c
-.RI "double \fBcalculate\fP (double targetHeading, double currentVelocity, double setPoint, int flag)"
+.RI "virtual std::vector< double > \fBcalculatePID\fP (double setPoint, double currentVelocity)"
+.br
+.RI "\fIFunction to calculate new velocity using PID in m/s\&. \fP"
+.ti -1c
+.RI "bool \fBgnuVelocityGraph\fP (std::vector< std::pair< double, double >> vectorPointsVel, double newVelocity, bool flag)"
+.br
+.RI "\fIFunction to use GNUplot for velocity convergence graph\&. \fP"
+.ti -1c
+.RI "bool \fBgnuSteerAngleGraph\fP (std::vector< std::pair< double, double >> vectorPointsSteer, double steerAngle, bool flag)"
+.br
+.RI "\fIFunction to use GNUplot for Steer angle convergence graph\&. \fP"
+.ti -1c
+.RI "virtual double \fBcalculate\fP (double \fBtargetHeading\fP, double currentVelocity, double setPoint, int flag)"
 .br
 .RI "\fIFunction to calculate new velocity in m/s with a PID Algorithm using kp, ki & kd\&. \fP"
 .ti -1c
-.RI "double \fBgetKp_\fP ()"
+.RI "virtual double \fBgetKp_\fP ()"
 .br
 .RI "\fIFunction to get kp_\&. \fP"
 .ti -1c
-.RI "double \fBgetKi_\fP ()"
+.RI "virtual double \fBgetKi_\fP ()"
 .br
 .RI "\fIFunction to get ki_\&. \fP"
 .ti -1c
-.RI "double \fBgetKd_\fP ()"
+.RI "virtual double \fBgetKd_\fP ()"
 .br
 .RI "\fIFunction to get kd_\&. \fP"
 .ti -1c
-.RI "bool \fBsetKp_\fP (double kp)"
+.RI "virtual bool \fBsetKp_\fP (double kp)"
 .br
 .RI "\fIFunction to set kp_\&. \fP"
 .ti -1c
-.RI "bool \fBsetKi_\fP (double ki)"
+.RI "virtual bool \fBsetKi_\fP (double ki)"
 .br
 .RI "\fIFunction to set ki_\&. \fP"
 .ti -1c
-.RI "bool \fBsetKd_\fP (double kd)"
+.RI "virtual bool \fBsetKd_\fP (double kd)"
 .br
 .RI "\fIFunction to set kd_\&. \fP"
 .in -1c
@@ -61,19 +75,25 @@ Inherits \fBSteerAlgorithm\fP\&.
 .SH "Detailed Description"
 .PP 
 Class \fBNavigation\fP Contains the methods of Pid Algorithm\&. 
+.PP
+Definition at line 43 of file Navigation\&.hpp\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "Navigation::Navigation ()"
 
 .PP
-Constructor of class \fBNavigation\fP\&. Constructor of class \fBSteerAlgorithm\fP\&. 
-.SS "Navigation::~Navigation ()"
+Constructor of class \fBNavigation\fP\&. 
+.PP
+Definition at line 44 of file Navigation\&.cpp\&.
+.SS "Navigation::~Navigation ()\fC [virtual]\fP"
 
 .PP
-Destructor of class \fBNavigation\fP\&. Destructor of class \fBSteerAlgorithm\fP\&. 
+Destructor of class \fBNavigation\fP\&. 
+.PP
+Definition at line 54 of file Navigation\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "double Navigation::calculate (double targetHeading, double currentVelocity, double setPoint, int flag)"
+.SS "double Navigation::calculate (double targetHeading, double currentVelocity, double setPoint, int flag)\fC [virtual]\fP"
 
 .PP
 Function to calculate new velocity in m/s with a PID Algorithm using kp, ki & kd\&. 
@@ -95,7 +115,29 @@ double newVelocity
 .RE
 .PP
 
-.SS "double Navigation::getKd_ ()"
+.PP
+Definition at line 128 of file Navigation\&.cpp\&.
+.SS "std::vector< double > Navigation::calculatePID (double setPoint, double currentVelocity)\fC [virtual]\fP"
+
+.PP
+Function to calculate new velocity using PID in m/s\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdouble\fP setPoint, Setpoint of the robot 
+.br
+\fIdouble\fP currentVelocity, current Velocity of the robot 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+double std::vector<double>, values of error, Proportional output, Integral output, derivative output 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file Navigation\&.cpp\&.
+.SS "double Navigation::getKd_ ()\fC [virtual]\fP"
 
 .PP
 Function to get kd_\&. 
@@ -111,7 +153,9 @@ double
 .RE
 .PP
 
-.SS "double Navigation::getKi_ ()"
+.PP
+Definition at line 241 of file Navigation\&.cpp\&.
+.SS "double Navigation::getKi_ ()\fC [virtual]\fP"
 
 .PP
 Function to get ki_\&. 
@@ -127,7 +171,9 @@ double
 .RE
 .PP
 
-.SS "double Navigation::getKp_ ()"
+.PP
+Definition at line 237 of file Navigation\&.cpp\&.
+.SS "double Navigation::getKp_ ()\fC [virtual]\fP"
 
 .PP
 Function to get kp_\&. 
@@ -143,7 +189,53 @@ double
 .RE
 .PP
 
-.SS "bool Navigation::setKd_ (double kd)"
+.PP
+Definition at line 233 of file Navigation\&.cpp\&.
+.SS "bool Navigation::gnuSteerAngleGraph (std::vector< std::pair< double, double >> vectorPointsSteer, double steerAngle, bool flag)"
+
+.PP
+Function to use GNUplot for Steer angle convergence graph\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::vector<std::pair<double,double>>\fP points vector 
+.br
+\fIdouble\fP steerAngle, steer angle from code 
+.br
+\fIbool\fP flag, to test the gnuplot working 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+none 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file Navigation\&.cpp\&.
+.SS "bool Navigation::gnuVelocityGraph (std::vector< std::pair< double, double >> vectorPointsVel, double newVelocity, bool flag)"
+
+.PP
+Function to use GNUplot for velocity convergence graph\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::vector<std::pair<double,double>>\fP points vector 
+.br
+\fIdouble\fP newVelocity, New velocity from code 
+.br
+\fIbool\fP flag, to test the gnuplot working 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+none 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file Navigation\&.cpp\&.
+.SS "bool Navigation::setKd_ (double kd)\fC [virtual]\fP"
 
 .PP
 Function to set kd_\&. 
@@ -159,7 +251,9 @@ boolean true
 .RE
 .PP
 
-.SS "bool Navigation::setKi_ (double ki)"
+.PP
+Definition at line 263 of file Navigation\&.cpp\&.
+.SS "bool Navigation::setKi_ (double ki)\fC [virtual]\fP"
 
 .PP
 Function to set ki_\&. 
@@ -175,7 +269,9 @@ boolean true
 .RE
 .PP
 
-.SS "bool Navigation::setKp_ (double kp)"
+.PP
+Definition at line 254 of file Navigation\&.cpp\&.
+.SS "bool Navigation::setKp_ (double kp)\fC [virtual]\fP"
 
 .PP
 Function to set kp_\&. 
@@ -191,7 +287,15 @@ boolean true
 .RE
 .PP
 
+.PP
+Definition at line 245 of file Navigation\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Navigation::motorDirection = true"
+
+.PP
+Definition at line 49 of file Navigation\&.hpp\&.
 
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Ackermann Steering Control from the source code\&.
+Generated automatically by Doxygen for GMock from the source code\&.

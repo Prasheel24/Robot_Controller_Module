@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgnuplotio_1_1plotting__empty__container" kind="class" language="C++" prot="public">
+    <compoundname>gnuplotio::plotting_empty_container</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">length_error</basecompoundref>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgnuplotio_1_1plotting__empty__container_1ac6498c9ce44e48757444c8335fb544a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::plotting_empty_container::plotting_empty_container</definition>
+        <argsstring>()</argsstring>
+        <name>plotting_empty_container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1182" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1182" bodyend="1182"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="176">
+        <label>gnuplotio::plotting_empty_container</label>
+        <link refid="classgnuplotio_1_1plotting__empty__container"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>std::length_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="178">
+        <label>gnuplotio::plotting_empty_container</label>
+        <link refid="classgnuplotio_1_1plotting__empty__container"/>
+        <childnode refid="179" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>std::length_error</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/gnuplot-iostream.h" line="1180" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1180" bodyend="1183"/>
+    <listofallmembers>
+      <member refid="classgnuplotio_1_1plotting__empty__container_1ac6498c9ce44e48757444c8335fb544a1" prot="public" virt="non-virtual"><scope>gnuplotio::plotting_empty_container</scope><name>plotting_empty_container</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

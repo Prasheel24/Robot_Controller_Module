@@ -1,4 +1,4 @@
-.TH "SteerAlgorithm" 3 "Mon Oct 21 2019" "Version 5" "Ackermann Steering Control" \" -*- nroff -*-
+.TH "SteerAlgorithm" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -35,7 +35,7 @@ Inherited by \fBNavigation\fP\&.
 .br
 .RI "\fIFunction to calculate the length of arc in meters to be traced in order to head in target direction\&. \fP"
 .ti -1c
-.RI "double \fBchangeWheelAngles\fP (double corrRadius, double shaftLength, double shaftDistance)"
+.RI "double \fBchangeWheelAngles\fP (double corrRadius, double \fBshaftLength\fP, double \fBshaftDistance\fP)"
 .br
 .RI "\fIFunction to calculate the angles in degrees for left and right wheels as per ackermann model, and then feed them to corresponding servos\&. \fP"
 .ti -1c
@@ -72,6 +72,22 @@ Inherited by \fBNavigation\fP\&.
 .SH "Detailed Description"
 .PP 
 Class \fBSteerAlgorithm\fP contains the methods of the Steering Algorithm\&. 
+.PP
+Definition at line 40 of file SteerAlgorithm\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SteerAlgorithm::SteerAlgorithm ()"
+
+.PP
+Constructor of class \fBSteerAlgorithm\fP\&. 
+.PP
+Definition at line 45 of file SteerAlgorithm\&.cpp\&.
+.SS "SteerAlgorithm::~SteerAlgorithm ()"
+
+.PP
+Destructor of class \fBSteerAlgorithm\fP\&. 
+.PP
+Definition at line 59 of file SteerAlgorithm\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "double SteerAlgorithm::arcLength (double diffAngle, double corrRadius)"
@@ -92,6 +108,8 @@ double arclength
 .RE
 .PP
 
+.PP
+Definition at line 92 of file SteerAlgorithm\&.cpp\&.
 .SS "double SteerAlgorithm::changeWheelAngles (double corrRadius, double shaftLength, double shaftDistance)"
 
 .PP
@@ -112,6 +130,8 @@ double maxWheelAngle
 .RE
 .PP
 
+.PP
+Definition at line 114 of file SteerAlgorithm\&.cpp\&.
 .SS "double SteerAlgorithm::getCorrRadius_ ()"
 
 .PP
@@ -128,6 +148,8 @@ double corresponding radius
 .RE
 .PP
 
+.PP
+Definition at line 66 of file SteerAlgorithm\&.cpp\&.
 .SS "bool SteerAlgorithm::resetWheel ()"
 
 .PP
@@ -144,6 +166,8 @@ bool true
 .RE
 .PP
 
+.PP
+Definition at line 137 of file SteerAlgorithm\&.cpp\&.
 .SS "bool SteerAlgorithm::setCorrRadius_ (double r)"
 
 .PP
@@ -160,6 +184,8 @@ bool true
 .RE
 .PP
 
+.PP
+Definition at line 75 of file SteerAlgorithm\&.cpp\&.
 .SS "double SteerAlgorithm::turnTime (double arclength, double newVelocity)"
 
 .PP
@@ -178,7 +204,35 @@ double time
 .RE
 .PP
 
+.PP
+Definition at line 154 of file SteerAlgorithm\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int SteerAlgorithm::dir"
+
+.PP
+Definition at line 51 of file SteerAlgorithm\&.hpp\&.
+.SS "double SteerAlgorithm::heading"
+
+.PP
+Definition at line 49 of file SteerAlgorithm\&.hpp\&.
+.SS "const double SteerAlgorithm::maxTurnVelocity = 20"
+
+.PP
+Definition at line 48 of file SteerAlgorithm\&.hpp\&.
+.SS "const double SteerAlgorithm::shaftDistance = 8"
+
+.PP
+Definition at line 47 of file SteerAlgorithm\&.hpp\&.
+.SS "const double SteerAlgorithm::shaftLength = 4"
+
+.PP
+Definition at line 46 of file SteerAlgorithm\&.hpp\&.
+.SS "double SteerAlgorithm::targetHeading"
+
+.PP
+Definition at line 50 of file SteerAlgorithm\&.hpp\&.
 
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Ackermann Steering Control from the source code\&.
+Generated automatically by Doxygen for GMock from the source code\&.

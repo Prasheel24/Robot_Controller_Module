@@ -9,24 +9,10 @@ Class \hyperlink{class_navigation}{Navigation} Contains the methods of Pid Algor
 
 {\ttfamily \#include $<$Navigation.\+hpp$>$}
 
-
-
-Inheritance diagram for Navigation\+:
-\nopagebreak
-\begin{figure}[H]
+Inheritance diagram for Navigation\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=161pt]{class_navigation__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Navigation\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=161pt]{class_navigation__coll__graph}
+\includegraphics[height=3.000000cm]{class_navigation}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -34,32 +20,41 @@ Collaboration diagram for Navigation\+:
 \item 
 \hyperlink{class_navigation_a81fdffdefe46340da5fa6c570066b42b}{Navigation} ()
 \begin{DoxyCompactList}\small\item\em Constructor of class \hyperlink{class_navigation}{Navigation}. \end{DoxyCompactList}\item 
-\hyperlink{class_navigation_addd4022d716df48f4e55a1db69361ba7}{$\sim$\+Navigation} ()
+virtual \hyperlink{class_navigation_addd4022d716df48f4e55a1db69361ba7}{$\sim$\+Navigation} ()
 \begin{DoxyCompactList}\small\item\em Destructor of class \hyperlink{class_navigation}{Navigation}. \end{DoxyCompactList}\item 
-double \hyperlink{class_navigation_a0f83b511cec12a68f2c3466c40c5d3cb}{calculate} (double target\+Heading, double current\+Velocity, double set\+Point, int flag)
+virtual std\+::vector$<$ double $>$ \hyperlink{class_navigation_ae8fc8426c7277de0b34aec951fc28e2c}{calculate\+P\+ID} (double set\+Point, double current\+Velocity)
+\begin{DoxyCompactList}\small\item\em Function to calculate new velocity using P\+ID in m/s. \end{DoxyCompactList}\item 
+bool \hyperlink{class_navigation_a632e4d0d9be60dd775b4e57edb797073}{gnu\+Velocity\+Graph} (std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ vector\+Points\+Vel, double new\+Velocity, bool flag)
+\begin{DoxyCompactList}\small\item\em Function to use G\+N\+Uplot for velocity convergence graph. \end{DoxyCompactList}\item 
+bool \hyperlink{class_navigation_ab35bfaf55fde4a16c05d88ef8789a947}{gnu\+Steer\+Angle\+Graph} (std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ vector\+Points\+Steer, double steer\+Angle, bool flag)
+\begin{DoxyCompactList}\small\item\em Function to use G\+N\+Uplot for Steer angle convergence graph. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_navigation_a0f83b511cec12a68f2c3466c40c5d3cb}{calculate} (double \hyperlink{class_steer_algorithm_a071efeb53e86ee949940b0ab10986044}{target\+Heading}, double current\+Velocity, double set\+Point, int flag)
 \begin{DoxyCompactList}\small\item\em Function to calculate new velocity in m/s with a P\+ID Algorithm using kp, ki \& kd. \end{DoxyCompactList}\item 
-double \hyperlink{class_navigation_ab1469d74f4838a9d32a8647d22701f9f}{get\+Kp\+\_\+} ()
+virtual double \hyperlink{class_navigation_ab1469d74f4838a9d32a8647d22701f9f}{get\+Kp\+\_\+} ()
 \begin{DoxyCompactList}\small\item\em Function to get kp\+\_\+. \end{DoxyCompactList}\item 
-double \hyperlink{class_navigation_a1a84392d6cce3f60df452ab482b5647c}{get\+Ki\+\_\+} ()
+virtual double \hyperlink{class_navigation_a1a84392d6cce3f60df452ab482b5647c}{get\+Ki\+\_\+} ()
 \begin{DoxyCompactList}\small\item\em Function to get ki\+\_\+. \end{DoxyCompactList}\item 
-double \hyperlink{class_navigation_ac6441bb601483166ef7a8081b76f634d}{get\+Kd\+\_\+} ()
+virtual double \hyperlink{class_navigation_ac6441bb601483166ef7a8081b76f634d}{get\+Kd\+\_\+} ()
 \begin{DoxyCompactList}\small\item\em Function to get kd\+\_\+. \end{DoxyCompactList}\item 
-bool \hyperlink{class_navigation_a6dd95f46ff4ecc69895452a1879c30af}{set\+Kp\+\_\+} (double kp)
+virtual bool \hyperlink{class_navigation_a6dd95f46ff4ecc69895452a1879c30af}{set\+Kp\+\_\+} (double kp)
 \begin{DoxyCompactList}\small\item\em Function to set kp\+\_\+. \end{DoxyCompactList}\item 
-bool \hyperlink{class_navigation_a539d10206ceb162171e39c36e8aa8f0f}{set\+Ki\+\_\+} (double ki)
+virtual bool \hyperlink{class_navigation_a539d10206ceb162171e39c36e8aa8f0f}{set\+Ki\+\_\+} (double ki)
 \begin{DoxyCompactList}\small\item\em Function to set ki\+\_\+. \end{DoxyCompactList}\item 
-bool \hyperlink{class_navigation_a4986e4357d9707ddf92cf8f559ef3dce}{set\+Kd\+\_\+} (double kd)
+virtual bool \hyperlink{class_navigation_a4986e4357d9707ddf92cf8f559ef3dce}{set\+Kd\+\_\+} (double kd)
 \begin{DoxyCompactList}\small\item\em Function to set kd\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-bool {\bfseries motor\+Direction} = true\hypertarget{class_navigation_ad7d7a5d5d1abe99e6b0f31ddb4794252}{}\label{class_navigation_ad7d7a5d5d1abe99e6b0f31ddb4794252}
-
+bool \hyperlink{class_navigation_ad7d7a5d5d1abe99e6b0f31ddb4794252}{motor\+Direction} = true
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Class \hyperlink{class_navigation}{Navigation} Contains the methods of Pid Algorithm. 
+
+Definition at line 43 of file Navigation.\+hpp.
+
+
 
 \subsection{Constructor \& Destructor Documentation}
 \index{Navigation@{Navigation}!Navigation@{Navigation}}
@@ -73,18 +68,26 @@ Class \hyperlink{class_navigation}{Navigation} Contains the methods of Pid Algor
 
 Constructor of class \hyperlink{class_navigation}{Navigation}. 
 
-Constructor of class \hyperlink{class_steer_algorithm}{Steer\+Algorithm}. \index{Navigation@{Navigation}!````~Navigation@{$\sim$\+Navigation}}
+
+
+Definition at line 44 of file Navigation.\+cpp.
+
+\index{Navigation@{Navigation}!````~Navigation@{$\sim$\+Navigation}}
 \index{````~Navigation@{$\sim$\+Navigation}!Navigation@{Navigation}}
 \subsubsection[{\texorpdfstring{$\sim$\+Navigation()}{~Navigation()}}]{\setlength{\rightskip}{0pt plus 5cm}Navigation\+::$\sim$\+Navigation (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_addd4022d716df48f4e55a1db69361ba7}{}\label{class_navigation_addd4022d716df48f4e55a1db69361ba7}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_addd4022d716df48f4e55a1db69361ba7}{}\label{class_navigation_addd4022d716df48f4e55a1db69361ba7}
 
 
 Destructor of class \hyperlink{class_navigation}{Navigation}. 
 
-Destructor of class \hyperlink{class_steer_algorithm}{Steer\+Algorithm}. 
+
+
+Definition at line 54 of file Navigation.\+cpp.
+
+
 
 \subsection{Member Function Documentation}
 \index{Navigation@{Navigation}!calculate@{calculate}}
@@ -96,7 +99,7 @@ Destructor of class \hyperlink{class_steer_algorithm}{Steer\+Algorithm}.
 \item[{double}]{set\+Point, }
 \item[{int}]{flag}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_a0f83b511cec12a68f2c3466c40c5d3cb}{}\label{class_navigation_a0f83b511cec12a68f2c3466c40c5d3cb}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_a0f83b511cec12a68f2c3466c40c5d3cb}{}\label{class_navigation_a0f83b511cec12a68f2c3466c40c5d3cb}
 
 
 Function to calculate new velocity in m/s with a P\+ID Algorithm using kp, ki \& kd. 
@@ -115,13 +118,43 @@ Function to calculate new velocity in m/s with a P\+ID Algorithm using kp, ki \&
 \begin{DoxyReturn}{Returns}
 double new\+Velocity 
 \end{DoxyReturn}
+
+
+Definition at line 128 of file Navigation.\+cpp.
+
+\index{Navigation@{Navigation}!calculate\+P\+ID@{calculate\+P\+ID}}
+\index{calculate\+P\+ID@{calculate\+P\+ID}!Navigation@{Navigation}}
+\subsubsection[{\texorpdfstring{calculate\+P\+I\+D(double set\+Point, double current\+Velocity)}{calculatePID(double setPoint, double currentVelocity)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ double $>$ Navigation\+::calculate\+P\+ID (
+\begin{DoxyParamCaption}
+\item[{double}]{set\+Point, }
+\item[{double}]{current\+Velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_ae8fc8426c7277de0b34aec951fc28e2c}{}\label{class_navigation_ae8fc8426c7277de0b34aec951fc28e2c}
+
+
+Function to calculate new velocity using P\+ID in m/s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & set\+Point, Setpoint of the robot \\
+\hline
+{\em double} & current\+Velocity, current Velocity of the robot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double std\+::vector$<$double$>$, values of error, Proportional output, Integral output, derivative output 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Navigation.\+cpp.
+
 \index{Navigation@{Navigation}!get\+Kd\+\_\+@{get\+Kd\+\_\+}}
 \index{get\+Kd\+\_\+@{get\+Kd\+\_\+}!Navigation@{Navigation}}
 \subsubsection[{\texorpdfstring{get\+Kd\+\_\+()}{getKd_()}}]{\setlength{\rightskip}{0pt plus 5cm}double Navigation\+::get\+Kd\+\_\+ (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_ac6441bb601483166ef7a8081b76f634d}{}\label{class_navigation_ac6441bb601483166ef7a8081b76f634d}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_ac6441bb601483166ef7a8081b76f634d}{}\label{class_navigation_ac6441bb601483166ef7a8081b76f634d}
 
 
 Function to get kd\+\_\+. 
@@ -134,13 +167,17 @@ Function to get kd\+\_\+.
 \begin{DoxyReturn}{Returns}
 double 
 \end{DoxyReturn}
+
+
+Definition at line 241 of file Navigation.\+cpp.
+
 \index{Navigation@{Navigation}!get\+Ki\+\_\+@{get\+Ki\+\_\+}}
 \index{get\+Ki\+\_\+@{get\+Ki\+\_\+}!Navigation@{Navigation}}
 \subsubsection[{\texorpdfstring{get\+Ki\+\_\+()}{getKi_()}}]{\setlength{\rightskip}{0pt plus 5cm}double Navigation\+::get\+Ki\+\_\+ (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_a1a84392d6cce3f60df452ab482b5647c}{}\label{class_navigation_a1a84392d6cce3f60df452ab482b5647c}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_a1a84392d6cce3f60df452ab482b5647c}{}\label{class_navigation_a1a84392d6cce3f60df452ab482b5647c}
 
 
 Function to get ki\+\_\+. 
@@ -153,13 +190,17 @@ Function to get ki\+\_\+.
 \begin{DoxyReturn}{Returns}
 double 
 \end{DoxyReturn}
+
+
+Definition at line 237 of file Navigation.\+cpp.
+
 \index{Navigation@{Navigation}!get\+Kp\+\_\+@{get\+Kp\+\_\+}}
 \index{get\+Kp\+\_\+@{get\+Kp\+\_\+}!Navigation@{Navigation}}
 \subsubsection[{\texorpdfstring{get\+Kp\+\_\+()}{getKp_()}}]{\setlength{\rightskip}{0pt plus 5cm}double Navigation\+::get\+Kp\+\_\+ (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_ab1469d74f4838a9d32a8647d22701f9f}{}\label{class_navigation_ab1469d74f4838a9d32a8647d22701f9f}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_ab1469d74f4838a9d32a8647d22701f9f}{}\label{class_navigation_ab1469d74f4838a9d32a8647d22701f9f}
 
 
 Function to get kp\+\_\+. 
@@ -172,13 +213,75 @@ Function to get kp\+\_\+.
 \begin{DoxyReturn}{Returns}
 double 
 \end{DoxyReturn}
+
+
+Definition at line 233 of file Navigation.\+cpp.
+
+\index{Navigation@{Navigation}!gnu\+Steer\+Angle\+Graph@{gnu\+Steer\+Angle\+Graph}}
+\index{gnu\+Steer\+Angle\+Graph@{gnu\+Steer\+Angle\+Graph}!Navigation@{Navigation}}
+\subsubsection[{\texorpdfstring{gnu\+Steer\+Angle\+Graph(std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ vector\+Points\+Steer, double steer\+Angle, bool flag)}{gnuSteerAngleGraph(std::vector< std::pair< double, double >> vectorPointsSteer, double steerAngle, bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Navigation\+::gnu\+Steer\+Angle\+Graph (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::pair$<$ double, double $>$$>$}]{vector\+Points\+Steer, }
+\item[{double}]{steer\+Angle, }
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_navigation_ab35bfaf55fde4a16c05d88ef8789a947}{}\label{class_navigation_ab35bfaf55fde4a16c05d88ef8789a947}
+
+
+Function to use G\+N\+Uplot for Steer angle convergence graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::pair$<$double,double$>$$>$} & points vector \\
+\hline
+{\em double} & steer\+Angle, steer angle from code \\
+\hline
+{\em bool} & flag, to test the gnuplot working \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Navigation.\+cpp.
+
+\index{Navigation@{Navigation}!gnu\+Velocity\+Graph@{gnu\+Velocity\+Graph}}
+\index{gnu\+Velocity\+Graph@{gnu\+Velocity\+Graph}!Navigation@{Navigation}}
+\subsubsection[{\texorpdfstring{gnu\+Velocity\+Graph(std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ vector\+Points\+Vel, double new\+Velocity, bool flag)}{gnuVelocityGraph(std::vector< std::pair< double, double >> vectorPointsVel, double newVelocity, bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Navigation\+::gnu\+Velocity\+Graph (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::pair$<$ double, double $>$$>$}]{vector\+Points\+Vel, }
+\item[{double}]{new\+Velocity, }
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_navigation_a632e4d0d9be60dd775b4e57edb797073}{}\label{class_navigation_a632e4d0d9be60dd775b4e57edb797073}
+
+
+Function to use G\+N\+Uplot for velocity convergence graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::pair$<$double,double$>$$>$} & points vector \\
+\hline
+{\em double} & new\+Velocity, New velocity from code \\
+\hline
+{\em bool} & flag, to test the gnuplot working \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Navigation.\+cpp.
+
 \index{Navigation@{Navigation}!set\+Kd\+\_\+@{set\+Kd\+\_\+}}
 \index{set\+Kd\+\_\+@{set\+Kd\+\_\+}!Navigation@{Navigation}}
 \subsubsection[{\texorpdfstring{set\+Kd\+\_\+(double kd)}{setKd_(double kd)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Navigation\+::set\+Kd\+\_\+ (
 \begin{DoxyParamCaption}
 \item[{double}]{kd}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_a4986e4357d9707ddf92cf8f559ef3dce}{}\label{class_navigation_a4986e4357d9707ddf92cf8f559ef3dce}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_a4986e4357d9707ddf92cf8f559ef3dce}{}\label{class_navigation_a4986e4357d9707ddf92cf8f559ef3dce}
 
 
 Function to set kd\+\_\+. 
@@ -191,13 +294,17 @@ Function to set kd\+\_\+.
 \begin{DoxyReturn}{Returns}
 boolean true 
 \end{DoxyReturn}
+
+
+Definition at line 263 of file Navigation.\+cpp.
+
 \index{Navigation@{Navigation}!set\+Ki\+\_\+@{set\+Ki\+\_\+}}
 \index{set\+Ki\+\_\+@{set\+Ki\+\_\+}!Navigation@{Navigation}}
 \subsubsection[{\texorpdfstring{set\+Ki\+\_\+(double ki)}{setKi_(double ki)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Navigation\+::set\+Ki\+\_\+ (
 \begin{DoxyParamCaption}
 \item[{double}]{ki}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_a539d10206ceb162171e39c36e8aa8f0f}{}\label{class_navigation_a539d10206ceb162171e39c36e8aa8f0f}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_a539d10206ceb162171e39c36e8aa8f0f}{}\label{class_navigation_a539d10206ceb162171e39c36e8aa8f0f}
 
 
 Function to set ki\+\_\+. 
@@ -210,13 +317,17 @@ Function to set ki\+\_\+.
 \begin{DoxyReturn}{Returns}
 boolean true 
 \end{DoxyReturn}
+
+
+Definition at line 254 of file Navigation.\+cpp.
+
 \index{Navigation@{Navigation}!set\+Kp\+\_\+@{set\+Kp\+\_\+}}
 \index{set\+Kp\+\_\+@{set\+Kp\+\_\+}!Navigation@{Navigation}}
 \subsubsection[{\texorpdfstring{set\+Kp\+\_\+(double kp)}{setKp_(double kp)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Navigation\+::set\+Kp\+\_\+ (
 \begin{DoxyParamCaption}
 \item[{double}]{kp}
 \end{DoxyParamCaption}
-)}\hypertarget{class_navigation_a6dd95f46ff4ecc69895452a1879c30af}{}\label{class_navigation_a6dd95f46ff4ecc69895452a1879c30af}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_navigation_a6dd95f46ff4ecc69895452a1879c30af}{}\label{class_navigation_a6dd95f46ff4ecc69895452a1879c30af}
 
 
 Function to set kp\+\_\+. 
@@ -229,6 +340,20 @@ Function to set kp\+\_\+.
 \begin{DoxyReturn}{Returns}
 boolean true 
 \end{DoxyReturn}
+
+
+Definition at line 245 of file Navigation.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Navigation@{Navigation}!motor\+Direction@{motor\+Direction}}
+\index{motor\+Direction@{motor\+Direction}!Navigation@{Navigation}}
+\subsubsection[{\texorpdfstring{motor\+Direction}{motorDirection}}]{\setlength{\rightskip}{0pt plus 5cm}bool Navigation\+::motor\+Direction = true}\hypertarget{class_navigation_ad7d7a5d5d1abe99e6b0f31ddb4794252}{}\label{class_navigation_ad7d7a5d5d1abe99e6b0f31ddb4794252}
+
+
+Definition at line 49 of file Navigation.\+hpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

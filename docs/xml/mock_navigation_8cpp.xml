@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="mock_navigation_8cpp" kind="file" language="C++">
+    <compoundname>mockNavigation.cpp</compoundname>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="no">gmock/gmock.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="yes">iostream</includes>
+    <includes refid="_navigation_8hpp" local="yes">Navigation.hpp</includes>
+    <incdepgraph>
+      <node id="87">
+        <label>SteerAlgorithm.hpp</label>
+        <link refid="_steer_algorithm_8hpp"/>
+      </node>
+      <node id="81">
+        <label>test/mockNavigation.cpp</label>
+        <link refid="mockNavigation.cpp"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>gmock/gmock.h</label>
+      </node>
+      <node id="84">
+        <label>vector</label>
+      </node>
+      <node id="86">
+        <label>Navigation.hpp</label>
+        <link refid="_navigation_8hpp"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>gtest/gtest.h</label>
+      </node>
+      <node id="85">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_mock_navigation" prot="public">MockNavigation</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mock_navigation_8cpp_1afa4f1fdcc49d8cae82093e455233f67e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(MockNavigation, checkKp)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref></type>
+        </param>
+        <param>
+          <type>checkKp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="98" column="1" bodyfile="test/mockNavigation.cpp" bodystart="98" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="mock_navigation_8cpp_1ab9c056b9285f5adb19253a96b7c24a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(MockNavigation, checkKi)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref></type>
+        </param>
+        <param>
+          <type>checkKi</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="112" column="1" bodyfile="test/mockNavigation.cpp" bodystart="112" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="mock_navigation_8cpp_1ae07284692a8f21de4325275c3a18a9bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(MockNavigation, checkKd)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref></type>
+        </param>
+        <param>
+          <type>checkKd</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="126" column="1" bodyfile="test/mockNavigation.cpp" bodystart="126" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="mock_navigation_8cpp_1a6be533ac83530d2c6b5c0e38f1186fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(MockNavigation, checkPID)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref></type>
+        </param>
+        <param>
+          <type>checkPID</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="141" column="1" bodyfile="test/mockNavigation.cpp" bodystart="141" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="mock_navigation_8cpp_1a4f7cc4afa8a4ed97f080e692640ba531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(MockNavigation, checkNavigation)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref></type>
+        </param>
+        <param>
+          <type>checkNavigation</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="153" column="1" bodyfile="test/mockNavigation.cpp" bodystart="153" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mid Term Project. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>MIT License, Copyright © 2019 Raj Shinde</para></simplesect>
+<simplesect kind="author"><para>Prasheel Renkuntla </para></simplesect>
+<simplesect kind="date"><para>11/22/2019 </para></simplesect>
+<simplesect kind="version"><para>7.0 </para></simplesect>
+</para><sect1 id="test_steer_algorithm_8cpp_1Tests">
+<title>all files in module with gmock</title>
+</sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>©<sp/>2019<sp/>Raj<sp/>Shinde</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">files<sp/>(the<sp/>“Software”),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>“AS<sp/>IS”,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gmock/gmock.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;iostream&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_navigation_8hpp" kindref="compound">Navigation.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_mock_navigation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_navigation" kindref="compound">Navigation</ref>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="48" refid="class_mock_navigation_1a54759f67f52b03841f44efe7926fff22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1a54759f67f52b03841f44efe7926fff22" kindref="member">MockNavigation</ref>()<sp/>:<sp/><ref refid="class_navigation" kindref="compound">Navigation</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1acd53221a46f65f159ad53d22d3db1c51" kindref="member">MOCK_METHOD0</ref>(<sp/><ref refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" kindref="member">getKp_</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1af40d1b1fb60d8bfe8a53ab5d91109b63" kindref="member">MOCK_METHOD1</ref>(<sp/><ref refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" kindref="member">setKp_</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1acd53221a46f65f159ad53d22d3db1c51" kindref="member">MOCK_METHOD0</ref>(<sp/><ref refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" kindref="member">getKi_</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1af40d1b1fb60d8bfe8a53ab5d91109b63" kindref="member">MOCK_METHOD1</ref>(<sp/><ref refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" kindref="member">setKi_</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1acd53221a46f65f159ad53d22d3db1c51" kindref="member">MOCK_METHOD0</ref>(<sp/><ref refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" kindref="member">getKd_</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1af40d1b1fb60d8bfe8a53ab5d91109b63" kindref="member">MOCK_METHOD1</ref>(<sp/><ref refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" kindref="member">setKd_</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1a6289387acc5f11297d7a765241a499b4" kindref="member">MOCK_METHOD2</ref>(<sp/><ref refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" kindref="member">calculatePID</ref>,<sp/>std::vector&lt;double&gt;(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mock_navigation_1a5189068e3bbe0eeb377a119eaa8f0b62" kindref="member">MOCK_METHOD4</ref>(<sp/><ref refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" kindref="member">calculate</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" kindref="member">targetHeading</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>currentVelocity,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>setPoint,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag)<sp/>);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="mock_navigation_8cpp_1afa4f1fdcc49d8cae82093e455233f67e" refkind="member"><highlight class="normal"><ref refid="mock_navigation_8cpp_1afa4f1fdcc49d8cae82093e455233f67e" kindref="member">TEST</ref>(<ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref>,<sp/>checkKp)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref><sp/>mn;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>set<sp/>kp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" kindref="member">setKp_</ref>(0.4)).Times(1);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">mn.<ref refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" kindref="member">setKp_</ref>(0.4);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>get<sp/>kp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" kindref="member">getKp_</ref>()).Times(1).WillOnce(::testing::Return(0.4));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">EXPECT_EQ(0.4,<sp/>mn.<ref refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" kindref="member">getKp_</ref>());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="mock_navigation_8cpp_1ab9c056b9285f5adb19253a96b7c24a40" refkind="member"><highlight class="normal"><ref refid="mock_navigation_8cpp_1afa4f1fdcc49d8cae82093e455233f67e" kindref="member">TEST</ref>(<ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref>,<sp/>checkKi)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref><sp/>mn;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>set<sp/>ki</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" kindref="member">setKi_</ref>(0.04)).Times(1);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">mn.<ref refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" kindref="member">setKi_</ref>(0.04);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>get<sp/>ki</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" kindref="member">getKi_</ref>()).Times(1).WillOnce(::testing::Return(0.04));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">EXPECT_EQ(0.04,<sp/>mn.<ref refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" kindref="member">getKi_</ref>());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="mock_navigation_8cpp_1ae07284692a8f21de4325275c3a18a9bf" refkind="member"><highlight class="normal"><ref refid="mock_navigation_8cpp_1afa4f1fdcc49d8cae82093e455233f67e" kindref="member">TEST</ref>(<ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref>,<sp/>checkKd)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref><sp/>mn;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>set<sp/>kd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" kindref="member">setKd_</ref>(0.01)).Times(1);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">mn.<ref refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" kindref="member">setKd_</ref>(0.01);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>get<sp/>kd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" kindref="member">getKd_</ref>()).Times(1).WillOnce(::testing::Return(0.01));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">EXPECT_EQ(0.01,<sp/>mn.<ref refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" kindref="member">getKd_</ref>());</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="mock_navigation_8cpp_1a6be533ac83530d2c6b5c0e38f1186fea" refkind="member"><highlight class="normal"><ref refid="mock_navigation_8cpp_1afa4f1fdcc49d8cae82093e455233f67e" kindref="member">TEST</ref>(<ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref>,<sp/>checkPID)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref><sp/>mn;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>compute<sp/>PID<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" kindref="member">calculatePID</ref>(40,<sp/>10)).Times(1);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">std::vector&lt;double&gt;<sp/>out;<sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">EXPECT_EQ(mn.<ref refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" kindref="member">calculatePID</ref>(40,<sp/>10),<sp/>out);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="mock_navigation_8cpp_1a4f7cc4afa8a4ed97f080e692640ba531" refkind="member"><highlight class="normal"><ref refid="mock_navigation_8cpp_1afa4f1fdcc49d8cae82093e455233f67e" kindref="member">TEST</ref>(<ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref>,<sp/>checkNavigation)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><ref refid="class_mock_navigation" kindref="compound">MockNavigation</ref><sp/>mn;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Expect<sp/>call<sp/>to<sp/>compute<sp/>Convergence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">EXPECT_CALL(mn,<sp/><ref refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" kindref="member">calculate</ref>(90,<sp/>10,<sp/>40,<sp/>1)).Times(2);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">mn.<ref refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" kindref="member">calculate</ref>(90,<sp/>10,<sp/>40,<sp/>1);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">EXPECT_EQ(mn.<ref refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" kindref="member">calculate</ref>(90,<sp/>10,<sp/>40,<sp/>1),<sp/>0);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="test/mockNavigation.cpp"/>
+  </compounddef>
+</doxygen>

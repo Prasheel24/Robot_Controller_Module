@@ -6,25 +6,25 @@
     <includes local="no">cmath</includes>
     <includes refid="_steer_algorithm_8hpp" local="yes">SteerAlgorithm.hpp</includes>
     <incdepgraph>
-      <node id="58">
-        <label>cmath</label>
-      </node>
-      <node id="56">
-        <label>app/SteerAlgorithm.cpp</label>
-        <link refid="SteerAlgorithm.cpp"/>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-      </node>
-      <node id="59">
+      <node id="38">
         <label>SteerAlgorithm.hpp</label>
         <link refid="_steer_algorithm_8hpp"/>
       </node>
-      <node id="57">
+      <node id="37">
+        <label>cmath</label>
+      </node>
+      <node id="36">
         <label>iostream</label>
+      </node>
+      <node id="35">
+        <label>app/SteerAlgorithm.cpp</label>
+        <link refid="SteerAlgorithm.cpp"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -33,8 +33,9 @@
 <para><simplesect kind="copyright"><para>MIT License, Copyright © 2019 Raj Shinde</para></simplesect>
 <simplesect kind="author"><para>Sprint-1 Raj Shinde- driver and Prasheel Renkuntla- navigator </para></simplesect>
 <simplesect kind="author"><para>Sprint-2 Prasheel Renkuntla- driver and Raj Shinde- navigator </para></simplesect>
-<simplesect kind="date"><para>10/10/2019 </para></simplesect>
-<simplesect kind="version"><para>6.0 </para></simplesect>
+<simplesect kind="author"><para>Gmock Prasheel Renkuntla </para></simplesect>
+<simplesect kind="date"><para>11/22/2019 </para></simplesect>
+<simplesect kind="version"><para>7.0 </para></simplesect>
 </para><sect1 id="_steer_algorithm_8cpp_1Implements">
 <title>Ackermann on PID control</title>
 </sect1>
@@ -65,79 +66,79 @@
 <codeline lineno="23"><highlight class="comment">OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
 <codeline lineno="24"><highlight class="comment"><sp/>*************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_steer_algorithm_8hpp" kindref="compound">SteerAlgorithm.hpp</ref>&quot;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><ref refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" kindref="member">SteerAlgorithm::SteerAlgorithm</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Initialised<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal">lWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">rWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal">heading<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal">robotAngle_<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">corrRadius_<sp/>=<sp/>30;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal">dir<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal">targetHeading<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><ref refid="class_steer_algorithm_1a37dd2ef0ed856582aaacc103a6cd6700" kindref="member">SteerAlgorithm::~SteerAlgorithm</ref>()<sp/>{}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" kindref="member">SteerAlgorithm::getCorrRadius_</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>corrRadius_;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a93cf1fc7d06376ddeaa4e81f2b0a22cc" kindref="member">SteerAlgorithm::setCorrRadius_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r)<sp/>{</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal">corrRadius_<sp/>=<sp/>r;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(corrRadius_<sp/>!=<sp/>r)<sp/>{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a17ff78af17e900f752237d274bcf751d" kindref="member">SteerAlgorithm::arcLength</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>diffAngle,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>corrRadius)<sp/>{</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>diffAngle<sp/>==<sp/>0<sp/>||<sp/>diffAngle<sp/>==<sp/>360<sp/>)<sp/>{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffAngle<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(diffAngle<sp/>==<sp/>90<sp/>||<sp/>diffAngle<sp/>==<sp/>180)<sp/>{</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffAngle<sp/>=<sp/>diffAngle<sp/>+<sp/>0;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(diffAngle<sp/>&lt;<sp/>90)<sp/>{</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffAngle<sp/>=<sp/>diffAngle<sp/>+<sp/>270;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((diffAngle/360)*(2*M_PI*corrRadius));</highlight></codeline>
-<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a6067af69593713f561890ae8ad23f5ff" kindref="member">SteerAlgorithm::changeWheelAngles</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>corrRadius,</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shaftLength,</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shaftDistance)<sp/>{</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>targetHeading<sp/>&gt;<sp/>0<sp/>)<sp/>{</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir<sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>To<sp/>calculate<sp/>the<sp/>angles,<sp/>follow<sp/>this<sp/>link</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>https://www.sciencedirect.com/topics/engineering/ackermann</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal">lWheelAngle_<sp/>=<sp/>(90<sp/>-<sp/>(180/M_PI)*std::atan((corrRadius<sp/>+</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(shaftLength<sp/>*<sp/>0.5))/<sp/>shaftDistance)<sp/>*<sp/>dir);</highlight></codeline>
-<codeline lineno="126"><highlight class="normal">rWheelAngle_<sp/>=<sp/>(90<sp/>-<sp/>(180/M_PI)*std::atan((corrRadius<sp/>-</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(shaftLength<sp/>*<sp/>0.5))/<sp/>shaftDistance)<sp/>*<sp/>dir);</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::max(lWheelAngle_,<sp/>rWheelAngle_);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1ab251b6fd1f88fb7a526b0d55cd12625b" kindref="member">SteerAlgorithm::resetWheel</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="138"><highlight class="normal">lWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="139"><highlight class="normal">rWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lWheelAngle_<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>rWheelAngle_<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">SteerAlgorithm::turnTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arclength,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newVelocity)<sp/>{</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(arclength/newVelocity);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_steer_algorithm_8hpp" kindref="compound">SteerAlgorithm.hpp</ref>&quot;</highlight></codeline>
+<codeline lineno="45" refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" refkind="member"><highlight class="normal"><ref refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" kindref="member">SteerAlgorithm::SteerAlgorithm</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Initialised<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">lWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">rWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">robotAngle_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">corrRadius_<sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" kindref="member">targetHeading</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_steer_algorithm_1a37dd2ef0ed856582aaacc103a6cd6700" refkind="member"><highlight class="normal"><ref refid="class_steer_algorithm_1a37dd2ef0ed856582aaacc103a6cd6700" kindref="member">SteerAlgorithm::~SteerAlgorithm</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" kindref="member">SteerAlgorithm::getCorrRadius_</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>corrRadius_;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_steer_algorithm_1a93cf1fc7d06376ddeaa4e81f2b0a22cc" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a93cf1fc7d06376ddeaa4e81f2b0a22cc" kindref="member">SteerAlgorithm::setCorrRadius_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">corrRadius_<sp/>=<sp/>r;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(corrRadius_<sp/>!=<sp/>r)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_steer_algorithm_1a17ff78af17e900f752237d274bcf751d" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a17ff78af17e900f752237d274bcf751d" kindref="member">SteerAlgorithm::arcLength</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>diffAngle,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>corrRadius)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>diffAngle<sp/>==<sp/>0<sp/>||<sp/>diffAngle<sp/>==<sp/>360<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffAngle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(diffAngle<sp/>==<sp/>90<sp/>||<sp/>diffAngle<sp/>==<sp/>180)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffAngle<sp/>=<sp/>diffAngle<sp/>+<sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(diffAngle<sp/>&lt;<sp/>90)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffAngle<sp/>=<sp/>diffAngle<sp/>+<sp/>270;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((diffAngle/360)*(2*M_PI*corrRadius));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_steer_algorithm_1a6067af69593713f561890ae8ad23f5ff" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a6067af69593713f561890ae8ad23f5ff" kindref="member">SteerAlgorithm::changeWheelAngles</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>corrRadius,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a9d5bc20acba39f0e53c3d0f6fc280433" kindref="member">shaftLength</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a38bc87552a30e8eda8f647cf341c9657" kindref="member">shaftDistance</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" kindref="member">targetHeading</ref><sp/>&gt;<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>To<sp/>calculate<sp/>the<sp/>angles,<sp/>follow<sp/>this<sp/>link</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>https://www.sciencedirect.com/topics/engineering/ackermann</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">lWheelAngle_<sp/>=<sp/>(90<sp/>-<sp/>(180/M_PI)*std::atan((corrRadius<sp/>+</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(shaftLength<sp/>*<sp/>0.5))/<sp/><ref refid="class_steer_algorithm_1a38bc87552a30e8eda8f647cf341c9657" kindref="member">shaftDistance</ref>)<sp/>*<sp/><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">rWheelAngle_<sp/>=<sp/>(90<sp/>-<sp/>(180/M_PI)*std::atan((corrRadius<sp/>-</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(shaftLength<sp/>*<sp/>0.5))/<sp/>shaftDistance)<sp/>*<sp/><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::max(lWheelAngle_,<sp/>rWheelAngle_);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="class_steer_algorithm_1ab251b6fd1f88fb7a526b0d55cd12625b" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1ab251b6fd1f88fb7a526b0d55cd12625b" kindref="member">SteerAlgorithm::resetWheel</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">lWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">rWheelAngle_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lWheelAngle_<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>rWheelAngle_<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">SteerAlgorithm::turnTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arclength,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newVelocity)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(arclength/newVelocity);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="app/SteerAlgorithm.cpp"/>
   </compounddef>

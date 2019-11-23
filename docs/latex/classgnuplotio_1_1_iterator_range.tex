@@ -1,0 +1,148 @@
+\hypertarget{classgnuplotio_1_1_iterator_range}{}\section{gnuplotio\+:\+:Iterator\+Range$<$ TI, TV $>$ Class Template Reference}
+\label{classgnuplotio_1_1_iterator_range}\index{gnuplotio\+::\+Iterator\+Range$<$ T\+I, T\+V $>$@{gnuplotio\+::\+Iterator\+Range$<$ T\+I, T\+V $>$}}
+
+
+{\ttfamily \#include $<$gnuplot-\/iostream.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::mpl\+::if\+\_\+c$<$ \hyperlink{classgnuplotio_1_1_iterator_range_a3f79d84bdf18761b6e49ae54d050f8ff}{is\+\_\+container}, \hyperlink{structgnuplotio_1_1_error___inappropriate_deref}{Error\+\_\+\+Inappropriate\+Deref}, TV $>$\+::type \hyperlink{classgnuplotio_1_1_iterator_range_a3d997739282df372a894c586c64a0687}{value\+\_\+type}
+\item 
+typedef \hyperlink{classgnuplotio_1_1_array_traits}{Array\+Traits}$<$ TV $>$\+::range\+\_\+type \hyperlink{classgnuplotio_1_1_iterator_range_a566ca30462a029f6df4ef16116f99acd}{subiter\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgnuplotio_1_1_iterator_range_aa5789bb82a999548d3e5fc359a4c0c43}{Iterator\+Range} ()
+\item 
+\hyperlink{classgnuplotio_1_1_iterator_range_adb89135fc292dfc5152120bc7fe6135e}{Iterator\+Range} (const TI \&\+\_\+it, const TI \&\+\_\+end)
+\item 
+bool \hyperlink{classgnuplotio_1_1_iterator_range_a9146c3be94e09b6318cb0590b5816d1e}{is\+\_\+end} () const 
+\item 
+void \hyperlink{classgnuplotio_1_1_iterator_range_a369f392a561011f8f1c93d13fd976878}{inc} ()
+\item 
+\hyperlink{classgnuplotio_1_1_iterator_range_a3d997739282df372a894c586c64a0687}{value\+\_\+type} \hyperlink{classgnuplotio_1_1_iterator_range_a58c90f44319ecc5efe43b80892d3b7f2}{deref} () const 
+\item 
+\hyperlink{classgnuplotio_1_1_iterator_range_a566ca30462a029f6df4ef16116f99acd}{subiter\+\_\+type} \hyperlink{classgnuplotio_1_1_iterator_range_a03ee1f4e4e321d6c9676b632dcfc5969}{deref\+\_\+subiter} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \hyperlink{classgnuplotio_1_1_iterator_range_a3f79d84bdf18761b6e49ae54d050f8ff}{is\+\_\+container} = \hyperlink{classgnuplotio_1_1_array_traits}{Array\+Traits}$<$TV$>$\+::is\+\_\+container
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename TI, typename TV$>$\\*
+class gnuplotio\+::\+Iterator\+Range$<$ T\+I, T\+V $>$}
+
+
+
+Definition at line 860 of file gnuplot-\/iostream.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!subiter\+\_\+type@{subiter\+\_\+type}}
+\index{subiter\+\_\+type@{subiter\+\_\+type}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{subiter\+\_\+type}{subiter_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ typedef {\bf Array\+Traits}$<$TV$>$\+::range\+\_\+type {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::{\bf subiter\+\_\+type}}\hypertarget{classgnuplotio_1_1_iterator_range_a566ca30462a029f6df4ef16116f99acd}{}\label{classgnuplotio_1_1_iterator_range_a566ca30462a029f6df4ef16116f99acd}
+
+
+Definition at line 868 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{value\+\_\+type}{value_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ typedef boost\+::mpl\+::if\+\_\+c$<${\bf is\+\_\+container}, {\bf Error\+\_\+\+Inappropriate\+Deref}, TV$>$\+::type {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::{\bf value\+\_\+type}}\hypertarget{classgnuplotio_1_1_iterator_range_a3d997739282df372a894c586c64a0687}{}\label{classgnuplotio_1_1_iterator_range_a3d997739282df372a894c586c64a0687}
+
+
+Definition at line 867 of file gnuplot-\/iostream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!Iterator\+Range@{Iterator\+Range}}
+\index{Iterator\+Range@{Iterator\+Range}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{Iterator\+Range()}{IteratorRange()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::{\bf Iterator\+Range} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_iterator_range_aa5789bb82a999548d3e5fc359a4c0c43}{}\label{classgnuplotio_1_1_iterator_range_aa5789bb82a999548d3e5fc359a4c0c43}
+
+
+Definition at line 862 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!Iterator\+Range@{Iterator\+Range}}
+\index{Iterator\+Range@{Iterator\+Range}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{Iterator\+Range(const T\+I \&\+\_\+it, const T\+I \&\+\_\+end)}{IteratorRange(const TI &_it, const TI &_end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::{\bf Iterator\+Range} (
+\begin{DoxyParamCaption}
+\item[{const TI \&}]{\+\_\+it, }
+\item[{const TI \&}]{\+\_\+end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_iterator_range_adb89135fc292dfc5152120bc7fe6135e}{}\label{classgnuplotio_1_1_iterator_range_adb89135fc292dfc5152120bc7fe6135e}
+
+
+Definition at line 863 of file gnuplot-\/iostream.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!deref@{deref}}
+\index{deref@{deref}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{deref() const }{deref() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ {\bf value\+\_\+type} {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::deref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_iterator_range_a58c90f44319ecc5efe43b80892d3b7f2}{}\label{classgnuplotio_1_1_iterator_range_a58c90f44319ecc5efe43b80892d3b7f2}
+
+
+Definition at line 874 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!deref\+\_\+subiter@{deref\+\_\+subiter}}
+\index{deref\+\_\+subiter@{deref\+\_\+subiter}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{deref\+\_\+subiter() const }{deref_subiter() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ {\bf subiter\+\_\+type} {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::deref\+\_\+subiter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_iterator_range_a03ee1f4e4e321d6c9676b632dcfc5969}{}\label{classgnuplotio_1_1_iterator_range_a03ee1f4e4e321d6c9676b632dcfc5969}
+
+
+Definition at line 883 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!inc@{inc}}
+\index{inc@{inc}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{inc()}{inc()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ void {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::inc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_iterator_range_a369f392a561011f8f1c93d13fd976878}{}\label{classgnuplotio_1_1_iterator_range_a369f392a561011f8f1c93d13fd976878}
+
+
+Definition at line 872 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!is\+\_\+end@{is\+\_\+end}}
+\index{is\+\_\+end@{is\+\_\+end}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{is\+\_\+end() const }{is_end() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ bool {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::is\+\_\+end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_iterator_range_a9146c3be94e09b6318cb0590b5816d1e}{}\label{classgnuplotio_1_1_iterator_range_a9146c3be94e09b6318cb0590b5816d1e}
+
+
+Definition at line 870 of file gnuplot-\/iostream.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}!is\+\_\+container@{is\+\_\+container}}
+\index{is\+\_\+container@{is\+\_\+container}!gnuplotio\+::\+Iterator\+Range@{gnuplotio\+::\+Iterator\+Range}}
+\subsubsection[{\texorpdfstring{is\+\_\+container}{is_container}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename TI , typename TV $>$ const bool {\bf gnuplotio\+::\+Iterator\+Range}$<$ TI, TV $>$\+::is\+\_\+container = {\bf Array\+Traits}$<$TV$>$\+::is\+\_\+container\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classgnuplotio_1_1_iterator_range_a3f79d84bdf18761b6e49ae54d050f8ff}{}\label{classgnuplotio_1_1_iterator_range_a3f79d84bdf18761b6e49ae54d050f8ff}
+
+
+Definition at line 865 of file gnuplot-\/iostream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{gnuplot-iostream_8h}{gnuplot-\/iostream.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,350 @@
+\hypertarget{gnuplot-iostream_8h}{}\section{include/gnuplot-\/iostream.h File Reference}
+\label{gnuplot-iostream_8h}\index{include/gnuplot-\/iostream.\+h@{include/gnuplot-\/iostream.\+h}}
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$complex$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$boost/iostreams/device/file\+\_\+descriptor.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/iostreams/stream.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/version.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/utility.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/tuple/tuple.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/mpl/bool.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/cstdint.\+hpp$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgnuplotio_1_1dont__treat__as__stl__container}{gnuplotio\+::dont\+\_\+treat\+\_\+as\+\_\+stl\+\_\+container$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1is__like__stl__container}{gnuplotio\+::is\+\_\+like\+\_\+stl\+\_\+container$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1is__boost__tuple__nulltype}{gnuplotio\+::is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1is__boost__tuple__nulltype_3_01boost_1_1tuples_1_1null__type_01_4}{gnuplotio\+::is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ boost\+::tuples\+::null\+\_\+type $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1is__boost__tuple}{gnuplotio\+::is\+\_\+boost\+\_\+tuple$<$ T $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_gnuplot_feedback}{gnuplotio\+::\+Gnuplot\+Feedback}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender}{gnuplotio\+::\+Text\+Sender$<$ T, Enable $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender}{gnuplotio\+::\+Binary\+Sender$<$ T, Enable $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_flat_binary_sender}{gnuplotio\+::\+Flat\+Binary\+Sender$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender}{gnuplotio\+::\+Binfmt\+Sender$<$ T, Enable $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01float_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ float $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01double_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ double $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int8__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::int8\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint8__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::uint8\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int16__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::int16\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint16__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::uint16\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int32__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::int32\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint32__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::uint32\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int64__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::int64\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint64__t_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ boost\+::uint64\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01float_01_4}{gnuplotio\+::\+Binary\+Sender$<$ float $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01double_01_4}{gnuplotio\+::\+Binary\+Sender$<$ double $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1int8__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::int8\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1uint8__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::uint8\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1int16__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::int16\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1uint16__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::uint16\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1int32__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::int32\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1uint32__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::uint32\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1int64__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::int64\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01boost_1_1uint64__t_01_4}{gnuplotio\+::\+Binary\+Sender$<$ boost\+::uint64\+\_\+t $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_cast_int_text_sender}{gnuplotio\+::\+Cast\+Int\+Text\+Sender$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01char_01_4}{gnuplotio\+::\+Text\+Sender$<$ char $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01signed_01char_01_4}{gnuplotio\+::\+Text\+Sender$<$ signed char $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01unsigned_01char_01_4}{gnuplotio\+::\+Text\+Sender$<$ unsigned char $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_float_text_sender}{gnuplotio\+::\+Float\+Text\+Sender$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01float_01_4}{gnuplotio\+::\+Text\+Sender$<$ float $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01double_01_4}{gnuplotio\+::\+Text\+Sender$<$ double $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01long_01double_01_4}{gnuplotio\+::\+Text\+Sender$<$ long double $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4}{gnuplotio\+::\+Text\+Sender$<$ std\+::pair$<$ T, U $>$ $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ std\+::pair$<$ T, U $>$ $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4}{gnuplotio\+::\+Binary\+Sender$<$ std\+::pair$<$ T, U $>$ $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01std_1_1complex_3_01_t_01_4_01_4}{gnuplotio\+::\+Text\+Sender$<$ std\+::complex$<$ T $>$ $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01std_1_1complex_3_01_t_01_4_01_4}{gnuplotio\+::\+Binfmt\+Sender$<$ std\+::complex$<$ T $>$ $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01std_1_1complex_3_01_t_01_4_01_4}{gnuplotio\+::\+Binary\+Sender$<$ std\+::complex$<$ T $>$ $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ad1ac3a3da167856c52be6ae54ba2c114}{gnuplotio\+::\+Text\+Sender$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, boost\+::mpl\+::not\+\_\+$<$ is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$ $>$\+::type $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_text_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ab6d6864cc1b3ed233c9f15134694f953}{gnuplotio\+::\+Text\+Sender$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$\+::type $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_e9270e5cb86823566a0af3940aa51061}{gnuplotio\+::\+Binfmt\+Sender$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, boost\+::mpl\+::not\+\_\+$<$ is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$ $>$\+::type $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binfmt_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_8c86f170c2e2969f5519817e5c367132}{gnuplotio\+::\+Binfmt\+Sender$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$\+::type $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_916ff7a758aa0b8917fd3b30ff275f06}{gnuplotio\+::\+Binary\+Sender$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, boost\+::mpl\+::not\+\_\+$<$ is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$ $>$\+::type $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_binary_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_29e1098ca8b7afc20f2ca0bc2e79506a}{gnuplotio\+::\+Binary\+Sender$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$\+::type $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_error___was_not_container}{gnuplotio\+::\+Error\+\_\+\+Was\+Not\+Container}
+\item 
+struct \hyperlink{structgnuplotio_1_1_error___inappropriate_deref}{gnuplotio\+::\+Error\+\_\+\+Inappropriate\+Deref}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits}{gnuplotio\+::\+Array\+Traits$<$ T, Enable $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits_defaults}{gnuplotio\+::\+Array\+Traits\+Defaults$<$ V $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits_3_01_t_01_6_01_4}{gnuplotio\+::\+Array\+Traits$<$ T \& $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_iterator_range}{gnuplotio\+::\+Iterator\+Range$<$ T\+I, T\+V $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01is__like__stl__co9e1736bbd08cd58c6993ab613a998887}{gnuplotio\+::\+Array\+Traits$<$ T, typename boost\+::enable\+\_\+if$<$ is\+\_\+like\+\_\+stl\+\_\+container$<$ T $>$ $>$\+::type $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits_3_01_t[_n]_4}{gnuplotio\+::\+Array\+Traits$<$ T\mbox{[}\+N\mbox{]}$>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_pair_of_range}{gnuplotio\+::\+Pair\+Of\+Range$<$ R\+T, R\+U $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4}{gnuplotio\+::\+Array\+Traits$<$ std\+::pair$<$ T, U $>$ $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1a8de3a8fe198d85f7f5d28b9a2f5bf229}{gnuplotio\+::\+Array\+Traits$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, boost\+::mpl\+::not\+\_\+$<$ is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$ $>$\+::type $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ad3fa8e75dccbaae12a06d17831678a88}{gnuplotio\+::\+Array\+Traits$<$ T, typename boost\+::enable\+\_\+if$<$ boost\+::mpl\+::and\+\_\+$<$ is\+\_\+boost\+\_\+tuple$<$ T $>$, is\+\_\+boost\+\_\+tuple\+\_\+nulltype$<$ typename T\+::tail\+\_\+type $>$ $>$ $>$\+::type $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1_vec_of_range}{gnuplotio\+::\+Vec\+Of\+Range$<$ R\+T $>$}
+\item 
+class \hyperlink{classgnuplotio_1_1plotting__empty__container}{gnuplotio\+::plotting\+\_\+empty\+\_\+container}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_text}{gnuplotio\+::\+Mode\+Text}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_binary}{gnuplotio\+::\+Mode\+Binary}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_binfmt}{gnuplotio\+::\+Mode\+Binfmt}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_size}{gnuplotio\+::\+Mode\+Size}
+\item 
+struct \hyperlink{structgnuplotio_1_1_col_unwrap_no}{gnuplotio\+::\+Col\+Unwrap\+No}
+\item 
+struct \hyperlink{structgnuplotio_1_1_col_unwrap_yes}{gnuplotio\+::\+Col\+Unwrap\+Yes}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode1_d}{gnuplotio\+::\+Mode1D}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode2_d}{gnuplotio\+::\+Mode2D}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode1_d_unwrap}{gnuplotio\+::\+Mode1\+D\+Unwrap}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode2_d_unwrap}{gnuplotio\+::\+Mode2\+D\+Unwrap}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_auto}{gnuplotio\+::\+Mode\+Auto}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_auto_decoder}{gnuplotio\+::\+Mode\+Auto\+Decoder$<$ T, Enable $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arraea646779afc1e35efaeffcebe81e18a0}{gnuplotio\+::type$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arra33ab7f3325313485a7f29355d9a819fc}{gnuplotio\+::type$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arra8faa7fb46cef74a29a23f22c000e4a99}{gnuplotio\+::type$<$ T $>$}
+\item 
+struct \hyperlink{structgnuplotio_1_1_file_handle_wrapper}{gnuplotio\+::\+File\+Handle\+Wrapper}
+\item 
+class \hyperlink{classgnuplotio_1_1_gnuplot}{gnuplotio\+::\+Gnuplot}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegnuplotio}{gnuplotio}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_ab3ce4a7287aefeb9af2345e08cb2d5c6}{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+O\+S\+T\+R\+E\+A\+M\+\_\+\+V\+E\+R\+S\+I\+ON}~2
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_aff01a99842ed9eb01a166d4bf19543c9}{G\+N\+U\+P\+L\+O\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+X\+X11}~(\+\_\+\+\_\+cplusplus $>$= 201103)
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_a763d85d6a998475c41e5bea11e6f0a16}{G\+N\+U\+P\+L\+O\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+SG}(cond,  msg)~B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT((cond))
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_aceaee9cbe0b7786c1ee8aa2e8b79ed1a}{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}(msg)
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_aed027791e656970e6de95b047dc375b1}{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+C\+L\+O\+SE}~pclose
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_a92922430eb3df3ace3b18c75b91a0ab8}{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+O\+P\+EN}~popen
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_abcc0f8f4d67f147c013bb33b55dc3a16}{G\+N\+U\+P\+L\+O\+T\+\_\+\+F\+I\+L\+E\+NO}~fileno
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_ac10f83c29b94951000138a0ab2054956}{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+S\+N\+AN}~std\+::isnan
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_aef2d72925bdeb9f505df49edbf7579bf}{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+U\+SH}
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_a4429193ca854af851cec4220c2d9102e}{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+OP}
+\item 
+\#define \hyperlink{gnuplot-iostream_8h_afe4b1cc99e87d3bb8bbb07280db4b697}{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+M\+A\+ND}~\char`\"{}gnuplot -\/persist\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\Vec\+Of\+Range$<$ typename Array\+Traits$<$ T $>$\+::range\+\_\+type\+::subiter\+\_\+type $>$ \hyperlink{namespacegnuplotio_a64984827dd8debb9098ad1afdde8e409}{gnuplotio\+::get\+\_\+columns\+\_\+range} (const T \&arg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacegnuplotio_a55ff2f9abaa4b3e1c64a8f730f791b33}{gnuplotio\+::send\+\_\+scalar} (std\+::ostream \&stream, const T \&arg, Mode\+Text)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacegnuplotio_a05022d6e136d8ed89a2bef0f61443332}{gnuplotio\+::send\+\_\+scalar} (std\+::ostream \&stream, const T \&arg, Mode\+Binary)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacegnuplotio_a926e0935a02d83735da2c34cfbad133f}{gnuplotio\+::send\+\_\+scalar} (std\+::ostream \&stream, const T \&, Mode\+Binfmt)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\boost\+::disable\+\_\+if\+\_\+c$<$ T\+::is\+\_\+container $>$\+::type \hyperlink{namespacegnuplotio_a66d64f716e539dc233f8183b4ce71c09}{gnuplotio\+::deref\+\_\+and\+\_\+print} (std\+::ostream \&stream, const T \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\boost\+::enable\+\_\+if\+\_\+c$<$ T\+::is\+\_\+container $>$\+::type \hyperlink{namespacegnuplotio_a8c6b699dd18c419d597a008b74eda41a}{gnuplotio\+::deref\+\_\+and\+\_\+print} (std\+::ostream \&stream, const T \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename U , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_acd0cb4bd9679f0b75bac15c8afcc10e6}{gnuplotio\+::deref\+\_\+and\+\_\+print} (std\+::ostream \&stream, const Pair\+Of\+Range$<$ T, U $>$ \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_ae768911c8adb77bfc080d5e4561573e6}{gnuplotio\+::deref\+\_\+and\+\_\+print} (std\+::ostream \&stream, const Vec\+Of\+Range$<$ T $>$ \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$size\+\_\+t Depth, typename T , typename Print\+Mode $>$ }\\boost\+::enable\+\_\+if\+\_\+c$<$(Depth==1)\&\&!Print\+Mode\+::is\+\_\+size $>$\+::type \hyperlink{namespacegnuplotio_a631368ab4e255d2a5d563a41895f2edc}{gnuplotio\+::print\+\_\+block} (std\+::ostream \&stream, T \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$size\+\_\+t Depth, typename T , typename Print\+Mode $>$ }\\boost\+::enable\+\_\+if\+\_\+c$<$(Depth $>$1)\&\&!Print\+Mode\+::is\+\_\+size $>$\+::type \hyperlink{namespacegnuplotio_a753a3551f418723c022be60c12379025}{gnuplotio\+::print\+\_\+block} (std\+::ostream \&stream, T \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T $>$ }\\size\+\_\+t \hyperlink{namespacegnuplotio_abb416b68686102ba84a2cb53c96b64e9}{gnuplotio\+::get\+\_\+range\+\_\+size} (const T \&arg)
+\item 
+{\footnotesize template$<$size\+\_\+t Depth, typename T , typename Print\+Mode $>$ }\\boost\+::enable\+\_\+if\+\_\+c$<$(Depth==1)\&\&Print\+Mode\+::is\+\_\+size $>$\+::type \hyperlink{namespacegnuplotio_ae470a0908ac5f51527ff76ecbc1616d1}{gnuplotio\+::print\+\_\+block} (std\+::ostream \&stream, T \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$size\+\_\+t Depth, typename T , typename Print\+Mode $>$ }\\boost\+::enable\+\_\+if\+\_\+c$<$(Depth $>$1)\&\&Print\+Mode\+::is\+\_\+size $>$\+::type \hyperlink{namespacegnuplotio_a94e97ca55dc1e5142dcc4457a5e1dd2d}{gnuplotio\+::print\+\_\+block} (std\+::ostream \&stream, T \&arg, Print\+Mode)
+\item 
+{\footnotesize template$<$size\+\_\+t Depth, typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_aef147f3d42f3f2c89cc4c895b8494150}{gnuplotio\+::handle\+\_\+colunwrap\+\_\+tag} (std\+::ostream \&stream, const T \&arg, Col\+Unwrap\+No, Print\+Mode)
+\item 
+{\footnotesize template$<$size\+\_\+t Depth, typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_a3b8981d3f39de8a058b5f18484f06c3c}{gnuplotio\+::handle\+\_\+colunwrap\+\_\+tag} (std\+::ostream \&stream, const T \&arg, Col\+Unwrap\+Yes, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_af809657552a53c3b17f0400a5c210a7f}{gnuplotio\+::handle\+\_\+organization\+\_\+tag} (std\+::ostream \&stream, const T \&arg, Mode1D, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_a1310221abf0551a805d4482f0612317b}{gnuplotio\+::handle\+\_\+organization\+\_\+tag} (std\+::ostream \&stream, const T \&arg, Mode2D, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_a99e6125b97bc2ca4241f6275d83f05d4}{gnuplotio\+::handle\+\_\+organization\+\_\+tag} (std\+::ostream \&stream, const T \&arg, Mode1\+D\+Unwrap, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_a9d2cee7a7f2ed9748a0f135b206836d3}{gnuplotio\+::handle\+\_\+organization\+\_\+tag} (std\+::ostream \&stream, const T \&arg, Mode2\+D\+Unwrap, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_affc9cb6a9b6e5630523f0dbf8acdfcc2}{gnuplotio\+::handle\+\_\+organization\+\_\+tag} (std\+::ostream \&stream, const T \&arg, Mode\+Auto, Print\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Organization\+Mode , typename Print\+Mode $>$ }\\void \hyperlink{namespacegnuplotio_a1e452d861932700749421ce103ef8d48}{gnuplotio\+::top\+\_\+level\+\_\+array\+\_\+sender} (std\+::ostream \&stream, const T \&arg, Organization\+Mode, Print\+Mode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+M\+A\+ND@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+M\+A\+ND}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+M\+A\+ND@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+M\+A\+ND}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+M\+A\+ND}{GNUPLOT_DEFAULT_COMMAND}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+M\+A\+ND~\char`\"{}gnuplot -\/persist\char`\"{}}\hypertarget{gnuplot-iostream_8h_afe4b1cc99e87d3bb8bbb07280db4b697}{}\label{gnuplot-iostream_8h_afe4b1cc99e87d3bb8bbb07280db4b697}
+
+
+Definition at line 164 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}{GNUPLOT_DEPRECATE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{gnuplot-iostream_8h_aceaee9cbe0b7786c1ee8aa2e8b79ed1a}{}\label{gnuplot-iostream_8h_aceaee9cbe0b7786c1ee8aa2e8b79ed1a}
+
+
+Definition at line 117 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+X\+X11@{G\+N\+U\+P\+L\+O\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+X\+X11}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+X\+X11@{G\+N\+U\+P\+L\+O\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+X\+X11}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+X\+X11}{GNUPLOT_ENABLE_CXX11}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+X\+X11~(\+\_\+\+\_\+cplusplus $>$= 201103)}\hypertarget{gnuplot-iostream_8h_aff01a99842ed9eb01a166d4bf19543c9}{}\label{gnuplot-iostream_8h_aff01a99842ed9eb01a166d4bf19543c9}
+
+
+Definition at line 47 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+F\+I\+L\+E\+NO@{G\+N\+U\+P\+L\+O\+T\+\_\+\+F\+I\+L\+E\+NO}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+F\+I\+L\+E\+NO@{G\+N\+U\+P\+L\+O\+T\+\_\+\+F\+I\+L\+E\+NO}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+F\+I\+L\+E\+NO}{GNUPLOT_FILENO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+F\+I\+L\+E\+NO~fileno}\hypertarget{gnuplot-iostream_8h_abcc0f8f4d67f147c013bb33b55dc3a16}{}\label{gnuplot-iostream_8h_abcc0f8f4d67f147c013bb33b55dc3a16}
+
+
+Definition at line 129 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+O\+S\+T\+R\+E\+A\+M\+\_\+\+V\+E\+R\+S\+I\+ON@{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+O\+S\+T\+R\+E\+A\+M\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+O\+S\+T\+R\+E\+A\+M\+\_\+\+V\+E\+R\+S\+I\+ON@{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+O\+S\+T\+R\+E\+A\+M\+\_\+\+V\+E\+R\+S\+I\+ON}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+O\+S\+T\+R\+E\+A\+M\+\_\+\+V\+E\+R\+S\+I\+ON}{GNUPLOT_IOSTREAM_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+O\+S\+T\+R\+E\+A\+M\+\_\+\+V\+E\+R\+S\+I\+ON~2}\hypertarget{gnuplot-iostream_8h_ab3ce4a7287aefeb9af2345e08cb2d5c6}{}\label{gnuplot-iostream_8h_ab3ce4a7287aefeb9af2345e08cb2d5c6}
+
+
+Definition at line 44 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+S\+N\+AN@{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+S\+N\+AN}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+S\+N\+AN@{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+S\+N\+AN}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+S\+N\+AN}{GNUPLOT_ISNAN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+I\+S\+N\+AN~std\+::isnan}\hypertarget{gnuplot-iostream_8h_ac10f83c29b94951000138a0ab2054956}{}\label{gnuplot-iostream_8h_ac10f83c29b94951000138a0ab2054956}
+
+
+Definition at line 137 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+OP@{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+OP}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+OP@{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+OP}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+OP}{GNUPLOT_MSVC_WARNING_4996_POP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+OP}\hypertarget{gnuplot-iostream_8h_a4429193ca854af851cec4220c2d9102e}{}\label{gnuplot-iostream_8h_a4429193ca854af851cec4220c2d9102e}
+
+
+Definition at line 152 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+U\+SH@{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+U\+SH}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+U\+SH@{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+U\+SH}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+U\+SH}{GNUPLOT_MSVC_WARNING_4996_PUSH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+M\+S\+V\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+4996\+\_\+\+P\+U\+SH}\hypertarget{gnuplot-iostream_8h_aef2d72925bdeb9f505df49edbf7579bf}{}\label{gnuplot-iostream_8h_aef2d72925bdeb9f505df49edbf7579bf}
+
+
+Definition at line 151 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+C\+L\+O\+SE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+C\+L\+O\+SE}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+C\+L\+O\+SE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+C\+L\+O\+SE}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+C\+L\+O\+SE}{GNUPLOT_PCLOSE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+C\+L\+O\+SE~pclose}\hypertarget{gnuplot-iostream_8h_aed027791e656970e6de95b047dc375b1}{}\label{gnuplot-iostream_8h_aed027791e656970e6de95b047dc375b1}
+
+
+Definition at line 127 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+O\+P\+EN@{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+O\+P\+EN}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+O\+P\+EN@{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+O\+P\+EN}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+O\+P\+EN}{GNUPLOT_POPEN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+P\+O\+P\+EN~popen}\hypertarget{gnuplot-iostream_8h_a92922430eb3df3ace3b18c75b91a0ab8}{}\label{gnuplot-iostream_8h_a92922430eb3df3ace3b18c75b91a0ab8}
+
+
+Definition at line 128 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}!G\+N\+U\+P\+L\+O\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+SG@{G\+N\+U\+P\+L\+O\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+SG}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+SG@{G\+N\+U\+P\+L\+O\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+SG}!gnuplot-\/iostream.\+h@{gnuplot-\/iostream.\+h}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+SG}{GNUPLOT_STATIC_ASSERT_MSG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+N\+U\+P\+L\+O\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+M\+SG(
+\begin{DoxyParamCaption}
+\item[{}]{cond, }
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)~B\+O\+O\+S\+T\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT((cond))}\hypertarget{gnuplot-iostream_8h_a763d85d6a998475c41e5bea11e6f0a16}{}\label{gnuplot-iostream_8h_a763d85d6a998475c41e5bea11e6f0a16}
+
+
+Definition at line 104 of file gnuplot-\/iostream.\+h.
+

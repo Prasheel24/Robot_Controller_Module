@@ -9,24 +9,18 @@ Class \hyperlink{class_steer_algorithm}{Steer\+Algorithm} contains the methods o
 
 {\ttfamily \#include $<$Steer\+Algorithm.\+hpp$>$}
 
-
-
-Inheritance diagram for Steer\+Algorithm\+:
-\nopagebreak
-\begin{figure}[H]
+Inheritance diagram for Steer\+Algorithm\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=161pt]{class_steer_algorithm__inherit__graph}
+\includegraphics[height=3.000000cm]{class_steer_algorithm}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_steer_algorithm_af64dd94816ab9d00d85227a42b26a3e8}{Steer\+Algorithm} ()\hypertarget{class_steer_algorithm_af64dd94816ab9d00d85227a42b26a3e8}{}\label{class_steer_algorithm_af64dd94816ab9d00d85227a42b26a3e8}
-
+\hyperlink{class_steer_algorithm_af64dd94816ab9d00d85227a42b26a3e8}{Steer\+Algorithm} ()
 \begin{DoxyCompactList}\small\item\em Constructor of class \hyperlink{class_steer_algorithm}{Steer\+Algorithm}. \end{DoxyCompactList}\item 
-\hyperlink{class_steer_algorithm_a37dd2ef0ed856582aaacc103a6cd6700}{$\sim$\+Steer\+Algorithm} ()\hypertarget{class_steer_algorithm_a37dd2ef0ed856582aaacc103a6cd6700}{}\label{class_steer_algorithm_a37dd2ef0ed856582aaacc103a6cd6700}
-
+\hyperlink{class_steer_algorithm_a37dd2ef0ed856582aaacc103a6cd6700}{$\sim$\+Steer\+Algorithm} ()
 \begin{DoxyCompactList}\small\item\em Destructor of class \hyperlink{class_steer_algorithm}{Steer\+Algorithm}. \end{DoxyCompactList}\item 
 double \hyperlink{class_steer_algorithm_a06a7dd049280fab40d1b54c912daf399}{get\+Corr\+Radius\+\_\+} ()
 \begin{DoxyCompactList}\small\item\em Function to get corresponding radius in meters. \end{DoxyCompactList}\item 
@@ -34,7 +28,7 @@ bool \hyperlink{class_steer_algorithm_a93cf1fc7d06376ddeaa4e81f2b0a22cc}{set\+Co
 \begin{DoxyCompactList}\small\item\em Function to set corresponding radius in meters. \end{DoxyCompactList}\item 
 double \hyperlink{class_steer_algorithm_a17ff78af17e900f752237d274bcf751d}{arc\+Length} (double diff\+Angle, double corr\+Radius)
 \begin{DoxyCompactList}\small\item\em Function to calculate the length of arc in meters to be traced in order to head in target direction. \end{DoxyCompactList}\item 
-double \hyperlink{class_steer_algorithm_a6067af69593713f561890ae8ad23f5ff}{change\+Wheel\+Angles} (double corr\+Radius, double shaft\+Length, double shaft\+Distance)
+double \hyperlink{class_steer_algorithm_a6067af69593713f561890ae8ad23f5ff}{change\+Wheel\+Angles} (double corr\+Radius, double \hyperlink{class_steer_algorithm_a9d5bc20acba39f0e53c3d0f6fc280433}{shaft\+Length}, double \hyperlink{class_steer_algorithm_a38bc87552a30e8eda8f647cf341c9657}{shaft\+Distance})
 \begin{DoxyCompactList}\small\item\em Function to calculate the angles in degrees for left and right wheels as per ackermann model, and then feed them to corresponding servos. \end{DoxyCompactList}\item 
 bool \hyperlink{class_steer_algorithm_ab251b6fd1f88fb7a526b0d55cd12625b}{reset\+Wheel} ()
 \begin{DoxyCompactList}\small\item\em Function to set wheel angles to 0. \end{DoxyCompactList}\item 
@@ -43,28 +37,59 @@ double \hyperlink{class_steer_algorithm_aefdb433f65c47bf6e0d6af5de98c8f5a}{turn\
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-const double {\bfseries shaft\+Length} = 4\hypertarget{class_steer_algorithm_a9d5bc20acba39f0e53c3d0f6fc280433}{}\label{class_steer_algorithm_a9d5bc20acba39f0e53c3d0f6fc280433}
-
+const double \hyperlink{class_steer_algorithm_a9d5bc20acba39f0e53c3d0f6fc280433}{shaft\+Length} = 4
 \item 
-const double {\bfseries shaft\+Distance} = 8\hypertarget{class_steer_algorithm_a38bc87552a30e8eda8f647cf341c9657}{}\label{class_steer_algorithm_a38bc87552a30e8eda8f647cf341c9657}
-
+const double \hyperlink{class_steer_algorithm_a38bc87552a30e8eda8f647cf341c9657}{shaft\+Distance} = 8
 \item 
-const double {\bfseries max\+Turn\+Velocity} = 20\hypertarget{class_steer_algorithm_acfce52839329f0ebb316f633494466e1}{}\label{class_steer_algorithm_acfce52839329f0ebb316f633494466e1}
-
+const double \hyperlink{class_steer_algorithm_acfce52839329f0ebb316f633494466e1}{max\+Turn\+Velocity} = 20
 \item 
-double {\bfseries heading}\hypertarget{class_steer_algorithm_ada73b1f087245af5cda5d1d6b9be7d31}{}\label{class_steer_algorithm_ada73b1f087245af5cda5d1d6b9be7d31}
-
+double \hyperlink{class_steer_algorithm_ada73b1f087245af5cda5d1d6b9be7d31}{heading}
 \item 
-double {\bfseries target\+Heading}\hypertarget{class_steer_algorithm_a071efeb53e86ee949940b0ab10986044}{}\label{class_steer_algorithm_a071efeb53e86ee949940b0ab10986044}
-
+double \hyperlink{class_steer_algorithm_a071efeb53e86ee949940b0ab10986044}{target\+Heading}
 \item 
-int {\bfseries dir}\hypertarget{class_steer_algorithm_af6ad5604b62eec22cc2d385c7683d019}{}\label{class_steer_algorithm_af6ad5604b62eec22cc2d385c7683d019}
-
+int \hyperlink{class_steer_algorithm_af6ad5604b62eec22cc2d385c7683d019}{dir}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Class \hyperlink{class_steer_algorithm}{Steer\+Algorithm} contains the methods of the Steering Algorithm. 
+
+Definition at line 40 of file Steer\+Algorithm.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Steer\+Algorithm@{Steer\+Algorithm}!Steer\+Algorithm@{Steer\+Algorithm}}
+\index{Steer\+Algorithm@{Steer\+Algorithm}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{Steer\+Algorithm()}{SteerAlgorithm()}}]{\setlength{\rightskip}{0pt plus 5cm}Steer\+Algorithm\+::\+Steer\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_steer_algorithm_af64dd94816ab9d00d85227a42b26a3e8}{}\label{class_steer_algorithm_af64dd94816ab9d00d85227a42b26a3e8}
+
+
+Constructor of class \hyperlink{class_steer_algorithm}{Steer\+Algorithm}. 
+
+
+
+Definition at line 45 of file Steer\+Algorithm.\+cpp.
+
+\index{Steer\+Algorithm@{Steer\+Algorithm}!````~Steer\+Algorithm@{$\sim$\+Steer\+Algorithm}}
+\index{````~Steer\+Algorithm@{$\sim$\+Steer\+Algorithm}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{$\sim$\+Steer\+Algorithm()}{~SteerAlgorithm()}}]{\setlength{\rightskip}{0pt plus 5cm}Steer\+Algorithm\+::$\sim$\+Steer\+Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_steer_algorithm_a37dd2ef0ed856582aaacc103a6cd6700}{}\label{class_steer_algorithm_a37dd2ef0ed856582aaacc103a6cd6700}
+
+
+Destructor of class \hyperlink{class_steer_algorithm}{Steer\+Algorithm}. 
+
+
+
+Definition at line 59 of file Steer\+Algorithm.\+cpp.
+
+
 
 \subsection{Member Function Documentation}
 \index{Steer\+Algorithm@{Steer\+Algorithm}!arc\+Length@{arc\+Length}}
@@ -89,6 +114,10 @@ Function to calculate the length of arc in meters to be traced in order to head 
 \begin{DoxyReturn}{Returns}
 double arclength 
 \end{DoxyReturn}
+
+
+Definition at line 92 of file Steer\+Algorithm.\+cpp.
+
 \index{Steer\+Algorithm@{Steer\+Algorithm}!change\+Wheel\+Angles@{change\+Wheel\+Angles}}
 \index{change\+Wheel\+Angles@{change\+Wheel\+Angles}!Steer\+Algorithm@{Steer\+Algorithm}}
 \subsubsection[{\texorpdfstring{change\+Wheel\+Angles(double corr\+Radius, double shaft\+Length, double shaft\+Distance)}{changeWheelAngles(double corrRadius, double shaftLength, double shaftDistance)}}]{\setlength{\rightskip}{0pt plus 5cm}double Steer\+Algorithm\+::change\+Wheel\+Angles (
@@ -114,6 +143,10 @@ Function to calculate the angles in degrees for left and right wheels as per ack
 \begin{DoxyReturn}{Returns}
 double max\+Wheel\+Angle 
 \end{DoxyReturn}
+
+
+Definition at line 114 of file Steer\+Algorithm.\+cpp.
+
 \index{Steer\+Algorithm@{Steer\+Algorithm}!get\+Corr\+Radius\+\_\+@{get\+Corr\+Radius\+\_\+}}
 \index{get\+Corr\+Radius\+\_\+@{get\+Corr\+Radius\+\_\+}!Steer\+Algorithm@{Steer\+Algorithm}}
 \subsubsection[{\texorpdfstring{get\+Corr\+Radius\+\_\+()}{getCorrRadius_()}}]{\setlength{\rightskip}{0pt plus 5cm}double Steer\+Algorithm\+::get\+Corr\+Radius\+\_\+ (
@@ -133,6 +166,10 @@ Function to get corresponding radius in meters.
 \begin{DoxyReturn}{Returns}
 double corresponding radius 
 \end{DoxyReturn}
+
+
+Definition at line 66 of file Steer\+Algorithm.\+cpp.
+
 \index{Steer\+Algorithm@{Steer\+Algorithm}!reset\+Wheel@{reset\+Wheel}}
 \index{reset\+Wheel@{reset\+Wheel}!Steer\+Algorithm@{Steer\+Algorithm}}
 \subsubsection[{\texorpdfstring{reset\+Wheel()}{resetWheel()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Steer\+Algorithm\+::reset\+Wheel (
@@ -152,6 +189,10 @@ Function to set wheel angles to 0.
 \begin{DoxyReturn}{Returns}
 bool true 
 \end{DoxyReturn}
+
+
+Definition at line 137 of file Steer\+Algorithm.\+cpp.
+
 \index{Steer\+Algorithm@{Steer\+Algorithm}!set\+Corr\+Radius\+\_\+@{set\+Corr\+Radius\+\_\+}}
 \index{set\+Corr\+Radius\+\_\+@{set\+Corr\+Radius\+\_\+}!Steer\+Algorithm@{Steer\+Algorithm}}
 \subsubsection[{\texorpdfstring{set\+Corr\+Radius\+\_\+(double r)}{setCorrRadius_(double r)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Steer\+Algorithm\+::set\+Corr\+Radius\+\_\+ (
@@ -171,6 +212,10 @@ Function to set corresponding radius in meters.
 \begin{DoxyReturn}{Returns}
 bool true 
 \end{DoxyReturn}
+
+
+Definition at line 75 of file Steer\+Algorithm.\+cpp.
+
 \index{Steer\+Algorithm@{Steer\+Algorithm}!turn\+Time@{turn\+Time}}
 \index{turn\+Time@{turn\+Time}!Steer\+Algorithm@{Steer\+Algorithm}}
 \subsubsection[{\texorpdfstring{turn\+Time(double arclength, double new\+Velocity)}{turnTime(double arclength, double newVelocity)}}]{\setlength{\rightskip}{0pt plus 5cm}double Steer\+Algorithm\+::turn\+Time (
@@ -193,6 +238,55 @@ Function to calculate time in seconds required to turn or keep wheels at the an 
 \begin{DoxyReturn}{Returns}
 double time 
 \end{DoxyReturn}
+
+
+Definition at line 154 of file Steer\+Algorithm.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Steer\+Algorithm@{Steer\+Algorithm}!dir@{dir}}
+\index{dir@{dir}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{dir}{dir}}]{\setlength{\rightskip}{0pt plus 5cm}int Steer\+Algorithm\+::dir}\hypertarget{class_steer_algorithm_af6ad5604b62eec22cc2d385c7683d019}{}\label{class_steer_algorithm_af6ad5604b62eec22cc2d385c7683d019}
+
+
+Definition at line 51 of file Steer\+Algorithm.\+hpp.
+
+\index{Steer\+Algorithm@{Steer\+Algorithm}!heading@{heading}}
+\index{heading@{heading}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{heading}{heading}}]{\setlength{\rightskip}{0pt plus 5cm}double Steer\+Algorithm\+::heading}\hypertarget{class_steer_algorithm_ada73b1f087245af5cda5d1d6b9be7d31}{}\label{class_steer_algorithm_ada73b1f087245af5cda5d1d6b9be7d31}
+
+
+Definition at line 49 of file Steer\+Algorithm.\+hpp.
+
+\index{Steer\+Algorithm@{Steer\+Algorithm}!max\+Turn\+Velocity@{max\+Turn\+Velocity}}
+\index{max\+Turn\+Velocity@{max\+Turn\+Velocity}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{max\+Turn\+Velocity}{maxTurnVelocity}}]{\setlength{\rightskip}{0pt plus 5cm}const double Steer\+Algorithm\+::max\+Turn\+Velocity = 20}\hypertarget{class_steer_algorithm_acfce52839329f0ebb316f633494466e1}{}\label{class_steer_algorithm_acfce52839329f0ebb316f633494466e1}
+
+
+Definition at line 48 of file Steer\+Algorithm.\+hpp.
+
+\index{Steer\+Algorithm@{Steer\+Algorithm}!shaft\+Distance@{shaft\+Distance}}
+\index{shaft\+Distance@{shaft\+Distance}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{shaft\+Distance}{shaftDistance}}]{\setlength{\rightskip}{0pt plus 5cm}const double Steer\+Algorithm\+::shaft\+Distance = 8}\hypertarget{class_steer_algorithm_a38bc87552a30e8eda8f647cf341c9657}{}\label{class_steer_algorithm_a38bc87552a30e8eda8f647cf341c9657}
+
+
+Definition at line 47 of file Steer\+Algorithm.\+hpp.
+
+\index{Steer\+Algorithm@{Steer\+Algorithm}!shaft\+Length@{shaft\+Length}}
+\index{shaft\+Length@{shaft\+Length}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{shaft\+Length}{shaftLength}}]{\setlength{\rightskip}{0pt plus 5cm}const double Steer\+Algorithm\+::shaft\+Length = 4}\hypertarget{class_steer_algorithm_a9d5bc20acba39f0e53c3d0f6fc280433}{}\label{class_steer_algorithm_a9d5bc20acba39f0e53c3d0f6fc280433}
+
+
+Definition at line 46 of file Steer\+Algorithm.\+hpp.
+
+\index{Steer\+Algorithm@{Steer\+Algorithm}!target\+Heading@{target\+Heading}}
+\index{target\+Heading@{target\+Heading}!Steer\+Algorithm@{Steer\+Algorithm}}
+\subsubsection[{\texorpdfstring{target\+Heading}{targetHeading}}]{\setlength{\rightskip}{0pt plus 5cm}double Steer\+Algorithm\+::target\+Heading}\hypertarget{class_steer_algorithm_a071efeb53e86ee949940b0ab10986044}{}\label{class_steer_algorithm_a071efeb53e86ee949940b0ab10986044}
+
+
+Definition at line 50 of file Steer\+Algorithm.\+hpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

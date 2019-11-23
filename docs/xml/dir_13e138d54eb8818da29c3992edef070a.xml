@@ -3,6 +3,7 @@
   <compounddef id="dir_13e138d54eb8818da29c3992edef070a" kind="dir">
     <compoundname>test</compoundname>
     <innerfile refid="test_2main_8cpp">main.cpp</innerfile>
+    <innerfile refid="mock_navigation_8cpp">mockNavigation.cpp</innerfile>
     <innerfile refid="test_navigation_8cpp">testNavigation.cpp</innerfile>
     <innerfile refid="test_steer_algorithm_8cpp">testSteerAlgorithm.cpp</innerfile>
     <briefdescription>

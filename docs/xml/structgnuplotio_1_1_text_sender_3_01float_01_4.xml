@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1_text_sender_3_01float_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::TextSender&lt; float &gt;</compoundname>
+    <basecompoundref refid="structgnuplotio_1_1_float_text_sender" prot="public" virt="non-virtual">gnuplotio::FloatTextSender&lt; float &gt;</basecompoundref>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="195">
+        <label>gnuplotio::FloatTextSender&lt; float &gt;</label>
+        <link refid="structgnuplotio_1_1_float_text_sender"/>
+      </node>
+      <node id="194">
+        <label>gnuplotio::TextSender&lt; float &gt;</label>
+        <link refid="structgnuplotio_1_1_text_sender_3_01float_01_4"/>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="197">
+        <label>gnuplotio::FloatTextSender&lt; float &gt;</label>
+        <link refid="structgnuplotio_1_1_float_text_sender"/>
+      </node>
+      <node id="196">
+        <label>gnuplotio::TextSender&lt; float &gt;</label>
+        <link refid="structgnuplotio_1_1_text_sender_3_01float_01_4"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/gnuplot-iostream.h" line="510" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="510" bodyend="510"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1_float_text_sender_1aed6b6c3a95b1396688800d6d1f2fc299" prot="public" virt="non-virtual"><scope>gnuplotio::TextSender&lt; float &gt;</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

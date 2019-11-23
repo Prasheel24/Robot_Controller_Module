@@ -1,0 +1,97 @@
+.TH "gnuplotio::ArrayTraits< std::pair< T, U > >" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnuplotio::ArrayTraits< std::pair< T, U > > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gnuplot\-iostream\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBPairOfRange\fP< typename \fBArrayTraits\fP< T >::\fBrange_type\fP, typename \fBArrayTraits\fP< U >::\fBrange_type\fP > \fBrange_type\fP"
+.br
+.ti -1c
+.RI "typedef std::pair< typename \fBArrayTraits\fP< T >::\fBvalue_type\fP, typename \fBArrayTraits\fP< U >::\fBvalue_type\fP > \fBvalue_type\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBrange_type\fP \fBget_range\fP (const std::pair< T, U > &arg)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const bool \fBis_container\fP = \fBArrayTraits\fP<T>::is_container && \fBArrayTraits\fP<U>::is_container"
+.br
+.ti -1c
+.RI "static const bool \fBallow_auto_unwrap\fP = false"
+.br
+.ti -1c
+.RI "static const size_t \fBl_depth\fP = \fBArrayTraits\fP<T>::\fBdepth\fP"
+.br
+.ti -1c
+.RI "static const size_t \fBr_depth\fP = \fBArrayTraits\fP<U>::\fBdepth\fP"
+.br
+.ti -1c
+.RI "static const size_t \fBdepth\fP = (\fBl_depth\fP < \fBr_depth\fP) ? \fBl_depth\fP : \fBr_depth\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename T, typename U>
+.br
+class gnuplotio::ArrayTraits< std::pair< T, U > >"
+
+.PP
+Definition at line 968 of file gnuplot\-iostream\&.h\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename T , typename U > typedef \fBPairOfRange\fP<typename \fBArrayTraits\fP<T>::\fBrange_type\fP, typename \fBArrayTraits\fP<U>::\fBrange_type\fP> \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::\fBrange_type\fP"
+
+.PP
+Definition at line 970 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename U > typedef std::pair<typename \fBArrayTraits\fP<T>::\fBvalue_type\fP, typename \fBArrayTraits\fP<U>::\fBvalue_type\fP> \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::\fBvalue_type\fP"
+
+.PP
+Definition at line 971 of file gnuplot\-iostream\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T , typename U > static \fBrange_type\fP \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::get_range (const std::pair< T, U > & arg)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 981 of file gnuplot\-iostream\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename T , typename U > const bool \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::allow_auto_unwrap = false\fC [static]\fP"
+
+.PP
+Definition at line 974 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename U > const size_t \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::depth = (\fBl_depth\fP < \fBr_depth\fP) ? \fBl_depth\fP : \fBr_depth\fP\fC [static]\fP"
+
+.PP
+Definition at line 979 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename U > const bool \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::is_container = \fBArrayTraits\fP<T>::is_container && \fBArrayTraits\fP<U>::is_container\fC [static]\fP"
+
+.PP
+Definition at line 972 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename U > const size_t \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::l_depth = \fBArrayTraits\fP<T>::\fBdepth\fP\fC [static]\fP"
+
+.PP
+Definition at line 977 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename U > const size_t \fBgnuplotio::ArrayTraits\fP< std::pair< T, U > >::r_depth = \fBArrayTraits\fP<U>::\fBdepth\fP\fC [static]\fP"
+
+.PP
+Definition at line 978 of file gnuplot\-iostream\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgnuplotio_1_1_binfmt_sender" kind="struct" language="C++" prot="public">
+    <compoundname>gnuplotio::BinfmtSender</compoundname>
+    <includes refid="gnuplot-iostream_8h" local="no">gnuplot-iostream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Enable</declname>
+        <defname>Enable</defname>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgnuplotio_1_1_binfmt_sender_1ab0b554a2e81309917b2fa6f480e2a8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gnuplotio::BinfmtSender&lt; T, Enable &gt;::GNUPLOT_STATIC_ASSERT_MSG</definition>
+        <argsstring>((sizeof(T)==0),&quot;BinfmtSender class not specialized for this type&quot;)</argsstring>
+        <name>GNUPLOT_STATIC_ASSERT_MSG</name>
+        <param>
+          <type>(sizeof(T)==0)</type>
+        </param>
+        <param>
+          <type>&quot;BinfmtSender class not specialized for this type&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="460" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgnuplotio_1_1_binfmt_sender_1a762010e3172c02e981252f93185b29c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gnuplotio::BinfmtSender&lt; T, Enable &gt;::send</definition>
+        <argsstring>(std::ostream &amp;)</argsstring>
+        <name>send</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="463" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/gnuplot-iostream.h" line="459" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="459" bodyend="464"/>
+    <listofallmembers>
+      <member refid="structgnuplotio_1_1_binfmt_sender_1ab0b554a2e81309917b2fa6f480e2a8e2" prot="public" virt="non-virtual"><scope>gnuplotio::BinfmtSender</scope><name>GNUPLOT_STATIC_ASSERT_MSG</name></member>
+      <member refid="structgnuplotio_1_1_binfmt_sender_1a762010e3172c02e981252f93185b29c8" prot="public" virt="non-virtual"><scope>gnuplotio::BinfmtSender</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

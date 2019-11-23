@@ -8,41 +8,55 @@
     <includedby refid="_navigation_8hpp" local="yes">include/Navigation.hpp</includedby>
     <includedby refid="test_steer_algorithm_8cpp" local="yes">test/testSteerAlgorithm.cpp</includedby>
     <invincdepgraph>
-      <node id="76">
-        <label>app/Navigation.cpp</label>
-        <link refid="_navigation_8cpp"/>
-      </node>
-      <node id="80">
-        <label>test/testSteerAlgorithm.cpp</label>
-        <link refid="test_steer_algorithm_8cpp"/>
-      </node>
-      <node id="77">
-        <label>app/SteerAlgorithm.cpp</label>
-        <link refid="_steer_algorithm_8cpp"/>
-      </node>
-      <node id="75">
+      <node id="71">
         <label>include/SteerAlgorithm.hpp</label>
         <link refid="SteerAlgorithm.hpp"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>test/mockNavigation.cpp</label>
+        <link refid="mock_navigation_8cpp"/>
+      </node>
+      <node id="75">
+        <label>include/Navigation.hpp</label>
+        <link refid="_navigation_8hpp"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
         <childnode refid="76" relation="include">
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="80" relation="include">
-        </childnode>
       </node>
-      <node id="79">
+      <node id="78">
+        <label>test/testSteerAlgorithm.cpp</label>
+        <link refid="test_steer_algorithm_8cpp"/>
+      </node>
+      <node id="73">
+        <label>app/Navigation.cpp</label>
+        <link refid="_navigation_8cpp"/>
+      </node>
+      <node id="72">
+        <label>app/main.cpp</label>
+        <link refid="app_2main_8cpp"/>
+      </node>
+      <node id="77">
         <label>test/testNavigation.cpp</label>
         <link refid="test_navigation_8cpp"/>
       </node>
-      <node id="78">
-        <label>include/Navigation.hpp</label>
-        <link refid="_navigation_8hpp"/>
-        <childnode refid="76" relation="include">
-        </childnode>
-        <childnode refid="79" relation="include">
-        </childnode>
+      <node id="74">
+        <label>app/SteerAlgorithm.cpp</label>
+        <link refid="_steer_algorithm_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_steer_algorithm" prot="public">SteerAlgorithm</innerclass>
@@ -89,12 +103,12 @@
 <codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lWheelAngle_,<sp/>rWheelAngle_,<sp/>robotAngle_,<sp/>corrRadius_;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shaftLength<sp/>=<sp/>4;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shaftDistance<sp/>=<sp/>8;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxTurnVelocity<sp/>=<sp/>20;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>heading;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>targetHeading;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir;</highlight></codeline>
+<codeline lineno="46" refid="class_steer_algorithm_1a9d5bc20acba39f0e53c3d0f6fc280433" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a9d5bc20acba39f0e53c3d0f6fc280433" kindref="member">shaftLength</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="47" refid="class_steer_algorithm_1a38bc87552a30e8eda8f647cf341c9657" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a38bc87552a30e8eda8f647cf341c9657" kindref="member">shaftDistance</ref><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="48" refid="class_steer_algorithm_1acfce52839329f0ebb316f633494466e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1acfce52839329f0ebb316f633494466e1" kindref="member">maxTurnVelocity</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="49" refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" kindref="member">targetHeading</ref>;</highlight></codeline>
+<codeline lineno="51" refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref>;</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" kindref="member">SteerAlgorithm</ref>();</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1a37dd2ef0ed856582aaacc103a6cd6700" kindref="member">~SteerAlgorithm</ref>();</highlight></codeline>

@@ -9,7 +9,7 @@
     <programlisting>
 <codeline><highlight class="normal">#<sp/>Robot<sp/>Controller<sp/>Module</highlight></codeline>
 <codeline><highlight class="normal">[![Build<sp/>Status](https://travis-ci.org/RajPShinde/Robot_Controller_Module.svg?branch=master)](https://travis-ci.org/RajPShinde/Robot_Controller_Module)</highlight></codeline>
-<codeline><highlight class="normal">[![Coverage<sp/>Status](https://coveralls.io/repos/github/RajPShinde/Robot_Controller_Module/badge.svg?branch=master)](https://coveralls.io/github/RajPShinde/Robot_Controller_Module?branch=master)</highlight></codeline>
+<codeline><highlight class="normal">[![Coverage<sp/>Status](https://coveralls.io/repos/github/RajPShinde/Robot_Controller_Module/badge.svg?branch=master&amp;service=github)](https://coveralls.io/github/RajPShinde/Robot_Controller_Module?branch=master)</highlight></codeline>
 <codeline><highlight class="normal">[![License<sp/>MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/RajPShinde/Robot_Controller_Module/blob/master/LICENSE)</highlight></codeline>
 <codeline><highlight class="normal">[![Documentation](https://img.shields.io/badge/docs-generated-brightgreen.svg)](https://github.com/RajPShinde/Robot_Controller_Module/tree/master/docs)</highlight></codeline>
 <codeline><highlight class="normal">---</highlight></codeline>
@@ -46,7 +46,7 @@
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Dependencies</highlight></codeline>
 <codeline><highlight class="normal">1.<sp/>C++<sp/>11/14/17</highlight></codeline>
-<codeline><highlight class="normal">2.<sp/>gnuplot</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>gnuplot-<sp/>http://stahlke.org/dan/gnuplot-iostream/</highlight></codeline>
 <codeline><highlight class="normal">&lt;br&gt;Install<sp/>gnuplot</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>gnuplot</highlight></codeline>
@@ -92,6 +92,7 @@
 <codeline><highlight class="normal">&lt;h5&gt;<sp/>Terminal<sp/>Output&lt;/h5&gt;</highlight></codeline>
 <codeline><highlight class="normal">&lt;img<sp/>src=&quot;/output/TerminalOutput.png&quot;&gt;</highlight></codeline>
 <codeline><highlight class="normal">&lt;/p&gt;</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Bugs</highlight></codeline>
 <codeline><highlight class="normal">None</highlight></codeline>
 <codeline></codeline>

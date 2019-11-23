@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_mock_navigation" kind="class" language="C++" prot="public">
+    <compoundname>MockNavigation</compoundname>
+    <basecompoundref refid="class_navigation" prot="public" virt="non-virtual">Navigation</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mock_navigation_1a54759f67f52b03841f44efe7926fff22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MockNavigation</definition>
+        <argsstring>()</argsstring>
+        <name>MockNavigation</name>
+        <briefdescription>
+<para>Initialise the constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="48" column="1" bodyfile="test/mockNavigation.cpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1acd53221a46f65f159ad53d22d3db1c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD0</definition>
+        <argsstring>(getKp_, double())</argsstring>
+        <name>MOCK_METHOD0</name>
+        <param>
+          <type><ref refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" kindref="member">getKp_</ref></type>
+        </param>
+        <param>
+          <type>double()</type>
+        </param>
+        <briefdescription>
+<para>Mock method to get Kp_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1af40d1b1fb60d8bfe8a53ab5d91109b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD1</definition>
+        <argsstring>(setKp_, bool(double))</argsstring>
+        <name>MOCK_METHOD1</name>
+        <param>
+          <type><ref refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" kindref="member">setKp_</ref></type>
+        </param>
+        <param>
+          <type>bool(double)</type>
+        </param>
+        <briefdescription>
+<para>Mock method to set Kp_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1aa8fa53a73e8d9774d41fea23d7ecdb63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD0</definition>
+        <argsstring>(getKi_, double())</argsstring>
+        <name>MOCK_METHOD0</name>
+        <param>
+          <type><ref refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" kindref="member">getKi_</ref></type>
+        </param>
+        <param>
+          <type>double()</type>
+        </param>
+        <briefdescription>
+<para>Mock method to get Ki_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1aa7670f64f701f2f174b991362ea11081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD1</definition>
+        <argsstring>(setKi_, bool(double))</argsstring>
+        <name>MOCK_METHOD1</name>
+        <param>
+          <type><ref refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" kindref="member">setKi_</ref></type>
+        </param>
+        <param>
+          <type>bool(double)</type>
+        </param>
+        <briefdescription>
+<para>Mock method to set Ki_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1adc8e4d41452d78b00729b9327c635ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD0</definition>
+        <argsstring>(getKd_, double())</argsstring>
+        <name>MOCK_METHOD0</name>
+        <param>
+          <type><ref refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" kindref="member">getKd_</ref></type>
+        </param>
+        <param>
+          <type>double()</type>
+        </param>
+        <briefdescription>
+<para>Mock method to get Kd_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1acb06c66920ae8ff1f96ba4c9b079deaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD1</definition>
+        <argsstring>(setKd_, bool(double))</argsstring>
+        <name>MOCK_METHOD1</name>
+        <param>
+          <type><ref refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" kindref="member">setKd_</ref></type>
+        </param>
+        <param>
+          <type>bool(double)</type>
+        </param>
+        <briefdescription>
+<para>Mock method to set Kd_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1a6289387acc5f11297d7a765241a499b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD2</definition>
+        <argsstring>(calculatePID, std::vector&lt; double &gt;(double, double))</argsstring>
+        <name>MOCK_METHOD2</name>
+        <param>
+          <type><ref refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" kindref="member">calculatePID</ref></type>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <array>double, double</array>
+        </param>
+        <briefdescription>
+<para>Mock method to calculate PID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mock_navigation_1a5189068e3bbe0eeb377a119eaa8f0b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MockNavigation::MOCK_METHOD4</definition>
+        <argsstring>(calculate, double(double targetHeading, double currentVelocity, double setPoint, int flag))</argsstring>
+        <name>MOCK_METHOD4</name>
+        <param>
+          <type><ref refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" kindref="member">calculate</ref></type>
+        </param>
+        <param>
+          <type>double(double <ref refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" kindref="member">targetHeading</ref>, double currentVelocity, double setPoint, int flag)</type>
+        </param>
+        <briefdescription>
+<para>Mock method to compute the convergence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/mockNavigation.cpp" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mock Class <ref refid="class_navigation" kindref="compound">Navigation</ref> To implement google mock. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="143">
+        <label>MockNavigation</label>
+        <link refid="class_mock_navigation"/>
+        <childnode refid="144" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>Navigation</label>
+        <link refid="class_navigation"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>SteerAlgorithm</label>
+        <link refid="class_steer_algorithm"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="146">
+        <label>MockNavigation</label>
+        <link refid="class_mock_navigation"/>
+        <childnode refid="147" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>Navigation</label>
+        <link refid="class_navigation"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>SteerAlgorithm</label>
+        <link refid="class_steer_algorithm"/>
+      </node>
+    </collaborationgraph>
+    <location file="test/mockNavigation.cpp" line="43" column="1" bodyfile="test/mockNavigation.cpp" bodystart="43" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_steer_algorithm_1a17ff78af17e900f752237d274bcf751d" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>arcLength</name></member>
+      <member refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" prot="public" virt="virtual"><scope>MockNavigation</scope><name>calculate</name></member>
+      <member refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" prot="public" virt="virtual"><scope>MockNavigation</scope><name>calculatePID</name></member>
+      <member refid="class_steer_algorithm_1a6067af69593713f561890ae8ad23f5ff" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>changeWheelAngles</name></member>
+      <member refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>dir</name></member>
+      <member refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>getCorrRadius_</name></member>
+      <member refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" prot="public" virt="virtual"><scope>MockNavigation</scope><name>getKd_</name></member>
+      <member refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" prot="public" virt="virtual"><scope>MockNavigation</scope><name>getKi_</name></member>
+      <member refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" prot="public" virt="virtual"><scope>MockNavigation</scope><name>getKp_</name></member>
+      <member refid="class_navigation_1ab35bfaf55fde4a16c05d88ef8789a947" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>gnuSteerAngleGraph</name></member>
+      <member refid="class_navigation_1a632e4d0d9be60dd775b4e57edb797073" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>gnuVelocityGraph</name></member>
+      <member refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>heading</name></member>
+      <member refid="class_steer_algorithm_1acfce52839329f0ebb316f633494466e1" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>maxTurnVelocity</name></member>
+      <member refid="class_mock_navigation_1acd53221a46f65f159ad53d22d3db1c51" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD0</name></member>
+      <member refid="class_mock_navigation_1aa8fa53a73e8d9774d41fea23d7ecdb63" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD0</name></member>
+      <member refid="class_mock_navigation_1adc8e4d41452d78b00729b9327c635ea1" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD0</name></member>
+      <member refid="class_mock_navigation_1af40d1b1fb60d8bfe8a53ab5d91109b63" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD1</name></member>
+      <member refid="class_mock_navigation_1aa7670f64f701f2f174b991362ea11081" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD1</name></member>
+      <member refid="class_mock_navigation_1acb06c66920ae8ff1f96ba4c9b079deaf" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD1</name></member>
+      <member refid="class_mock_navigation_1a6289387acc5f11297d7a765241a499b4" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD2</name></member>
+      <member refid="class_mock_navigation_1a5189068e3bbe0eeb377a119eaa8f0b62" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MOCK_METHOD4</name></member>
+      <member refid="class_mock_navigation_1a54759f67f52b03841f44efe7926fff22" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>MockNavigation</name></member>
+      <member refid="class_navigation_1ad7d7a5d5d1abe99e6b0f31ddb4794252" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>motorDirection</name></member>
+      <member refid="class_navigation_1a81fdffdefe46340da5fa6c570066b42b" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>Navigation</name></member>
+      <member refid="class_steer_algorithm_1ab251b6fd1f88fb7a526b0d55cd12625b" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>resetWheel</name></member>
+      <member refid="class_steer_algorithm_1a93cf1fc7d06376ddeaa4e81f2b0a22cc" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>setCorrRadius_</name></member>
+      <member refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" prot="public" virt="virtual"><scope>MockNavigation</scope><name>setKd_</name></member>
+      <member refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" prot="public" virt="virtual"><scope>MockNavigation</scope><name>setKi_</name></member>
+      <member refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" prot="public" virt="virtual"><scope>MockNavigation</scope><name>setKp_</name></member>
+      <member refid="class_steer_algorithm_1a38bc87552a30e8eda8f647cf341c9657" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>shaftDistance</name></member>
+      <member refid="class_steer_algorithm_1a9d5bc20acba39f0e53c3d0f6fc280433" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>shaftLength</name></member>
+      <member refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>SteerAlgorithm</name></member>
+      <member refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>targetHeading</name></member>
+      <member refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>turnTime</name></member>
+      <member refid="class_navigation_1addd4022d716df48f4e55a1db69361ba7" prot="public" virt="virtual"><scope>MockNavigation</scope><name>~Navigation</name></member>
+      <member refid="class_steer_algorithm_1a37dd2ef0ed856582aaacc103a6cd6700" prot="public" virt="non-virtual"><scope>MockNavigation</scope><name>~SteerAlgorithm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

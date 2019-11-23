@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['testnavigation_2ecpp',['testNavigation.cpp',['../test_navigation_8cpp.html',1,'']]],
-  ['teststeeralgorithm_2ecpp',['testSteerAlgorithm.cpp',['../test_steer_algorithm_8cpp.html',1,'']]]
+  ['navigation_2ecpp',['Navigation.cpp',['../_navigation_8cpp.html',1,'']]],
+  ['navigation_2ehpp',['Navigation.hpp',['../_navigation_8hpp.html',1,'']]]
 ];

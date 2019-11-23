@@ -3,55 +3,144 @@
   <compounddef id="_navigation_8cpp" kind="file" language="C++">
     <compoundname>Navigation.cpp</compoundname>
     <includes local="no">time.h</includes>
-    <includes local="no">gnuplot-iostream.h</includes>
     <includes local="no">iostream</includes>
     <includes local="no">fstream</includes>
     <includes local="no">vector</includes>
+    <includes refid="gnuplot-iostream_8h" local="yes">gnuplot-iostream.h</includes>
     <includes refid="_navigation_8hpp" local="yes">Navigation.hpp</includes>
     <includes refid="_steer_algorithm_8hpp" local="yes">SteerAlgorithm.hpp</includes>
     <incdepgraph>
-      <node id="49">
-        <label>gnuplot-iostream.h</label>
-      </node>
-      <node id="47">
-        <label>app/Navigation.cpp</label>
-        <link refid="Navigation.cpp"/>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="53" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-      </node>
-      <node id="54">
+      <node id="33">
         <label>SteerAlgorithm.hpp</label>
         <link refid="_steer_algorithm_8hpp"/>
       </node>
-      <node id="51">
+      <node id="21">
+        <label>iomanip</label>
+      </node>
+      <node id="27">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="24">
+        <label>cmath</label>
+      </node>
+      <node id="18">
+        <label>stdexcept</label>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="26">
+        <label>boost/iostreams/stream.hpp</label>
+      </node>
+      <node id="13">
         <label>fstream</label>
       </node>
-      <node id="52">
+      <node id="15">
+        <label>gnuplot-iostream.h</label>
+        <link refid="gnuplot-iostream_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>boost/cstdint.hpp</label>
+      </node>
+      <node id="16">
+        <label>cstdio</label>
+      </node>
+      <node id="14">
         <label>vector</label>
       </node>
-      <node id="48">
-        <label>time.h</label>
-      </node>
-      <node id="50">
-        <label>iostream</label>
-      </node>
-      <node id="53">
+      <node id="32">
         <label>Navigation.hpp</label>
         <link refid="_navigation_8hpp"/>
-        <childnode refid="54" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>utility</label>
+      </node>
+      <node id="17">
+        <label>sstream</label>
+      </node>
+      <node id="28">
+        <label>boost/utility.hpp</label>
+      </node>
+      <node id="11">
+        <label>time.h</label>
+      </node>
+      <node id="23">
+        <label>cstdlib</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>app/Navigation.cpp</label>
+        <link refid="Navigation.cpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>complex</label>
+      </node>
+      <node id="25">
+        <label>boost/iostreams/device/file_descriptor.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/mpl/bool.hpp</label>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -60,8 +149,9 @@
 <para><simplesect kind="copyright"><para>MIT License, Copyright © 2019 Raj Shinde</para></simplesect>
 <simplesect kind="author"><para>Sprint-1 Raj Shinde- driver and Prasheel Renkuntla- navigator </para></simplesect>
 <simplesect kind="author"><para>Sprint-2 Prasheel Renkuntla- driver and Raj Shinde- navigator </para></simplesect>
-<simplesect kind="date"><para>10/10/2019 </para></simplesect>
-<simplesect kind="version"><para>6.0 </para></simplesect>
+<simplesect kind="author"><para>Gmock Prasheel Renkuntla </para></simplesect>
+<simplesect kind="date"><para>11/22/2019 </para></simplesect>
+<simplesect kind="version"><para>7.0 </para></simplesect>
 </para><sect1 id="_steer_algorithm_8cpp_1Implements">
 <title>Ackermann on PID control</title>
 </sect1>
@@ -89,198 +179,243 @@
 <codeline lineno="20"><highlight class="comment">OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
 <codeline lineno="21"><highlight class="comment"><sp/>*************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gnuplot-iostream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_navigation_8hpp" kindref="compound">Navigation.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_steer_algorithm_8hpp" kindref="compound">SteerAlgorithm.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><ref refid="class_navigation_1a81fdffdefe46340da5fa6c570066b42b" kindref="member">Navigation::Navigation</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Initialised<sp/>Variables</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal">kp_<sp/>=<sp/>0.5;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal">ki_<sp/>=<sp/>0.05;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">kd_<sp/>=<sp/>0.001;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal">diffTime_<sp/>=<sp/>0.002;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal">error_<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">previousError_<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnuplot-iostream_8h" kindref="compound">gnuplot-iostream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_navigation_8hpp" kindref="compound">Navigation.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_steer_algorithm_8hpp" kindref="compound">SteerAlgorithm.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_navigation_1a81fdffdefe46340da5fa6c570066b42b" refkind="member"><highlight class="normal"><ref refid="class_navigation_1a81fdffdefe46340da5fa6c570066b42b" kindref="member">Navigation::Navigation</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Initialised<sp/>Variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">kp_<sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">ki_<sp/>=<sp/>0.05;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">kd_<sp/>=<sp/>0.001;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">diffTime_<sp/>=<sp/>0.002;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">error_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">previousError_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_navigation_1addd4022d716df48f4e55a1db69361ba7" refkind="member"><highlight class="normal"><ref refid="class_navigation_1addd4022d716df48f4e55a1db69361ba7" kindref="member">Navigation::~Navigation</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><ref refid="class_navigation_1addd4022d716df48f4e55a1db69361ba7" kindref="member">Navigation::~Navigation</ref>()<sp/>{}</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" kindref="member">Navigation::calculate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>targetHeading,</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>currentVelocity,</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>setPoint,</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag)<sp/>{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newVelocity<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>errorValue<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>current<sp/>error</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>propOutput<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>proportional<sp/>output</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>integralVal<sp/>=<sp/>0;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>calculate<sp/>integral<sp/>value</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intOutput<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>integral<sp/>output</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>derivativeVal<sp/>=<sp/>0;<sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>calculate<sp/>derivative<sp/>value</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>derOutput<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>derivative<sp/>output</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempVel;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>store<sp/>current<sp/>velocity</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>velocityConverged<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>headingConverged<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>outTime<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>determine<sp/>convergence<sp/>time</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><ref refid="class_steer_algorithm" kindref="compound">SteerAlgorithm</ref><sp/>Ackermann<sp/>=<sp/><ref refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" kindref="member">SteerAlgorithm</ref>();</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempHeading<sp/>=<sp/>targetHeading;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>the<sp/>target<sp/>for<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>call<sp/>object<sp/>and<sp/>intialise<sp/>variables<sp/>for<sp/>Graph<sp/>in<sp/>GNUPLOT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal">Gnuplot<sp/>gnu;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal">std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;<sp/>combinedXY(1,<sp/>std::make_pair(0,<sp/>0));</highlight></codeline>
-<codeline lineno="94"><highlight class="normal">std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;<sp/>points;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal">std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;<sp/>pointsVelocity;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>set<sp/>the<sp/>graph<sp/>on<sp/>gnuplot<sp/>for<sp/>the<sp/>respective<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>xrange<sp/>[0:2]\nset<sp/>yrange<sp/>[0:100]\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>title<sp/>\&quot;Steering<sp/>angle<sp/>Convergence\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>pointsize<sp/>1\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>xlabel<sp/>\&quot;Time\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>ylabel<sp/>\&quot;Heading<sp/>Angle\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>key<sp/>outside\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56" refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" refkind="member"><highlight class="normal">std::vector&lt;double&gt;<sp/><ref refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" kindref="member">Navigation::calculatePID</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>setPoint,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>currentVelocity)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">std::vector&lt;double&gt;<sp/>pidOut;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>newVelocity<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>errorValue<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>current<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>propOutput<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>proportional<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>integralVal<sp/>=<sp/>0;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>calculate<sp/>integral<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intOutput<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>integral<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>derivativeVal<sp/>=<sp/>0;<sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>calculate<sp/>derivative<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>derOutput<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>derivative<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">errorValue<sp/>=<sp/>setPoint<sp/>-<sp/>currentVelocity;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">propOutput<sp/>=<sp/>kp_<sp/>*<sp/>errorValue;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">integralVal<sp/>+=<sp/>errorValue<sp/>*<sp/>diffTime_;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">intOutput<sp/>=<sp/>ki_<sp/>*<sp/>integralVal;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">derivativeVal<sp/>=<sp/>((errorValue<sp/>-<sp/>previousError_)<sp/>/<sp/>diffTime_);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">derOutput<sp/>=<sp/>kd_<sp/>*<sp/>derivativeVal;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">pidOut.push_back(errorValue);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">pidOut.push_back(propOutput);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">pidOut.push_back(intOutput);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">pidOut.push_back(derOutput);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pidOut;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="class_navigation_1a632e4d0d9be60dd775b4e57edb797073" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a632e4d0d9be60dd775b4e57edb797073" kindref="member">Navigation::gnuVelocityGraph</ref>(std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vectorPointsVel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newVel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>call<sp/>object<sp/>and<sp/>intialise<sp/>variables<sp/>for<sp/>Graph<sp/>in<sp/>GNUPLOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="classgnuplotio_1_1_gnuplot" kindref="compound">Gnuplot</ref><sp/>gnup;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>set<sp/>the<sp/>graph<sp/>on<sp/>gnuplot<sp/>for<sp/>the<sp/>respective<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>xrange<sp/>[0:0.03]\nset<sp/>yrange<sp/>[0:45]\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>title<sp/>\&quot;Velocity<sp/>Convergence\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>pointsize<sp/>1\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>xlabel<sp/>\&quot;Time\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>ylabel<sp/>\&quot;Current<sp/>Velocity\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>key<sp/>outside\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;plot&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>gnup.file1d(vectorPointsVel)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;with<sp/>lp<sp/>title<sp/>&apos;Current<sp/>Velocity&apos;<sp/>lc<sp/>3,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>newVel<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>title<sp/>&apos;Set<sp/>Point&apos;<sp/>lt<sp/>1<sp/>lc<sp/>4&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">gnup<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>while<sp/>loop<sp/>to<sp/>run<sp/>until<sp/>velocity<sp/>and<sp/>heading<sp/>are<sp/>converged</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(velocityConverged<sp/>!=<sp/>1<sp/>&amp;&amp;<sp/>headingConverged<sp/>!=<sp/>1)<sp/>{</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Run<sp/>PID<sp/>control<sp/>initially</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errorValue<sp/>=<sp/>setPoint<sp/>-<sp/>currentVelocity;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>propOutput<sp/>=<sp/>kp_<sp/>*<sp/>errorValue;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>integralVal<sp/>+=<sp/>errorValue<sp/>*<sp/>diffTime_;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intOutput<sp/>=<sp/>ki_<sp/>*<sp/>integralVal;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>derivativeVal<sp/>=<sp/>((errorValue<sp/>-<sp/>previousError_)<sp/>/<sp/>diffTime_);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>derOutput<sp/>=<sp/>kd_<sp/>*<sp/>derivativeVal;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newVelocity<sp/>=<sp/>currentVelocity<sp/>+<sp/>(propOutput<sp/>+<sp/>intOutput<sp/>+<sp/>derOutput);</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>previousError_<sp/>=<sp/>errorValue;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentVelocity<sp/>=<sp/>newVelocity;</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock_t<sp/>toc<sp/>=<sp/>clock();</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>store<sp/>the<sp/>current<sp/>values<sp/>in<sp/>a<sp/>vector<sp/>for<sp/>plotting</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pointsVelocity.push_back(std::make_pair((</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_cast&lt;double&gt;<sp/>(toc)/CLOCKS_PER_SEC),</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentVelocity));</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>show<sp/>the<sp/>values<sp/>on<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Current<sp/>Velocity:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>currentVelocity</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Setpoint:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>newVelocity<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(setPoint<sp/>==<sp/>newVelocity)<sp/>{</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocityConverged<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((targetHeading-heading)<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>velocityConverged<sp/>==<sp/>1)<sp/>{</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newVelocity<sp/>&gt;<sp/>maxTurnVelocity)<sp/>{</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tempVel<sp/>=<sp/>maxTurnVelocity;</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tempVel<sp/>=<sp/>newVelocity;</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(targetHeading-heading<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir<sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>change<sp/>wheel<sp/>angles<sp/>to<sp/>move<sp/>robot<sp/>towards<sp/>target</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ackermann.<ref refid="class_steer_algorithm_1a6067af69593713f561890ae8ad23f5ff" kindref="member">changeWheelAngles</ref>(Ackermann.<ref refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" kindref="member">getCorrRadius_</ref>(),</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shaftLength,</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shaftDistance);</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arcLen<sp/>=<sp/>Ackermann.<ref refid="class_steer_algorithm_1a17ff78af17e900f752237d274bcf751d" kindref="member">arcLength</ref>(targetHeading,</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ackermann.<ref refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" kindref="member">getCorrRadius_</ref>());</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">turnTime</ref><sp/>=<sp/>Ackermann.<ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">turnTime</ref>(arcLen,<sp/>newVelocity);</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock_t<sp/>tic<sp/>=<sp/>clock();</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>loop<sp/>until<sp/>heading<sp/>is<sp/>converged<sp/>towards<sp/>target</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((outTime<sp/>&lt;<sp/><ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">turnTime</ref>)<sp/>&amp;&amp;<sp/>(targetHeading<sp/>!=<sp/>heading))<sp/>{</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errorValue<sp/>=<sp/>setPoint<sp/>-<sp/>currentVelocity;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>propOutput<sp/>=<sp/>kp_<sp/>*<sp/>errorValue;</highlight></codeline>
+<codeline lineno="105" refid="class_navigation_1ab35bfaf55fde4a16c05d88ef8789a947" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1ab35bfaf55fde4a16c05d88ef8789a947" kindref="member">Navigation::gnuSteerAngleGraph</ref>(std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vectorPointsSteer,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>steerAngle,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>call<sp/>object<sp/>and<sp/>intialise<sp/>variables<sp/>for<sp/>Graph<sp/>in<sp/>GNUPLOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="classgnuplotio_1_1_gnuplot" kindref="compound">Gnuplot</ref><sp/>gnu;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>set<sp/>the<sp/>graph<sp/>on<sp/>gnuplot<sp/>for<sp/>the<sp/>respective<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>xrange<sp/>[0:2]\nset<sp/>yrange<sp/>[0:100]\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>title<sp/>\&quot;Steering<sp/>angle<sp/>Convergence\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>pointsize<sp/>1\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>xlabel<sp/>\&quot;Time\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>ylabel<sp/>\&quot;Heading<sp/>Angle\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>key<sp/>outside\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;plot&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>gnu.file1d(vectorPointsSteer)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;with<sp/>points<sp/>title<sp/>&apos;Heading&apos;<sp/>lc<sp/>3,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>steerAngle<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>title<sp/>&apos;Target<sp/>Heading&apos;<sp/>lt<sp/>1<sp/>lc<sp/>4&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a0f83b511cec12a68f2c3466c40c5d3cb" kindref="member">Navigation::calculate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" kindref="member">targetHeading</ref>,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>currentVelocity,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>setPoint,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newVelocity<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempVel;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>store<sp/>current<sp/>velocity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>velocityConverged<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>headingConverged<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">std::vector&lt;double&gt;<sp/>pidOutput;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>outTime<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>temp<sp/>variable<sp/>to<sp/>determine<sp/>convergence<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="class_steer_algorithm" kindref="compound">SteerAlgorithm</ref><sp/>Ackermann<sp/>=<sp/><ref refid="class_steer_algorithm_1af64dd94816ab9d00d85227a42b26a3e8" kindref="member">SteerAlgorithm</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempHeading<sp/>=<sp/><ref refid="class_steer_algorithm_1a071efeb53e86ee949940b0ab10986044" kindref="member">targetHeading</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>store<sp/>the<sp/>target<sp/>for<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;<sp/>combinedXY(1,<sp/>std::make_pair(0,<sp/>0));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;<sp/>points;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">std::vector&lt;std::pair&lt;double,<sp/>double&gt;&gt;<sp/>pointsVelocity;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>while<sp/>loop<sp/>to<sp/>run<sp/>until<sp/>velocity<sp/>and<sp/>heading<sp/>are<sp/>converged</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(velocityConverged<sp/>!=<sp/>1<sp/>&amp;&amp;<sp/>headingConverged<sp/>!=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Run<sp/>PID<sp/>control<sp/>initially</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pidOutput<sp/>=<sp/><ref refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" kindref="member">calculatePID</ref>(setPoint,<sp/>currentVelocity);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newVelocity<sp/>=<sp/>currentVelocity<sp/>+</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pidOutput[1]<sp/>+<sp/>pidOutput[2]<sp/>+<sp/>pidOutput[2]);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>previousError_<sp/>=<sp/>pidOutput[0];</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentVelocity<sp/>=<sp/>newVelocity;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock_t<sp/>toc<sp/>=<sp/>clock();</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>integralVal<sp/>+=<sp/>errorValue<sp/>*<sp/>diffTime_;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intOutput<sp/>=<sp/>ki_<sp/>*<sp/>integralVal;</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>derivativeVal<sp/>=<sp/>((errorValue<sp/>-<sp/>previousError_)<sp/>/<sp/>diffTime_);</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>derOutput<sp/>=<sp/>kd_<sp/>*<sp/>derivativeVal;</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newVelocity<sp/>=<sp/>currentVelocity<sp/>+</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(propOutput<sp/>+<sp/>intOutput<sp/>+<sp/>derOutput);</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>previousError_<sp/>=<sp/>errorValue;</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentVelocity<sp/>=<sp/>newVelocity;</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock_t<sp/>toc<sp/>=<sp/>clock();</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outTime<sp/>=<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(toc<sp/>-<sp/>tic))<sp/>/<sp/>CLOCKS_PER_SEC;</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newArcLen<sp/>=<sp/>tempVel<sp/>*<sp/>outTime;</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heading<sp/>=<sp/>(newArcLen<sp/>*<sp/>targetHeading<sp/>/<sp/>arcLen);</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>store<sp/>the<sp/>current<sp/>values<sp/>in<sp/>a<sp/>vector<sp/>for<sp/>plotting</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>points.push_back(std::make_pair(</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(static_cast&lt;double&gt;<sp/>(toc)/CLOCKS_PER_SEC),</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heading));</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Current<sp/>Velocity:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>currentVelocity</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Setpoint:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>newVelocity<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Current<sp/>Heading:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>heading</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Target:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>targetHeading<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetHeading<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>headingConverged<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ackermann.<ref refid="class_steer_algorithm_1ab251b6fd1f88fb7a526b0d55cd12625b" kindref="member">resetWheel</ref>();</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag<sp/>==<sp/>2)<sp/>{</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Plot<sp/>the<sp/>graph<sp/>on<sp/>gnuplot<sp/>by<sp/>calling<sp/>the<sp/>below<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/>gnu<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;plot&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>gnu.file1d(points)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;with<sp/>points<sp/>title<sp/>&apos;Heading&apos;<sp/>lc<sp/>3,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>tempHeading<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>title<sp/>&apos;Target<sp/>Heading&apos;<sp/>lt<sp/>1<sp/>lc<sp/>4&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="193"><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag<sp/>==<sp/>1)<sp/>{</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newVelocity;</highlight></codeline>
-<codeline lineno="195"><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>heading;</highlight></codeline>
-<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newVelocity;</highlight></codeline>
-<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" kindref="member">Navigation::getKp_</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kp_;</highlight></codeline>
-<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" kindref="member">Navigation::getKi_</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ki_;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>store<sp/>the<sp/>current<sp/>values<sp/>in<sp/>a<sp/>vector<sp/>for<sp/>plotting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pointsVelocity.push_back(std::make_pair((</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_cast&lt;double&gt;<sp/>(toc)/CLOCKS_PER_SEC),</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentVelocity));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>show<sp/>the<sp/>values<sp/>on<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Current<sp/>Velocity:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>currentVelocity</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Setpoint:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>newVelocity<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(setPoint<sp/>==<sp/>newVelocity)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocityConverged<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((targetHeading-<ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref>)<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>velocityConverged<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newVelocity<sp/>&gt;<sp/><ref refid="class_steer_algorithm_1acfce52839329f0ebb316f633494466e1" kindref="member">maxTurnVelocity</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tempVel<sp/>=<sp/><ref refid="class_steer_algorithm_1acfce52839329f0ebb316f633494466e1" kindref="member">maxTurnVelocity</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tempVel<sp/>=<sp/>newVelocity;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(targetHeading-<ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref><sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1af6ad5604b62eec22cc2d385c7683d019" kindref="member">dir</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>change<sp/>wheel<sp/>angles<sp/>to<sp/>move<sp/>robot<sp/>towards<sp/>target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ackermann.<ref refid="class_steer_algorithm_1a6067af69593713f561890ae8ad23f5ff" kindref="member">changeWheelAngles</ref>(Ackermann.<ref refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" kindref="member">getCorrRadius_</ref>(),</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1a9d5bc20acba39f0e53c3d0f6fc280433" kindref="member">shaftLength</ref>,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1a38bc87552a30e8eda8f647cf341c9657" kindref="member">shaftDistance</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arcLen<sp/>=<sp/>Ackermann.<ref refid="class_steer_algorithm_1a17ff78af17e900f752237d274bcf751d" kindref="member">arcLength</ref>(targetHeading,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ackermann.<ref refid="class_steer_algorithm_1a06a7dd049280fab40d1b54c912daf399" kindref="member">getCorrRadius_</ref>());</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">turnTime</ref><sp/>=<sp/>Ackermann.<ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">turnTime</ref>(arcLen,<sp/>newVelocity);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock_t<sp/>tic<sp/>=<sp/>clock();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>loop<sp/>until<sp/>heading<sp/>is<sp/>converged<sp/>towards<sp/>target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((outTime<sp/>&lt;<sp/><ref refid="class_steer_algorithm_1aefdb433f65c47bf6e0d6af5de98c8f5a" kindref="member">turnTime</ref>)<sp/>&amp;&amp;<sp/>(targetHeading<sp/>!=<sp/><ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pidOutput<sp/>=<sp/><ref refid="class_navigation_1ae8fc8426c7277de0b34aec951fc28e2c" kindref="member">calculatePID</ref>(setPoint,<sp/>currentVelocity);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newVelocity<sp/>=<sp/>currentVelocity<sp/>+</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pidOutput[1]<sp/>+<sp/>pidOutput[2]<sp/>+<sp/>pidOutput[2]);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>previousError_<sp/>=<sp/>pidOutput[0];</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentVelocity<sp/>=<sp/>newVelocity;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock_t<sp/>toc<sp/>=<sp/>clock();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outTime<sp/>=<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(toc<sp/>-<sp/>tic))<sp/>/<sp/>CLOCKS_PER_SEC;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newArcLen<sp/>=<sp/>tempVel<sp/>*<sp/>outTime;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref><sp/>=<sp/>(newArcLen<sp/>*<sp/>targetHeading<sp/>/<sp/>arcLen);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>store<sp/>the<sp/>current<sp/>values<sp/>in<sp/>a<sp/>vector<sp/>for<sp/>plotting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>points.push_back(std::make_pair(</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(static_cast&lt;double&gt;<sp/>(toc)/CLOCKS_PER_SEC),</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref>));</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Current<sp/>Velocity:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>currentVelocity</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Setpoint:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>newVelocity<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Current<sp/>Heading:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Target:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>targetHeading<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetHeading<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>headingConverged<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ackermann.<ref refid="class_steer_algorithm_1ab251b6fd1f88fb7a526b0d55cd12625b" kindref="member">resetWheel</ref>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="218"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" kindref="member">Navigation::getKd_</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kd_;</highlight></codeline>
-<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"></highlight></codeline>
-<codeline lineno="234"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" kindref="member">Navigation::setKp_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kp)<sp/>{</highlight></codeline>
-<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="236"><highlight class="normal">kp_<sp/>=<sp/>kp;</highlight></codeline>
-<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(kp_<sp/>!=<sp/>kp)<sp/>{</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Plot<sp/>the<sp/>graph<sp/>on<sp/>gnuplot<sp/>by<sp/>calling<sp/>the<sp/>below<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><ref refid="class_navigation_1ab35bfaf55fde4a16c05d88ef8789a947" kindref="member">gnuSteerAngleGraph</ref>(points,<sp/>tempHeading,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><ref refid="class_navigation_1a632e4d0d9be60dd775b4e57edb797073" kindref="member">gnuVelocityGraph</ref>(pointsVelocity,<sp/>newVelocity,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flag<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newVelocity;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_steer_algorithm_1ada73b1f087245af5cda5d1d6b9be7d31" kindref="member">heading</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newVelocity;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1ab1469d74f4838a9d32a8647d22701f9f" kindref="member">Navigation::getKp_</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kp_;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a1a84392d6cce3f60df452ab482b5647c" kindref="member">Navigation::getKi_</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ki_;</highlight></codeline>
 <codeline lineno="239"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
-<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="242"><highlight class="normal"></highlight></codeline>
-<codeline lineno="248"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" kindref="member">Navigation::setKi_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ki)<sp/>{</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="250"><highlight class="normal">ki_<sp/>=<sp/>ki;</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ki_<sp/>!=<sp/>ki)<sp/>{</highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
-<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"></highlight></codeline>
-<codeline lineno="262"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" kindref="member">Navigation::setKd_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kd)<sp/>{</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="264"><highlight class="normal">kd_<sp/>=<sp/>kd;</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(kd_<sp/>!=<sp/>kd)<sp/>{</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
-<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1ac6441bb601483166ef7a8081b76f634d" kindref="member">Navigation::getKd_</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kd_;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a6dd95f46ff4ecc69895452a1879c30af" kindref="member">Navigation::setKp_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kp)<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">kp_<sp/>=<sp/>kp;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(kp_<sp/>!=<sp/>kp)<sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a539d10206ceb162171e39c36e8aa8f0f" kindref="member">Navigation::setKi_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ki)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">ki_<sp/>=<sp/>ki;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ki_<sp/>!=<sp/>ki)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_navigation_1a4986e4357d9707ddf92cf8f559ef3dce" kindref="member">Navigation::setKd_</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kd)<sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">kd_<sp/>=<sp/>kd;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(kd_<sp/>!=<sp/>kd)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="app/Navigation.cpp"/>
   </compounddef>

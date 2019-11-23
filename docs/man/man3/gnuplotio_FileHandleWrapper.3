@@ -1,0 +1,68 @@
+.TH "gnuplotio::FileHandleWrapper" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnuplotio::FileHandleWrapper \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gnuplot\-iostream\&.h>\fP
+.PP
+Inherited by \fBgnuplotio::Gnuplot\fP\fC [private]\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFileHandleWrapper\fP (std::FILE *_fh, bool _should_use_pclose)"
+.br
+.ti -1c
+.RI "void \fBfh_close\fP ()"
+.br
+.ti -1c
+.RI "int \fBfh_fileno\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::FILE * \fBwrapped_fh\fP"
+.br
+.ti -1c
+.RI "bool \fBshould_use_pclose\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 1523 of file gnuplot\-iostream\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gnuplotio::FileHandleWrapper::FileHandleWrapper (std::FILE * _fh, bool _should_use_pclose)\fC [inline]\fP"
+
+.PP
+Definition at line 1524 of file gnuplot\-iostream\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void gnuplotio::FileHandleWrapper::fh_close ()\fC [inline]\fP"
+
+.PP
+Definition at line 1527 of file gnuplot\-iostream\&.h\&.
+.SS "int gnuplotio::FileHandleWrapper::fh_fileno ()\fC [inline]\fP"
+
+.PP
+Definition at line 1539 of file gnuplot\-iostream\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool gnuplotio::FileHandleWrapper::should_use_pclose"
+
+.PP
+Definition at line 1544 of file gnuplot\-iostream\&.h\&.
+.SS "std::FILE* gnuplotio::FileHandleWrapper::wrapped_fh"
+
+.PP
+Definition at line 1543 of file gnuplot\-iostream\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

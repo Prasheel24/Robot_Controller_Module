@@ -1,0 +1,214 @@
+\hypertarget{classgnuplotio_1_1_gnuplot}{}\section{gnuplotio\+:\+:Gnuplot Class Reference}
+\label{classgnuplotio_1_1_gnuplot}\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+
+
+{\ttfamily \#include $<$gnuplot-\/iostream.\+h$>$}
+
+Inheritance diagram for gnuplotio\+:\+:Gnuplot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.469816cm]{classgnuplotio_1_1_gnuplot}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgnuplotio_1_1_gnuplot_ab2fb14389ab63ad5d9b2e57169bbbf1d}{Gnuplot} (const std\+::string \&\+\_\+cmd=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classgnuplotio_1_1_gnuplot_a4a4f48a548e6ce6d485ca0a868410078}{Gnuplot} (F\+I\+LE $\ast$\+\_\+fh)
+\item 
+\hyperlink{classgnuplotio_1_1_gnuplot_ad10824df011e645542b5f97a903f4c31}{$\sim$\+Gnuplot} ()
+\item 
+void \hyperlink{classgnuplotio_1_1_gnuplot_a0d62f80988c3db4413a668e366406393}{clear\+Tmpfiles} ()
+\item 
+{\footnotesize template$<$typename T , typename Organization\+Mode $>$ }\\\hyperlink{classgnuplotio_1_1_gnuplot}{Gnuplot} \& \hyperlink{classgnuplotio_1_1_gnuplot_ae3f4c07960aa5601cc72158be67f945c}{send} (const T \&arg, Organization\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Organization\+Mode $>$ }\\\hyperlink{classgnuplotio_1_1_gnuplot}{Gnuplot} \& \hyperlink{classgnuplotio_1_1_gnuplot_a46c9e01d2030768cd811d2e8dbd10dfa}{send\+Binary} (const T \&arg, Organization\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Organization\+Mode $>$ }\\std\+::string \hyperlink{classgnuplotio_1_1_gnuplot_a43fe103649ec168b453c43aecdacce81}{binfmt} (const T \&arg, const std\+::string \&\hyperlink{classgnuplotio_1_1_gnuplot_a2d194dbd4d2f3475ff6f9b8384e62a9f}{arr\+\_\+or\+\_\+rec}, Organization\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Organization\+Mode $>$ }\\std\+::string \hyperlink{classgnuplotio_1_1_gnuplot_a9b9980e3b3d7cbb233a989e27468fa55}{file} (const T \&arg, std\+::string filename, Organization\+Mode)
+\item 
+{\footnotesize template$<$typename T , typename Organization\+Mode $>$ }\\std\+::string \hyperlink{classgnuplotio_1_1_gnuplot_ad90501e6dbab5379abcd76fd0e2e4ef1}{binary\+File} (const T \&arg, std\+::string filename, const std\+::string \&\hyperlink{classgnuplotio_1_1_gnuplot_a2d194dbd4d2f3475ff6f9b8384e62a9f}{arr\+\_\+or\+\_\+rec}, Organization\+Mode)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classgnuplotio_1_1_gnuplot}{Gnuplot} \hyperlink{classgnuplotio_1_1_gnuplot_ab2edc3c8f57483c6d9db86d685f3eee7}{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE} (\char`\"{}use send1d or send2d\char`\"{})\&send(const T \&arg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{classgnuplotio_1_1_gnuplot_aeb3ba94ed04ecd46b55f89591ba23e7c}{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE} (\char`\"{}use binfmt1d or binfmt2d\char`\"{}) binfmt(const T \&arg
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string const std\+::string \& \hyperlink{classgnuplotio_1_1_gnuplot_a2d194dbd4d2f3475ff6f9b8384e62a9f}{arr\+\_\+or\+\_\+rec}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classgnuplotio_1_1_gnuplot_a92a4f6322e486de17db4507a5fc77348}{tmp\+\_\+files}
+\item 
+bool \hyperlink{classgnuplotio_1_1_gnuplot_a63e08bfd0cd02937d895ecfb6180107c}{debug\+\_\+messages}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1551 of file gnuplot-\/iostream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!Gnuplot@{Gnuplot}}
+\index{Gnuplot@{Gnuplot}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{Gnuplot(const std\+::string \&\+\_\+cmd="""")}{Gnuplot(const std::string &_cmd="")}}]{\setlength{\rightskip}{0pt plus 5cm}gnuplotio\+::\+Gnuplot\+::\+Gnuplot (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{\+\_\+cmd = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classgnuplotio_1_1_gnuplot_ab2fb14389ab63ad5d9b2e57169bbbf1d}{}\label{classgnuplotio_1_1_gnuplot_ab2fb14389ab63ad5d9b2e57169bbbf1d}
+
+
+Definition at line 1588 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!Gnuplot@{Gnuplot}}
+\index{Gnuplot@{Gnuplot}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{Gnuplot(\+F\+I\+L\+E $\ast$\+\_\+fh)}{Gnuplot(FILE *_fh)}}]{\setlength{\rightskip}{0pt plus 5cm}gnuplotio\+::\+Gnuplot\+::\+Gnuplot (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{\+\_\+fh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classgnuplotio_1_1_gnuplot_a4a4f48a548e6ce6d485ca0a868410078}{}\label{classgnuplotio_1_1_gnuplot_a4a4f48a548e6ce6d485ca0a868410078}
+
+
+Definition at line 1605 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!````~Gnuplot@{$\sim$\+Gnuplot}}
+\index{````~Gnuplot@{$\sim$\+Gnuplot}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{$\sim$\+Gnuplot()}{~Gnuplot()}}]{\setlength{\rightskip}{0pt plus 5cm}gnuplotio\+::\+Gnuplot\+::$\sim$\+Gnuplot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_ad10824df011e645542b5f97a903f4c31}{}\label{classgnuplotio_1_1_gnuplot_ad10824df011e645542b5f97a903f4c31}
+
+
+Definition at line 1628 of file gnuplot-\/iostream.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!binary\+File@{binary\+File}}
+\index{binary\+File@{binary\+File}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{binary\+File(const T \&arg, std\+::string filename, const std\+::string \&arr\+\_\+or\+\_\+rec, Organization\+Mode)}{binaryFile(const T &arg, std::string filename, const std::string &arr_or_rec, OrganizationMode)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename Organization\+Mode $>$ std\+::string gnuplotio\+::\+Gnuplot\+::binary\+File (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{arg, }
+\item[{std\+::string}]{filename, }
+\item[{const std\+::string \&}]{arr\+\_\+or\+\_\+rec, }
+\item[{Organization\+Mode}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_ad90501e6dbab5379abcd76fd0e2e4ef1}{}\label{classgnuplotio_1_1_gnuplot_ad90501e6dbab5379abcd76fd0e2e4ef1}
+
+
+Definition at line 1726 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!binfmt@{binfmt}}
+\index{binfmt@{binfmt}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{binfmt(const T \&arg, const std\+::string \&arr\+\_\+or\+\_\+rec, Organization\+Mode)}{binfmt(const T &arg, const std::string &arr_or_rec, OrganizationMode)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename Organization\+Mode $>$ std\+::string gnuplotio\+::\+Gnuplot\+::binfmt (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{arg, }
+\item[{const std\+::string \&}]{arr\+\_\+or\+\_\+rec, }
+\item[{Organization\+Mode}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_a43fe103649ec168b453c43aecdacce81}{}\label{classgnuplotio_1_1_gnuplot_a43fe103649ec168b453c43aecdacce81}
+
+
+Definition at line 1691 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!clear\+Tmpfiles@{clear\+Tmpfiles}}
+\index{clear\+Tmpfiles@{clear\+Tmpfiles}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{clear\+Tmpfiles()}{clearTmpfiles()}}]{\setlength{\rightskip}{0pt plus 5cm}void gnuplotio\+::\+Gnuplot\+::clear\+Tmpfiles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_a0d62f80988c3db4413a668e366406393}{}\label{classgnuplotio_1_1_gnuplot_a0d62f80988c3db4413a668e366406393}
+
+
+Definition at line 1645 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!file@{file}}
+\index{file@{file}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{file(const T \&arg, std\+::string filename, Organization\+Mode)}{file(const T &arg, std::string filename, OrganizationMode)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename Organization\+Mode $>$ std\+::string gnuplotio\+::\+Gnuplot\+::file (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{arg, }
+\item[{std\+::string}]{filename, }
+\item[{Organization\+Mode}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_a9b9980e3b3d7cbb233a989e27468fa55}{}\label{classgnuplotio_1_1_gnuplot_a9b9980e3b3d7cbb233a989e27468fa55}
+
+
+Definition at line 1711 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E(""use send1d or send2d"")\&send(const T \&arg)}{GNUPLOT_DEPRECATE("use send1d or send2d")&send(const T &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Gnuplot} gnuplotio\+::\+Gnuplot\+::\+G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}use send1d or send2d\char`\"{}}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_ab2edc3c8f57483c6d9db86d685f3eee7}{}\label{classgnuplotio_1_1_gnuplot_ab2edc3c8f57483c6d9db86d685f3eee7}
+
+
+Definition at line 1744 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}}
+\index{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE@{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E(""use binfmt1d or binfmt2d"") binfmt(const T \&arg}{GNUPLOT_DEPRECATE("use binfmt1d or binfmt2d") binfmt(const T &arg}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::string gnuplotio\+::\+Gnuplot\+::\+G\+N\+U\+P\+L\+O\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}use binfmt1d or binfmt2d\char`\"{}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgnuplotio_1_1_gnuplot_aeb3ba94ed04ecd46b55f89591ba23e7c}{}\label{classgnuplotio_1_1_gnuplot_aeb3ba94ed04ecd46b55f89591ba23e7c}
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!send@{send}}
+\index{send@{send}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{send(const T \&arg, Organization\+Mode)}{send(const T &arg, OrganizationMode)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename Organization\+Mode $>$ {\bf Gnuplot}\& gnuplotio\+::\+Gnuplot\+::send (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{arg, }
+\item[{Organization\+Mode}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_ae3f4c07960aa5601cc72158be67f945c}{}\label{classgnuplotio_1_1_gnuplot_ae3f4c07960aa5601cc72158be67f945c}
+
+
+Definition at line 1676 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!send\+Binary@{send\+Binary}}
+\index{send\+Binary@{send\+Binary}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{send\+Binary(const T \&arg, Organization\+Mode)}{sendBinary(const T &arg, OrganizationMode)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename Organization\+Mode $>$ {\bf Gnuplot}\& gnuplotio\+::\+Gnuplot\+::send\+Binary (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{arg, }
+\item[{Organization\+Mode}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnuplotio_1_1_gnuplot_a46c9e01d2030768cd811d2e8dbd10dfa}{}\label{classgnuplotio_1_1_gnuplot_a46c9e01d2030768cd811d2e8dbd10dfa}
+
+
+Definition at line 1684 of file gnuplot-\/iostream.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!arr\+\_\+or\+\_\+rec@{arr\+\_\+or\+\_\+rec}}
+\index{arr\+\_\+or\+\_\+rec@{arr\+\_\+or\+\_\+rec}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{arr\+\_\+or\+\_\+rec}{arr_or_rec}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string const std\+::string\& gnuplotio\+::\+Gnuplot\+::arr\+\_\+or\+\_\+rec}\hypertarget{classgnuplotio_1_1_gnuplot_a2d194dbd4d2f3475ff6f9b8384e62a9f}{}\label{classgnuplotio_1_1_gnuplot_a2d194dbd4d2f3475ff6f9b8384e62a9f}
+
+
+Definition at line 1748 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!debug\+\_\+messages@{debug\+\_\+messages}}
+\index{debug\+\_\+messages@{debug\+\_\+messages}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{debug\+\_\+messages}{debug_messages}}]{\setlength{\rightskip}{0pt plus 5cm}bool gnuplotio\+::\+Gnuplot\+::debug\+\_\+messages}\hypertarget{classgnuplotio_1_1_gnuplot_a63e08bfd0cd02937d895ecfb6180107c}{}\label{classgnuplotio_1_1_gnuplot_a63e08bfd0cd02937d895ecfb6180107c}
+
+
+Definition at line 1849 of file gnuplot-\/iostream.\+h.
+
+\index{gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}!tmp\+\_\+files@{tmp\+\_\+files}}
+\index{tmp\+\_\+files@{tmp\+\_\+files}!gnuplotio\+::\+Gnuplot@{gnuplotio\+::\+Gnuplot}}
+\subsubsection[{\texorpdfstring{tmp\+\_\+files}{tmp_files}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ gnuplotio\+::\+Gnuplot\+::tmp\+\_\+files}\hypertarget{classgnuplotio_1_1_gnuplot_a92a4f6322e486de17db4507a5fc77348}{}\label{classgnuplotio_1_1_gnuplot_a92a4f6322e486de17db4507a5fc77348}
+
+
+Definition at line 1845 of file gnuplot-\/iostream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{gnuplot-iostream_8h}{gnuplot-\/iostream.\+h}\end{DoxyCompactItemize}

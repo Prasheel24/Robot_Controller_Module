@@ -1,0 +1,106 @@
+.TH "gnuplotio::IteratorRange< TI, TV >" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnuplotio::IteratorRange< TI, TV > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gnuplot\-iostream\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef boost::mpl::if_c< \fBis_container\fP, \fBError_InappropriateDeref\fP, TV >::type \fBvalue_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBArrayTraits\fP< TV >::range_type \fBsubiter_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBIteratorRange\fP ()"
+.br
+.ti -1c
+.RI "\fBIteratorRange\fP (const TI &_it, const TI &_end)"
+.br
+.ti -1c
+.RI "bool \fBis_end\fP () const "
+.br
+.ti -1c
+.RI "void \fBinc\fP ()"
+.br
+.ti -1c
+.RI "\fBvalue_type\fP \fBderef\fP () const "
+.br
+.ti -1c
+.RI "\fBsubiter_type\fP \fBderef_subiter\fP () const "
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const bool \fBis_container\fP = \fBArrayTraits\fP<TV>::is_container"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename TI, typename TV>
+.br
+class gnuplotio::IteratorRange< TI, TV >"
+
+.PP
+Definition at line 860 of file gnuplot\-iostream\&.h\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename TI , typename TV > typedef \fBArrayTraits\fP<TV>::range_type \fBgnuplotio::IteratorRange\fP< TI, TV >::\fBsubiter_type\fP"
+
+.PP
+Definition at line 868 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename TI , typename TV > typedef boost::mpl::if_c<\fBis_container\fP, \fBError_InappropriateDeref\fP, TV>::type \fBgnuplotio::IteratorRange\fP< TI, TV >::\fBvalue_type\fP"
+
+.PP
+Definition at line 867 of file gnuplot\-iostream\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename TI , typename TV > \fBgnuplotio::IteratorRange\fP< TI, TV >::\fBIteratorRange\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 862 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename TI , typename TV > \fBgnuplotio::IteratorRange\fP< TI, TV >::\fBIteratorRange\fP (const TI & _it, const TI & _end)\fC [inline]\fP"
+
+.PP
+Definition at line 863 of file gnuplot\-iostream\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename TI , typename TV > \fBvalue_type\fP \fBgnuplotio::IteratorRange\fP< TI, TV >::deref () const\fC [inline]\fP"
+
+.PP
+Definition at line 874 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename TI , typename TV > \fBsubiter_type\fP \fBgnuplotio::IteratorRange\fP< TI, TV >::deref_subiter () const\fC [inline]\fP"
+
+.PP
+Definition at line 883 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename TI , typename TV > void \fBgnuplotio::IteratorRange\fP< TI, TV >::inc ()\fC [inline]\fP"
+
+.PP
+Definition at line 872 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename TI , typename TV > bool \fBgnuplotio::IteratorRange\fP< TI, TV >::is_end () const\fC [inline]\fP"
+
+.PP
+Definition at line 870 of file gnuplot\-iostream\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename TI , typename TV > const bool \fBgnuplotio::IteratorRange\fP< TI, TV >::is_container = \fBArrayTraits\fP<TV>::is_container\fC [static]\fP"
+
+.PP
+Definition at line 865 of file gnuplot\-iostream\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

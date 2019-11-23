@@ -1,0 +1,129 @@
+.TH "gnuplotio::Gnuplot" 3 "Fri Nov 22 2019" "Version 7" "GMock" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnuplotio::Gnuplot \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gnuplot\-iostream\&.h>\fP
+.PP
+Inherits \fBgnuplotio::FileHandleWrapper\fP, and stream< boost::iostreams::file_descriptor_sink >\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGnuplot\fP (const std::string &_cmd='')"
+.br
+.ti -1c
+.RI "\fBGnuplot\fP (FILE *_fh)"
+.br
+.ti -1c
+.RI "\fB~Gnuplot\fP ()"
+.br
+.ti -1c
+.RI "void \fBclearTmpfiles\fP ()"
+.br
+.ti -1c
+.RI "template<typename T , typename OrganizationMode > \fBGnuplot\fP & \fBsend\fP (const T &arg, OrganizationMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename OrganizationMode > \fBGnuplot\fP & \fBsendBinary\fP (const T &arg, OrganizationMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename OrganizationMode > std::string \fBbinfmt\fP (const T &arg, const std::string &\fBarr_or_rec\fP, OrganizationMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename OrganizationMode > std::string \fBfile\fP (const T &arg, std::string filename, OrganizationMode)"
+.br
+.ti -1c
+.RI "template<typename T , typename OrganizationMode > std::string \fBbinaryFile\fP (const T &arg, std::string filename, const std::string &\fBarr_or_rec\fP, OrganizationMode)"
+.br
+.ti -1c
+.RI "template<typename T > \fBGnuplot\fP \fBGNUPLOT_DEPRECATE\fP ('use send1d or send2d')&send(const T &arg)"
+.br
+.ti -1c
+.RI "template<typename T > std::string \fBGNUPLOT_DEPRECATE\fP ('use binfmt1d or binfmt2d') binfmt(const T &arg"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string const std::string & \fBarr_or_rec\fP"
+.br
+.ti -1c
+.RI "std::vector< int > \fBtmp_files\fP"
+.br
+.ti -1c
+.RI "bool \fBdebug_messages\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 1551 of file gnuplot\-iostream\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gnuplotio::Gnuplot::Gnuplot (const std::string & _cmd = \fC''\fP)\fC [inline]\fP, \fC [explicit]\fP"
+
+.PP
+Definition at line 1588 of file gnuplot\-iostream\&.h\&.
+.SS "gnuplotio::Gnuplot::Gnuplot (FILE * _fh)\fC [inline]\fP, \fC [explicit]\fP"
+
+.PP
+Definition at line 1605 of file gnuplot\-iostream\&.h\&.
+.SS "gnuplotio::Gnuplot::~Gnuplot ()\fC [inline]\fP"
+
+.PP
+Definition at line 1628 of file gnuplot\-iostream\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T , typename OrganizationMode > std::string gnuplotio::Gnuplot::binaryFile (const T & arg, std::string filename, const std::string & arr_or_rec, OrganizationMode)\fC [inline]\fP"
+
+.PP
+Definition at line 1726 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename OrganizationMode > std::string gnuplotio::Gnuplot::binfmt (const T & arg, const std::string & arr_or_rec, OrganizationMode)\fC [inline]\fP"
+
+.PP
+Definition at line 1691 of file gnuplot\-iostream\&.h\&.
+.SS "void gnuplotio::Gnuplot::clearTmpfiles ()\fC [inline]\fP"
+
+.PP
+Definition at line 1645 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename OrganizationMode > std::string gnuplotio::Gnuplot::file (const T & arg, std::string filename, OrganizationMode)\fC [inline]\fP"
+
+.PP
+Definition at line 1711 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T > \fBGnuplot\fP gnuplotio::Gnuplot::GNUPLOT_DEPRECATE ('use send1d or send2d') const\fC [inline]\fP"
+
+.PP
+Definition at line 1744 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T > std::string gnuplotio::Gnuplot::GNUPLOT_DEPRECATE ('use binfmt1d or binfmt2d') const"
+
+.SS "template<typename T , typename OrganizationMode > \fBGnuplot\fP& gnuplotio::Gnuplot::send (const T & arg, OrganizationMode)\fC [inline]\fP"
+
+.PP
+Definition at line 1676 of file gnuplot\-iostream\&.h\&.
+.SS "template<typename T , typename OrganizationMode > \fBGnuplot\fP& gnuplotio::Gnuplot::sendBinary (const T & arg, OrganizationMode)\fC [inline]\fP"
+
+.PP
+Definition at line 1684 of file gnuplot\-iostream\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string const std::string& gnuplotio::Gnuplot::arr_or_rec"
+
+.PP
+Definition at line 1748 of file gnuplot\-iostream\&.h\&.
+.SS "bool gnuplotio::Gnuplot::debug_messages"
+
+.PP
+Definition at line 1849 of file gnuplot\-iostream\&.h\&.
+.SS "std::vector<int> gnuplotio::Gnuplot::tmp_files"
+
+.PP
+Definition at line 1845 of file gnuplot\-iostream\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GMock from the source code\&.

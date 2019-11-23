@@ -1,0 +1,812 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacegnuplotio" kind="namespace" language="C++">
+    <compoundname>gnuplotio</compoundname>
+    <innerclass refid="classgnuplotio_1_1_array_traits" prot="public">gnuplotio::ArrayTraits</innerclass>
+    <innerclass refid="classgnuplotio_1_1_array_traits_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4" prot="public">gnuplotio::ArrayTraits&lt; std::pair&lt; T, U &gt; &gt;</innerclass>
+    <innerclass refid="classgnuplotio_1_1_array_traits_3_01_t_01_6_01_4" prot="public">gnuplotio::ArrayTraits&lt; T &amp; &gt;</innerclass>
+    <innerclass refid="classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1a8de3a8fe198d85f7f5d28b9a2f5bf229" prot="public">gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ad3fa8e75dccbaae12a06d17831678a88" prot="public">gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="classgnuplotio_1_1_array_traits_3_01_t_00_01typename_01boost_1_1enable__if_3_01is__like__stl__co9e1736bbd08cd58c6993ab613a998887" prot="public">gnuplotio::ArrayTraits&lt; T, typename boost::enable_if&lt; is_like_stl_container&lt; T &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="classgnuplotio_1_1_array_traits_3_01_t[_n]_4" prot="public">gnuplotio::ArrayTraits&lt; T[N]&gt;</innerclass>
+    <innerclass refid="classgnuplotio_1_1_array_traits_defaults" prot="public">gnuplotio::ArrayTraitsDefaults</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender" prot="public">gnuplotio::BinarySender</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1int16__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::int16_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1int32__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::int32_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1int64__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::int64_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1int8__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::int8_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1uint16__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::uint16_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1uint32__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::uint32_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1uint64__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::uint64_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01boost_1_1uint8__t_01_4" prot="public">gnuplotio::BinarySender&lt; boost::uint8_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01double_01_4" prot="public">gnuplotio::BinarySender&lt; double &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01float_01_4" prot="public">gnuplotio::BinarySender&lt; float &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01std_1_1complex_3_01_t_01_4_01_4" prot="public">gnuplotio::BinarySender&lt; std::complex&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4" prot="public">gnuplotio::BinarySender&lt; std::pair&lt; T, U &gt; &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_916ff7a758aa0b8917fd3b30ff275f06" prot="public">gnuplotio::BinarySender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binary_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_29e1098ca8b7afc20f2ca0bc2e79506a" prot="public">gnuplotio::BinarySender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender" prot="public">gnuplotio::BinfmtSender</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int16__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::int16_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int32__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::int32_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int64__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::int64_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1int8__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::int8_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint16__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::uint16_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint32__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::uint32_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint64__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::uint64_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01boost_1_1uint8__t_01_4" prot="public">gnuplotio::BinfmtSender&lt; boost::uint8_t &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01double_01_4" prot="public">gnuplotio::BinfmtSender&lt; double &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01float_01_4" prot="public">gnuplotio::BinfmtSender&lt; float &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01std_1_1complex_3_01_t_01_4_01_4" prot="public">gnuplotio::BinfmtSender&lt; std::complex&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4" prot="public">gnuplotio::BinfmtSender&lt; std::pair&lt; T, U &gt; &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_e9270e5cb86823566a0af3940aa51061" prot="public">gnuplotio::BinfmtSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_binfmt_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_8c86f170c2e2969f5519817e5c367132" prot="public">gnuplotio::BinfmtSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_cast_int_text_sender" prot="public">gnuplotio::CastIntTextSender</innerclass>
+    <innerclass refid="structgnuplotio_1_1_col_unwrap_no" prot="public">gnuplotio::ColUnwrapNo</innerclass>
+    <innerclass refid="structgnuplotio_1_1_col_unwrap_yes" prot="public">gnuplotio::ColUnwrapYes</innerclass>
+    <innerclass refid="structgnuplotio_1_1dont__treat__as__stl__container" prot="public">gnuplotio::dont_treat_as_stl_container</innerclass>
+    <innerclass refid="structgnuplotio_1_1_error___inappropriate_deref" prot="public">gnuplotio::Error_InappropriateDeref</innerclass>
+    <innerclass refid="structgnuplotio_1_1_error___was_not_container" prot="public">gnuplotio::Error_WasNotContainer</innerclass>
+    <innerclass refid="structgnuplotio_1_1_file_handle_wrapper" prot="public">gnuplotio::FileHandleWrapper</innerclass>
+    <innerclass refid="structgnuplotio_1_1_flat_binary_sender" prot="public">gnuplotio::FlatBinarySender</innerclass>
+    <innerclass refid="structgnuplotio_1_1_float_text_sender" prot="public">gnuplotio::FloatTextSender</innerclass>
+    <innerclass refid="classgnuplotio_1_1_gnuplot" prot="public">gnuplotio::Gnuplot</innerclass>
+    <innerclass refid="classgnuplotio_1_1_gnuplot_feedback" prot="public">gnuplotio::GnuplotFeedback</innerclass>
+    <innerclass refid="structgnuplotio_1_1is__boost__tuple" prot="public">gnuplotio::is_boost_tuple</innerclass>
+    <innerclass refid="structgnuplotio_1_1is__boost__tuple__nulltype" prot="public">gnuplotio::is_boost_tuple_nulltype</innerclass>
+    <innerclass refid="structgnuplotio_1_1is__boost__tuple__nulltype_3_01boost_1_1tuples_1_1null__type_01_4" prot="public">gnuplotio::is_boost_tuple_nulltype&lt; boost::tuples::null_type &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1is__like__stl__container" prot="public">gnuplotio::is_like_stl_container</innerclass>
+    <innerclass refid="classgnuplotio_1_1_iterator_range" prot="public">gnuplotio::IteratorRange</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode1_d" prot="public">gnuplotio::Mode1D</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode1_d_unwrap" prot="public">gnuplotio::Mode1DUnwrap</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode2_d" prot="public">gnuplotio::Mode2D</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode2_d_unwrap" prot="public">gnuplotio::Mode2DUnwrap</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_auto" prot="public">gnuplotio::ModeAuto</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_auto_decoder" prot="public">gnuplotio::ModeAutoDecoder</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_binary" prot="public">gnuplotio::ModeBinary</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_binfmt" prot="public">gnuplotio::ModeBinfmt</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_size" prot="public">gnuplotio::ModeSize</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_text" prot="public">gnuplotio::ModeText</innerclass>
+    <innerclass refid="classgnuplotio_1_1_pair_of_range" prot="public">gnuplotio::PairOfRange</innerclass>
+    <innerclass refid="classgnuplotio_1_1plotting__empty__container" prot="public">gnuplotio::plotting_empty_container</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender" prot="public">gnuplotio::TextSender</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01char_01_4" prot="public">gnuplotio::TextSender&lt; char &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01double_01_4" prot="public">gnuplotio::TextSender&lt; double &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01float_01_4" prot="public">gnuplotio::TextSender&lt; float &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01long_01double_01_4" prot="public">gnuplotio::TextSender&lt; long double &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01signed_01char_01_4" prot="public">gnuplotio::TextSender&lt; signed char &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01std_1_1complex_3_01_t_01_4_01_4" prot="public">gnuplotio::TextSender&lt; std::complex&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4" prot="public">gnuplotio::TextSender&lt; std::pair&lt; T, U &gt; &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ad1ac3a3da167856c52be6ae54ba2c114" prot="public">gnuplotio::TextSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, boost::mpl::not_&lt; is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01_t_00_01typename_01boost_1_1enable__if_3_01boost_1_1mpl_1_1ab6d6864cc1b3ed233c9f15134694f953" prot="public">gnuplotio::TextSender&lt; T, typename boost::enable_if&lt; boost::mpl::and_&lt; is_boost_tuple&lt; T &gt;, is_boost_tuple_nulltype&lt; typename T::tail_type &gt; &gt; &gt;::type &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_text_sender_3_01unsigned_01char_01_4" prot="public">gnuplotio::TextSender&lt; unsigned char &gt;</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arra8faa7fb46cef74a29a23f22c000e4a99" prot="public">gnuplotio::ModeAutoDecoder&lt; T, typename boost::enable_if_c&lt; (ArrayTraits&lt; T &gt;::depth==2)&amp;&amp;ArrayTraits&lt; T &gt;::allow_auto_unwrap &gt;::type</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arra33ab7f3325313485a7f29355d9a819fc" prot="public">gnuplotio::ModeAutoDecoder&lt; T, typename boost::enable_if_c&lt; (ArrayTraits&lt; T &gt;::depth==2)&amp;&amp;!ArrayTraits&lt; T &gt;::allow_auto_unwrap &gt;::type</innerclass>
+    <innerclass refid="structgnuplotio_1_1_mode_auto_decoder_3_01_t_00_01typename_01boost_1_1enable__if__c_3_01_07_arraea646779afc1e35efaeffcebe81e18a0" prot="public">gnuplotio::ModeAutoDecoder&lt; T, typename boost::enable_if_c&lt; (ArrayTraits&lt; T &gt;::depth==1) &gt;::type</innerclass>
+    <innerclass refid="classgnuplotio_1_1_vec_of_range" prot="public">gnuplotio::VecOfRange</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegnuplotio_1a71f818c9176244bae06acab90bb6f810" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool gnuplotio::debug_array_print</definition>
+        <argsstring></argsstring>
+        <name>debug_array_print</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1176" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegnuplotio_1a64984827dd8debb9098ad1afdde8e409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classgnuplotio_1_1_vec_of_range" kindref="compound">VecOfRange</ref>&lt; typename <ref refid="classgnuplotio_1_1_array_traits" kindref="compound">ArrayTraits</ref>&lt; T &gt;::range_type::subiter_type &gt;</type>
+        <definition>VecOfRange&lt;typename ArrayTraits&lt;T&gt;::range_type::subiter_type&gt; gnuplotio::get_columns_range</definition>
+        <argsstring>(const T &amp;arg)</argsstring>
+        <name>get_columns_range</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1150" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1150" bodyend="1160"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a55ff2f9abaa4b3e1c64a8f730f791b33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::send_scalar</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, ModeText)</argsstring>
+        <name>send_scalar</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode_text" kindref="compound">ModeText</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1292" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1292" bodyend="1294"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a05022d6e136d8ed89a2bef0f61443332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::send_scalar</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, ModeBinary)</argsstring>
+        <name>send_scalar</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode_binary" kindref="compound">ModeBinary</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1297" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1297" bodyend="1299"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a926e0935a02d83735da2c34cfbad133f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::send_scalar</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;, ModeBinfmt)</argsstring>
+        <name>send_scalar</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode_binfmt" kindref="compound">ModeBinfmt</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1302" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1302" bodyend="1304"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a66d64f716e539dc233f8183b4ce71c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>boost::disable_if_c&lt; T::is_container &gt;::type</type>
+        <definition>boost::disable_if_c&lt;T::is_container&gt;::type gnuplotio::deref_and_print</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, PrintMode)</argsstring>
+        <name>deref_and_print</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1317" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1317" bodyend="1320"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a8c6b699dd18c419d597a008b74eda41a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>boost::enable_if_c&lt; T::is_container &gt;::type</type>
+        <definition>boost::enable_if_c&lt;T::is_container&gt;::type gnuplotio::deref_and_print</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, PrintMode)</argsstring>
+        <name>deref_and_print</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1327" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1327" bodyend="1340"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1acd0cb4bd9679f0b75bac15c8afcc10e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::deref_and_print</definition>
+        <argsstring>(std::ostream &amp;stream, const PairOfRange&lt; T, U &gt; &amp;arg, PrintMode)</argsstring>
+        <name>deref_and_print</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgnuplotio_1_1_pair_of_range" kindref="compound">PairOfRange</ref>&lt; T, U &gt; &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1344" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1344" bodyend="1348"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1ae768911c8adb77bfc080d5e4561573e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::deref_and_print</definition>
+        <argsstring>(std::ostream &amp;stream, const VecOfRange&lt; T &gt; &amp;arg, PrintMode)</argsstring>
+        <name>deref_and_print</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgnuplotio_1_1_vec_of_range" kindref="compound">VecOfRange</ref>&lt; T &gt; &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1352" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1352" bodyend="1358"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a631368ab4e255d2a5d563a41895f2edc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>Depth</declname>
+            <defname>Depth</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>boost::enable_if_c&lt;(Depth==1)&amp;&amp;!PrintMode::is_size &gt;::type</type>
+        <definition>boost::enable_if_c&lt;(Depth==1) &amp;&amp; !PrintMode::is_size&gt;::type gnuplotio::print_block</definition>
+        <argsstring>(std::ostream &amp;stream, T &amp;arg, PrintMode)</argsstring>
+        <name>print_block</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1381" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1381" bodyend="1391"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a753a3551f418723c022be60c12379025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>Depth</declname>
+            <defname>Depth</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>boost::enable_if_c&lt;(Depth &gt;1)&amp;&amp;!PrintMode::is_size &gt;::type</type>
+        <definition>boost::enable_if_c&lt;(Depth&gt;1) &amp;&amp; !PrintMode::is_size&gt;::type gnuplotio::print_block</definition>
+        <argsstring>(std::ostream &amp;stream, T &amp;arg, PrintMode)</argsstring>
+        <name>print_block</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1397" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1397" bodyend="1414"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1abb416b68686102ba84a2cb53c96b64e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t gnuplotio::get_range_size</definition>
+        <argsstring>(const T &amp;arg)</argsstring>
+        <name>get_range_size</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1418" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1418" bodyend="1423"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1ae470a0908ac5f51527ff76ecbc1616d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>Depth</declname>
+            <defname>Depth</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>boost::enable_if_c&lt;(Depth==1)&amp;&amp;PrintMode::is_size &gt;::type</type>
+        <definition>boost::enable_if_c&lt;(Depth==1) &amp;&amp; PrintMode::is_size&gt;::type gnuplotio::print_block</definition>
+        <argsstring>(std::ostream &amp;stream, T &amp;arg, PrintMode)</argsstring>
+        <name>print_block</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1428" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1428" bodyend="1430"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a94e97ca55dc1e5142dcc4457a5e1dd2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>Depth</declname>
+            <defname>Depth</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>boost::enable_if_c&lt;(Depth &gt;1)&amp;&amp;PrintMode::is_size &gt;::type</type>
+        <definition>boost::enable_if_c&lt;(Depth&gt;1) &amp;&amp; PrintMode::is_size&gt;::type gnuplotio::print_block</definition>
+        <argsstring>(std::ostream &amp;stream, T &amp;arg, PrintMode)</argsstring>
+        <name>print_block</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1435" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1435" bodyend="1442"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1aef147f3d42f3f2c89cc4c895b8494150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>Depth</declname>
+            <defname>Depth</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::handle_colunwrap_tag</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, ColUnwrapNo, PrintMode)</argsstring>
+        <name>handle_colunwrap_tag</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_col_unwrap_no" kindref="compound">ColUnwrapNo</ref></type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1453" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1453" bodyend="1457"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a3b8981d3f39de8a058b5f18484f06c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>Depth</declname>
+            <defname>Depth</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::handle_colunwrap_tag</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, ColUnwrapYes, PrintMode)</argsstring>
+        <name>handle_colunwrap_tag</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_col_unwrap_yes" kindref="compound">ColUnwrapYes</ref></type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1460" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1460" bodyend="1464"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1af809657552a53c3b17f0400a5c210a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::handle_organization_tag</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, Mode1D, PrintMode)</argsstring>
+        <name>handle_organization_tag</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode1_d" kindref="compound">Mode1D</ref></type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1476" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1476" bodyend="1478"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a1310221abf0551a805d4482f0612317b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::handle_organization_tag</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, Mode2D, PrintMode)</argsstring>
+        <name>handle_organization_tag</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode2_d" kindref="compound">Mode2D</ref></type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1481" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1481" bodyend="1483"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a99e6125b97bc2ca4241f6275d83f05d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::handle_organization_tag</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, Mode1DUnwrap, PrintMode)</argsstring>
+        <name>handle_organization_tag</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode1_d_unwrap" kindref="compound">Mode1DUnwrap</ref></type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1486" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1486" bodyend="1488"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a9d2cee7a7f2ed9748a0f135b206836d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::handle_organization_tag</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, Mode2DUnwrap, PrintMode)</argsstring>
+        <name>handle_organization_tag</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode2_d_unwrap" kindref="compound">Mode2DUnwrap</ref></type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1491" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1491" bodyend="1493"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1affc9cb6a9b6e5630523f0dbf8acdfcc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::handle_organization_tag</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, ModeAuto, PrintMode)</argsstring>
+        <name>handle_organization_tag</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type><ref refid="structgnuplotio_1_1_mode_auto" kindref="compound">ModeAuto</ref></type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1496" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1496" bodyend="1498"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegnuplotio_1a1e452d861932700749421ce103ef8d48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename OrganizationMode</type>
+          </param>
+          <param>
+            <type>typename PrintMode</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gnuplotio::top_level_array_sender</definition>
+        <argsstring>(std::ostream &amp;stream, const T &amp;arg, OrganizationMode, PrintMode)</argsstring>
+        <name>top_level_array_sender</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>OrganizationMode</type>
+        </param>
+        <param>
+          <type>PrintMode</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gnuplot-iostream.h" line="1509" column="1" bodyfile="include/gnuplot-iostream.h" bodystart="1509" bodyend="1511"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/gnuplot-iostream.h" line="170" column="1"/>
+  </compounddef>
+</doxygen>
