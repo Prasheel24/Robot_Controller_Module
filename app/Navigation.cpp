@@ -37,7 +37,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <fstream>
 #include <vector>
 
-#include "include/gnuplot-iostream.h"
+#include "gnuplot-iostream.h"
 #include "Navigation.hpp"
 #include "SteerAlgorithm.hpp"
 
