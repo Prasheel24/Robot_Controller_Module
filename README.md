@@ -1,8 +1,6 @@
 # Robot Controller Module (GMock)
 [![Build Status](https://travis-ci.org/Prasheel24/Robot_Controller_Module.svg?branch=GmockForCredit)](https://travis-ci.org/Prasheel24/Robot_Controller_Module)
-
 [![Coverage Status](https://coveralls.io/repos/github/Prasheel24/Robot_Controller_Module/badge.svg?branch=GmockForCredit)](https://coveralls.io/github/Prasheel24/Robot_Controller_Module?branch=GmockForCredit)
-
 [![License MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/Prasheel24/Robot_Controller_Module/blob/GmockForCredit/LICENSE)
 [![Documentation](https://img.shields.io/badge/docs-generated-brightgreen.svg)](https://github.com/Prasheel24/tree/GmockForCredit/docs)
 ---
@@ -50,11 +48,17 @@ Log- https://docs.google.com/spreadsheets/d/1LFQMKbuGeusgmI7IMbjiw-RJrt9jNgej0F8
 sudo apt-get install gnuplot
 ```
 3. boost
-<br>Install boost
 ```
 sudo apt-get install libboost-all-dev
 ```
 4. googletest
+```
+sudo apt isntall libgtest-dev
+cd /usr/src/gtest/
+sudo cmake -DBUILD_SHARED_LIBS=ON
+sudo make
+sudo cp *.so /usr/lib
+```
 
 ## Build the specific branch
 ```
