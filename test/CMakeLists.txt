@@ -30,10 +30,11 @@ add_executable(
     main.cpp
     testNavigation.cpp
     testSteerAlgorithm.cpp
+    mockNavigation.cpp
     ../app/Navigation.cpp
     ../app/SteerAlgorithm.cpp
 )
 
-target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
+target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include  ../vendor/googletest/googlemock/include
                                            ${CMAKE_SOURCE_DIR}/include)
-target_link_libraries(cpp-test PUBLIC gtest ${Boost_LIBRARIES})
+target_link_libraries(cpp-test PUBLIC gtest gmock ${Boost_LIBRARIES})
