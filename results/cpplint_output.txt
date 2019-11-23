@@ -22,11 +22,13 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 
-prasheel@prasheelHP:~/Workspace/Week8/GitUpload$ cpplint $( find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" )
-Done processing ./test/test.cpp
-Done processing ./test/main.cpp
-Done processing ./app/SteerAlgorithm.cpp
-Done processing ./app/main.cpp
-Done processing ./app/Navigation.cpp
-Done processing ./include/Navigation.hpp
+prasheel@prasheelHP:~/GMockCredit/Robot_Controller_Module$ cpplint $( find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" )
 Done processing ./include/SteerAlgorithm.hpp
+Done processing ./include/Navigation.hpp
+Done processing ./app/main.cpp
+Done processing ./app/SteerAlgorithm.cpp
+Done processing ./app/Navigation.cpp
+Done processing ./test/main.cpp
+Done processing ./test/testSteerAlgorithm.cpp
+Done processing ./test/mockNavigation.cpp
+Done processing ./test/testNavigation.cpp
