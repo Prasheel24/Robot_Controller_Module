@@ -62,7 +62,7 @@ sudo cp *.so /usr/lib
 
 ## Build the specific branch
 ```
-git clone --single-branch --branch GmockForCredit https://github.com/Prasheel24/Robot_Controller_Module.git 
+git clone --single-branch --branch GMock_Extra_Credit https://github.com/Prasheel24/Robot_Controller_Module.git 
 cd <path to repository>
 mkdir build
 cd build
